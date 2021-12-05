@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--To Do-->
+	<CultureDef>
+		<defName>Pathifinder</defName>
+		<label>pathifinder</label>
+		<description>A set of culture traditions common among pathfinder explorers</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoPathfinder</ideoNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Pathfinder</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+    
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+    
+		<iconPath>UI/PathfinderCultureIcon</iconPath>
+		<iconColor>(1, 1, 1)</iconColor>
+    
+		<styleItemTags>
+			<li>
+				<tag>PathfinderFeathers</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

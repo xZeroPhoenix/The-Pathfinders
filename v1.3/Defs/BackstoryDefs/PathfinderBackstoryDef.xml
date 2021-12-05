@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- =========Childhood========= -->
+<!--1-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_CoreChild</defName>
+    <title>Pathfinder Juvenile</title>
+    <titleShort>Juvenile</titleShort>
+    <baseDescription>[PAWN_nameDef] was born and raised on one of the many Pathfinder core worlds. Like many of [PAWN_nameDef]'s kin [PAWN_pronoun] was well provided for and educated, but did little physical labour.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Artistic</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>-1</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Mining</defName>
+            <amount>-4</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--2-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_CadetChild</defName>
+    <title>Pathfinder Cadet</title>
+    <titleShort>Cadet</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on one of the many Pathfinder worlds. Early in life, [PAWN_nameDef] decided to join the junior exploration corps and received much of the training they would need to explore unknown worlds by an early age.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Melee</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Shooting</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Plants</defName>
+            <amount>1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--3-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ExplorerChild</defName>
+    <title>Pathfinder Explorer</title>
+    <titleShort>Explorer</titleShort>
+    <baseDescription>[PAWN_nameDef] was born the child of two navy officers. And so spent much of [PAWN_possessive] childhood aboard the spacious and advanced vessels that the Pathfinder had to offer.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>5</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Shooting</defName>
+            <amount>1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--4-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ColonyChild</defName>
+    <title>Pathfinder Colonist</title>
+    <titleShort>Colonist</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on a remote, far off world. [PAWN_pronoun] spent much of their free time in the local library when not in school or helping around the colony.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Shooting</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Plants</defName>
+            <amount>1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--5-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_StationChild</defName>
+    <title>Pathfinder Station'er</title>
+    <titleShort>Spacer</titleShort>
+    <baseDescription>[PAWN_nameDef] was born the child of some crew members of a large Space Station. [PAWN_pronoun] spent much their childhood aboard and learned a thing or two about construction and jerry-rigging.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+
+        <li>
+            <defName>Social</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Plants</defName>
+            <amount>5</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--6-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_CommuneChild</defName>
+    <title>Pathfinder Hippie</title>
+    <titleShort>Hippie</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in a remote area of a freshly settled planet. [PAWN_pronoun] parents where the leaders of a commune and they learnt a lot about off-grid living as a Child.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>5</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>3</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--7-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ApprenticeChild</defName>
+    <title>Pathfinder Apprentice</title>
+    <titleShort>Apprentice</titleShort>
+    <baseDescription>[PAWN_nameDef] spent much of their time growing up on freshly settled planet in their parents workshop. [PAWN_pronoun] was always a good tinkerer but never good with people, so spent much of their time in the workshop.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>-2</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>7</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>4</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>3</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--8-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_RefugeeChild</defName>
+    <title>Pathfinder Refugee</title>
+    <titleShort>Refugee</titleShort>
+    <baseDescription>An asteroid hit [PAWN_nameDef]'s homeworld, [PAWN_pronoun] parents survived but the freshly colonized world was all but destroyed. [PAWN_nameDef] evacuated within days with their family but [PAWN_pronoun] was never the same, taking little interest in most subjects.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>-2</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>2</amount>
+        </li>     
+        <li>
+            <defName>Construction</defName>
+            <amount>1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+
+<!--9-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_DiplomatChild</defName>
+    <title>Pathfinder Juvenile</title>
+    <titleShort>Juvenile</titleShort>
+    <baseDescription>[PAWN_nameDef] was Diplomat the child of an esteemed Diplomat. [PAWN_pronoun] spent much of their time growing up in Alien cultures throughout explored space, even being taught in Alien schools on occasion.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>6</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>-1</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>5</amount>
+        </li>      
+        <li>
+            <defName>Construction</defName>
+            <amount>-1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--10-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ScoutChild</defName>
+    <title>Pathfinder Prodigy</title>
+    <titleShort>Child Prodigy</titleShort>
+    <baseDescription>it was noticed that at young age that [PAWN_nameDef] was quickly picking up many concept faster than [PAWN_pronoun] peers. [PAWN_pronoun] was quickly moved to a specialist school and earned many qualifications before reaching adulthood.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>10</amount>
+        </li>      
+        <li>
+            <defName>Construction</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Artistic</defName>
+            <amount>2</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--11-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ScienceChild</defName>
+    <title>Pathfinder Geek</title>
+    <titleShort>Geek</titleShort>
+    <baseDescription>it was  evident from a young [PAWN_nameDef] had a love all things nerdy. [PAWN_pronoun] spent a lot of time immersed in old textbooks and even pioneered a club of like-minded students.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+
+    <skillGains>
+        <li>
+            <defName>Shooting</defName>
+            <amount>-2</amount>
+        </li>
+        <li>
+            <defName>Social</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>5</amount>
+        </li>
+        <li>
+            <defName>Construction</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Medicine</defName>
+            <amount>1</amount>
+        </li>
+        <li>
+            <defName>Artistic</defName>
+            <amount>1</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--12-->
+
+<AlienRace.BackstoryDef>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <defName>Pathfinder_CreativeChild</defName>
+    <title>Pathfinder Creative</title>
+    <titleShort>Creative</titleShort>
+    <baseDescription>[PAWN_nameDef] we're something of a creative child. [PAWN_pronoun] made many a sculpture and painting, but tended to ignore other aspects of life.</baseDescription>
+
+    <slot>Childhood</slot>
+    <skillGains>
+        <li>
+            <defName>Social</defName>
+            <amount>-2</amount>
+        </li>
+        <li>
+            <defName>Crafting</defName>
+            <amount>2</amount>
+        </li>
+        <li>
+            <defName>Intellectual</defName>
+            <amount>3</amount>
+        </li>
+        <li>
+            <defName>Artistic</defName>
+            <amount>6</amount>
+        </li>
+    </skillGains>
+
+    <spawnCategories>
+    <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<!--Adult-->
+  
+<!--Explorer-->
+<!--1-->
+<AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_ExplorerAdult</defName>
+    <title>Pathfinder Explorer</title>
+    <titleShort>Explorer</titleShort>
+    <baseDescription>[PAWN_nameDef] always had a longing to explore. [PAWN_nameDef] joined up with the Expeditionary Corps, and was sent off on many missions to procure samples and take readings of alien worlds.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+
+    <spawnCategories>
+      <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+  
+  <!--Explorer-->
+  <!--1-->
+  <!-- Copy -->
+  <AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_Explorer2Adult</defName>
+    <title>Pathfinder Explorer</title>
+    <titleShort>Explorer</titleShort>
+    <baseDescription>[PAWN_nameDef] always had a longing to explore. [PAWN_nameDef] joined up with the Expeditionary Corps, and was sent off on many missions to procure samples and take readings of alien worlds.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+
+    <spawnCategories>
+      <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+  </AlienRace.BackstoryDef>
+  
+  <!--Diplomat-->
+  <!--2-->
+  <AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_DiplomatAdult</defName>
+    <title>Pathfinder Diplomat</title>
+    <titleShort>Diplomat</titleShort>
+    <baseDescription>[PAWN_nameDef] always had a something of a silver-tongue. [PAWN_nameDef] later joined up with the Diplomatic Corps, and was sent to a number of alien worlds gaining a lot of insight into various different cultural customs.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+  </AlienRace.BackstoryDef>
+  
+  <!--Diplomat-->
+  <!--2-->
+  <!-- Copy -->
+  <AlienRace.BackstoryDef>
+
+    <defName>Pathfinder_Diplomat2Adult</defName>
+    <title>Pathfinder Diplomat</title>
+    <titleShort>Diplomat</titleShort>
+    <baseDescription>[PAWN_nameDef] always had a something of a silver-tongue. [PAWN_nameDef] later joined up with the Diplomatic Corps, and was sent to a number of alien worlds gaining a lot of insight into various different cultural customs.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Pathfinder_Backstory</li>
+    </spawnCategories>
+
+  </AlienRace.BackstoryDef>
+  
+</Defs>

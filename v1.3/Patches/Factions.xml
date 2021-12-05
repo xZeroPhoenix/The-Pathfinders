@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+    <!-- Outlander "normal" group -->
+    <value>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <!-- The more rare, the lower your points should be -->
+      <PathfinderMercenaries>0.5</PathfinderMercenaries>
+      <PathfinderDrifters>3</PathfinderDrifters>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+    <!-- Outlander Caravan guard group -->
+    <value>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <PathfinderMercenaries>0.5</PathfinderMercenaries>
+      <PathfinderDrifters>2</PathfinderDrifters>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+    <!-- Outlander base group -->
+    <value>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <PathfinderMercenaries>0.8</PathfinderMercenaries>
+      <PathfinderDrifters>2</PathfinderDrifters>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+    <!-- Pirate "normal" group -->
+    <value>
+      <PathfinderMercenaries>0.2</PathfinderMercenaries>
+      <PathfinderDrifters>5</PathfinderDrifters>
+      <PathfinderPirates>4</PathfinderPirates>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[7]/options</xpath>
+    <!-- Pirate base group -->
+    <value>
+      <PathfinderMercenaries>0.5</PathfinderMercenaries>
+      <PathfinderDrifters>3</PathfinderDrifters>
+      <PathfinderPirates>5</PathfinderPirates>
+    </value>
+  </Operation>
+
+</Patch>

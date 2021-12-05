@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Pathfinders_Weapons_Raw",
+      "appliesTo": "Textures/Pathfinders_Weapons_Raw.afdesign",
+      "type": "launch"
+    }
+  ]
+}

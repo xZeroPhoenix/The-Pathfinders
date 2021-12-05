@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<BodyPartDef>
+		<defName>PathTail</defName>
+		<label>Pathfinder tail</label>
+		<description>A feathery bird tail form a Pathfinder.</description>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<spawnThingOnRemoved>PathTail</spawnThingOnRemoved>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+  <BodyPartDef>
+    <defName>PathfinderBeak</defName>
+    <label>Pathfinder Beak</label>
+    <description>The beak of a Pathfinder, its hard to eat or speak without it.</description>
+    <hitPoints>35</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canScarify>false</canScarify>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

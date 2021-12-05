@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- ==================== Light ================================ -->
+ 
+  <SoundDef>
+    <defName>Shot_LightRiflePathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/LightRiflePathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30</min>
+          <max>50</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ==================== Medium ================================ -->
+
+  <SoundDef>
+    <defName>Shot_MediumRiflePathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MediumRiflePathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30</min>
+          <max>50</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ==================== Grenade Launcher ================================ -->
+
+  <SoundDef>
+    <defName>Shot_GrenadeLauncherPathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/GrenadeLauncherPathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>
+          <max>80</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- ==================== Heavy Sniper ================================ -->
+
+  <SoundDef>
+    <defName>Shot_HeavySniperPathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/HeavySniperPathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>90</min>
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- ==================== RPG Launcher ================================ -->
+
+  <SoundDef>
+    <defName>Shot_RPGLauncherPathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/RPGLauncherPathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>90</min>
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- ==================== Pathfinder ================================ -->
+  <SoundDef>
+    <defName>Shot_ShotgunPathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ShotgunPathfinder</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>90</min>
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  <!-- ==================== Artillery ================================ -->
+
+  <SoundDef>
+    <defName>Shot_ArtilleryPathfinder</defName>
+    <context>MapOnly</context>
+    <eventNames/>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Artillery</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>90</min>
+          <max>100</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

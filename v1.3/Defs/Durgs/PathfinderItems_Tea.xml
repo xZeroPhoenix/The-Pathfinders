@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>KatTaTea</defName>
+    <label>Kat'Ta Tea </label>
+    <description>A fragrant alien tea infused with leaves of the Kat'Ta plant. Kat'Ta Tea very mild in comparison to Psychite Tea, and is often drink purely for the flavour, though the tea itself has some aphrodisiac-like properties along with a mild calming effect, so is often consumed by both couples and those simply looking to mellow out.  \n\The tea is easy to produce at cooking facilities, and is completely non-addictive but is difficult to grow.</description>
+    <descriptionHyperlinks>
+      <HediffDef>KatTaTeaWarmth</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Resources/PathTea</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <MarketValue>10</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <baseIngestTicks>210</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>KatTaTeaWarmth</hediffDef>
+          <severity>0.75</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <skillRequirements>
+        <Cooking>2</Cooking>
+      </skillRequirements>
+      <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    </recipeMaker>
+    <costList>
+      <KatTaTeaLeafs>4</KatTaTeaLeafs>
+    </costList>
+    <comps>
+     <li Class="CompProperties_Drug">
+        <addictiveness>0.00</addictiveness>
+        <listOrder>800</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>KatTaTeaWarmth</defName>
+    <label>Kat'Ta Tea Warmth</label>
+    <description>Kat'Ta tea by-products in the bloodstream. Generates a mild calming effect and can help put people in the mood for some lovemaking.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>0.98</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>KatTaTeaWarmth</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>KatTaTeaWarmth</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Kat'Ta Tea Warmth</label>
+        <description>That tea was pleasant, I feel bit more at ease as well. Though, I do feel pretty tingly now...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

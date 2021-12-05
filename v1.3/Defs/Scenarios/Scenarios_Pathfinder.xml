@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ScenarioDef>
+    <defName>PathfinderScenario</defName>
+    <label>A Couple Pathfinders</label>
+    <description>Despite having not prepared as much as you probably should have, you're extremely advanced armour and weapons will make surviving much easier than it would be otherwise. 
+    Though your lack of starting food makes foraging and hunting a priority, hope you landed somewhere where the local wildlife is edible.
+    </description>
+    <scenario>
+      <summary>You two decided explore the universe with only 3 things: your rifles, your armour, and a friend as crazy as you.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PathfinderPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>2</pawnCount>
+          <pawnChoiceCount>2</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_MRS-12_Assault_Rifle</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_PathfinderBallisticLining</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_PathfinderAdvHelmet</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_PathfinderAdvHelmet</thingDef>
+          <count>2</count>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

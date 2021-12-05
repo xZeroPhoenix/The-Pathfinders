@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>PathfinderRaceSettings</defName>
+		<pawnKindSettings>
+
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PathfinderSettler</li>
+					</kindDefs>
+					<chance>15.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>PathfinderDrifters</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienrefugeekinds>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PathfinderSettler</li>
+								<li>PathfinderDrifters</li>
+							</kindDefs>
+							<chance>55.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PathfinderPlayerColony</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>

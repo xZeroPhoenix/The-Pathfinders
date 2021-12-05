@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch MayRequire="Ludeon.RimWorld.Royalty">
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>PathfinderPlayerColony</li>
+		</value>
+	</Operation>
+</Patch>
+

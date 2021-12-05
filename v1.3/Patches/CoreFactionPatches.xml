@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ThePathfinderCodex</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ThePathfinderCodex</li>
+    </value>
+  </Operation>
+</Patch>

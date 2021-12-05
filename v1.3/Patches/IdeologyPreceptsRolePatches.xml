@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch MayRequire="Ludeon.RimWorld.Ideology">
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="IdeoRole_ResearchSpecialist"]/requiredMemes</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ThePathfinderCodex</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>The Pathfinders</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        
+        <li Class="PatchOperationRemove">
+          <xpath>
+            Defs/ThingDef[
+            defName = "Turret_PathfinderTurret" or
+            defName = "PathfinderTurret_Base"
+            ]/comps/li[@Class = "CompProperties_Refuelable"]
+          </xpath>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>
+            Defs/ThingDef[
+            defName = "Turret_PathfinderTurret" or
+            defName = "PathfinderArtillery_TopTurret"
+            ]/thingClass
+          </xpath>
+          <value>
+            <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>
+            Defs/ThingDef[
+            defName = "Turret_PathfinderTurret" or
+            defName = "PathfinderArtillery_TopTurret"
+            ]/fillPercent
+          </xpath>
+          <value>
+            <fillPercent>0.85</fillPercent>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>
+            /Defs/ThingDef[
+            defName = "Turret_PathfinderTurret" or
+            defName = "PathfinderTurret_Base"
+            ]/comps/li[@Class="CompProperties_Explosive"]
+          </xpath>
+        </li>
+        
+        <!-- ========== Mini-turret ========== -->
+        
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "Turret_PathfinderTurret"]/comps/li[@Class="CompProperties_Power"]</xpath>
+          <value>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerTrader</compClass>
+              <basePowerConsumption>150</basePowerConsumption>
+            </li>
+          </value>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_PathfinderTurret</defName>
+          
+          <statBases>
+            <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.30</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1.15</SwayFactor>
+            <Bulk>8.0</Bulk>
+          </statBases>
+          
+          <Properties>
+            <recoilAmount>1.1</recoilAmount>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_5mmCoilgun_Sabot</defaultProjectile>
+            <warmupTime>1.1</warmupTime>
+            <range>52</range>
+            <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+            <burstShotCount>10</burstShotCount>
+            <soundCast>Shot_LightRiflePathfinder</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>11</muzzleFlashScale>
+          </Properties>
+          
+          <AmmoUser>
+            <magazineSize>200</magazineSize>
+            <reloadTime>5.2</reloadTime>
+            <ammoSet>AmmoSet_5mmCoilgun</ammoSet>
+          </AmmoUser>
+          
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <noSnapshot>true</noSnapshot>
+            <noSingleShot>true</noSingleShot>
+          </FireModes>
+
+        </li>
+        
+        <!-- ========== Mortar ========== -->
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="PathfinderBaseArtilleryBuilding"]/thingClass</xpath>
+          <value>
+            <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="PathfinderBaseArtilleryBuilding"]/statBases</xpath>
+          <value>
+            <ShootingAccuracyTurret>0.75</ShootingAccuracyTurret>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "PathfinderArtillery_TopTurret"]</xpath>
+          <value>
+            <comps>
+              <li Class="CombatExtended.CompProperties_Charges">
+                <chargeSpeeds>
+                  <li>30</li>
+                  <li>50</li>
+                  <li>70</li>
+                  <li>90</li>
+                </chargeSpeeds>
+              </li>
+              <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>3</magazineSize>
+                <reloadTime>8</reloadTime>
+                <ammoSet>AmmoSet_95mmCoilgunShell</ammoSet>
+              </li>
+            </comps>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "PathfinderArtillery_TopTurret"]/weaponTags</xpath>
+          <value>
+            <li>TurretGun</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "PathfinderArtillery_TopTurret"]/verbs</xpath>
+          <value>
+            <verbs>
+              <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+                <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_95mmCoilgunShell_HE</defaultProjectile>
+                <warmupTime>11</warmupTime>
+                <minRange>32</minRange>
+                <range>700</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_ArtilleryPathfinder</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <circularError>0.1</circularError>
+                <indirectFirePenalty>0.1</indirectFirePenalty>
+                <targetParams>
+                  <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+              </li>
+            </verbs>
+          </value>
+        </li>
+        
+        
+      </operations>
+    </match>
+
+
+
+  </Operation>
+</Patch>

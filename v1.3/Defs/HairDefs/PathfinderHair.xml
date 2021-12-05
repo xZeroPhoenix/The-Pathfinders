@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- unisex -->
+	<HairDef>
+		<defName>PathfinderFeathers1</defName>
+		<label>PathfinderFeathersCut1</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Hair/feathers1</texPath>
+    <category>PathfinderFeathers</category>
+    <styleTags>
+      <li>PathfinderFeathers</li>
+    </styleTags>
+	</HairDef> 
+
+    <HairDef>
+		<defName>PathfinderFeathers2</defName>
+		<label>PathfinderFeathersCut2</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Hair/feathers2</texPath>
+      <category>PathfinderFeathers</category>
+    <styleTags>
+			<li>PathfinderFeathers</li>
+    </styleTags>
+    </HairDef> 
+
+	 
+    <HairDef>
+		<defName>PathfinderFeathers3</defName>
+		<label>PathfinderFeathersCut3</label>
+		<hairGender>Any</hairGender>
+      <category>PathfinderFeathers</category>
+		<texPath>Things/Hair/feathers3</texPath>
+     <styleTags>
+			<li>PathfinderFeathers</li>
+     </styleTags>
+	</HairDef> 
+</Defs>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!--=========================== Drug crops ==============================-->
+  
+<ThingDef ParentName="PlantBase">
+  <defName>Plant_KatTaTea</defName>
+  <label>Kat'Ta Tea Plant</label>
+  <description>A leafy plant multi-coloured plant native to the Pathfinder Homeworld, when cut the leafs can be made into a sweet tea. it requires rich soil but has a pretty high yield.</description>
+  <statBases>
+    <MaxHitPoints>85</MaxHitPoints>
+    <Nutrition>0.05</Nutrition>
+  </statBases>
+  <graphicData>
+    <texPath>Things/Plants/KatTaTeaPlant</texPath>
+    <graphicClass>Graphic_Random</graphicClass>
+  </graphicData>
+  <selectable>true</selectable>
+  <pathCost>14</pathCost>
+  <ingestible/>
+  <plant>
+    <fertilityMin>1</fertilityMin>
+    <fertilitySensitivity>1.2</fertilitySensitivity>
+    <growDays>9.00</growDays>
+    <dieIfLeafless>true</dieIfLeafless>
+    <harvestTag>Standard</harvestTag>
+    <harvestedThingDef>KatTaTeaLeafs</harvestedThingDef>
+    <harvestYield>10</harvestYield>
+    <sowMinSkill>6</sowMinSkill>
+    <sowTags>
+      <li>Ground</li>
+      <li>Hydroponic</li>
+    </sowTags>
+    <topWindExposure>0.1</topWindExposure>
+    <visualSizeRange>0.3~1.2</visualSizeRange>
+    <wildOrder>2</wildOrder>
+  </plant>
+</ThingDef>
+
+<!--=========================== Food crops ==============================-->
+  
+<ThingDef ParentName="PlantBase">
+    <defName>Plant_MalkaFruitPlant</defName>
+    <label>Malka Fruit Plant</label>
+    <description>An alien plant native to the sky-high waterfalls on the Pathfinders homeplanet. The Malka Plant naturally produces a very sweet, blue, caramel-like substance inside it's barry. it's considered much a treat like chocolate.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/MalkaFruitPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible/>
+    <plant>
+      <fertilityMin>1.0</fertilityMin>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
+      <growDays>17</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MalkaFruit</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestFailable>true</harvestFailable>
+      <sowMinSkill>8</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+
+    </plant>
+</ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_SolarPinesNuts</defName>
+    <label>Solar Pine Plant</label>
+    <description>An alien low bush-like plant from the Pathfinders homeplanet that yields a variety of different nuts, though not as productive as other plants, they can be eaten raw without issue.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/SolarPines</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible/>
+    <plant>
+      <growDays>6.5</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SolarPinesNuts</harvestedThingDef>
+      <harvestYield>9</harvestYield>
+      <harvestFailable>true</harvestFailable>
+      <sowMinSkill>5</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_SourCane</defName>
+    <label>Sour Cane</label>
+    <description>An alien sugarcane like plant native to the badlands of the Pathfinder homeworld. The plant is incredibly hardy and is able to grow in virtually any soil soft enough, though very slowly. Very nutritious but it is exceptional bitter to the point of bringing the consumer to tears.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.8</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/SourCane</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible/>
+    <plant>
+      <growDays>22</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>SourCaneStock</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <harvestFailable>true</harvestFailable>
+      <sowMinSkill>5</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <fertilityMin>0.1</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.6</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  
+</Defs>

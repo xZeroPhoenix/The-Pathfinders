@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+   <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>PathTail</defName>
+      <label>Pathfinder tail</label>
+      <description>A Pathfinders tail.</description>
+      <graphicData>
+         <texPath>Things/Item/Health/HealthItem</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+	  
+      <statBases>
+         <MarketValue>200</MarketValue>
+		 <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+
+</Defs>

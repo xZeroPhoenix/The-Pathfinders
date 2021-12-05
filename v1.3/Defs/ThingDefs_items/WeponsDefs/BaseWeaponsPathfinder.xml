@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- TEMP -->
+
+<Defs>
+  <ThingDef Name="PathfinderTechRanged" ParentName="BaseHumanMakeableGun" Abstract="True">
+    <recipeMaker>
+      <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

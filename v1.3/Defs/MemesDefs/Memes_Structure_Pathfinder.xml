@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+<MemeDef>
+    <defName>Structure_Pathfinder</defName>
+    <label>Pathfinder</label>
+    <description>There are no gods. The moral structure of the universe is found in our grand narrative of social forces.</description>
+    <category>Structure</category>
+    <iconPath>UI/Structures/Structure_Ideological</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>sanctuary</worshipRoomLabel>
+    <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
+    <consumableBuildings>
+        <li>SacrificialFlag</li>
+    </consumableBuildings>
+    <renderOrder>-1</renderOrder>
+    <generalRules>
+        <rulesStrings>
+
+            <li>memeCreed->Codex</li>
+            <li>memeAdjective->Pathfinder</li>
+
+            
+            <li>memeHyphenPrefix->ideo</li>
+            <li>memeLeaderNoun->leader</li>
+            <li>memeLeaderAdjective->awoken</li>
+            <li>memeMoralist->academic</li>
+        </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+        <patterns>
+            <li>
+                <def>IdeologicalFounder</def>
+                <weight>1</weight>
+            </li>
+            <li>
+                <def>IdeologicalLesson</def>
+                <weight>3</weight>
+            </li>
+        </patterns>
+        <constants>
+            <li>
+                <key>structure_ideological</key>
+                <value>true</value>
+            </li>
+        </constants>
+    </descriptionMaker>
+
+    
+    <symbolPacks>
+        <li>
+            <ideoName>Codex</ideoName>
+            <theme>pathfinder</theme>
+            <adjective>pathfinder</adjective>
+            <member>pathfinder</member>
+        </li>
+
+    </symbolPacks>
+
+</MemeDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<IdeoIconDef>
+  <defName>PathfinderA</defName>
+  <iconPath>UI/PathfinderIdeoSymbol</iconPath>
+  <memes>
+    <li>ThePathfinderCodex</li>
+  </memes>
+</IdeoIconDef>
+</Defs>

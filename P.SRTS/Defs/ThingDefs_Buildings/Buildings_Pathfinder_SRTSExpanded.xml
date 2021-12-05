@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="NECShipBase">
+    <defName>PathfinderRaven</defName>
+    <label>Pathfinder: L2A Raven</label>
+    <description>An aerial military vessel designed to scout, quest, and minor assaults. Liable to breakdown.
+
+      Passenger cap: 1 - 15
+      Space flight: Yes, Shuttlebay Only
+
+      --Military--
+      Bombs: 20/10
+      Accuracy: Excellent
+      Build: Strike Craft
+      ----------------------------
+      Speed: Excellent
+      Fuel cap: 300 Kg (3000 uints)
+      Fuel efficiency: Exceptional
+      ----------------------------
+      Cargo cap: 4000kg
+      Internal power plant: 4000w</description>
+
+    <graphicData>
+      <texPath>Things/Building/PathSRTS/Path_Raven</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(11,11)</drawSize>
+    </graphicData>
+    
+    <size>(3,3)</size>
+    
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <WorkToBuild>38000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>20</Mass>
+      <Beauty>95</Beauty>
+    </statBases>
+    
+    <costList>
+      <Steel>1200</Steel>
+      <Plasteel>1550</Plasteel>
+      <Gold>1200</Gold>
+      <ComponentIndustrial>28</ComponentIndustrial>
+      <ComponentSpacer>16</ComponentSpacer>
+    </costList>
+    
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>2</restEffectiveness>
+        <massCapacity>4000</massCapacity>
+      </li>
+      <li Class="SRTS.CompProperties_LaunchableSRTS">
+        <travelSpeed>45</travelSpeed>
+        <fuelPerTile>1.15</fuelPerTile>
+        <minPassengers>1</minPassengers>
+        <maxPassengers>15</maxPassengers>
+        <spaceFaring>true</spaceFaring>
+        <shuttleBayLanding>true</shuttleBayLanding>
+      </li>
+      
+      <li Class="SRTS.CompProperties_BombsAway">
+        <numberBombs>20</numberBombs>
+        <precisionBombingNumBombs>10</precisionBombingNumBombs>
+        <radiusOfDrop>5</radiusOfDrop>
+        <speed>3</speed>
+        <distanceBetweenDrops>2</distanceBetweenDrops>
+      </li>
+      
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>3000</fuelCapacity>
+        <fuelMultiplier>10</fuelMultiplier>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>3000</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialFuelPercent>0.25</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+      </li>
+      
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-4000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(217,217,217,0)</glowColor>
+      </li>
+    </comps>
+    
+    <researchPrerequisites>
+      <li>Research_SRTSSkip</li>
+    </researchPrerequisites>
+    
+    <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+    <uiIconScale>0.35</uiIconScale>
+
+    <killedLeavings>
+      <ChunkSlagSteel>15</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+  
+</Defs>

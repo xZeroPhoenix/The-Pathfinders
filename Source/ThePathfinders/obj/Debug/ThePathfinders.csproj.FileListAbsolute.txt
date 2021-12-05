@@ -1,0 +1,8 @@
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Common\Assemblies\ThePathfinders.dll
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Common\Assemblies\ThePathfinders.pdb
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.AssemblyReference.cache
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.CoreCompileInputs.cache
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.dll
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.pdb
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Assemblies\ThePathfinders.dll
+C:\Users\cameron\Desktop\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The Pathfinders\Assemblies\ThePathfinders.pdb

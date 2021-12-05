@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>LeaderTitleMaker_PathfinderStructure</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle(p=1)->[cultureLeaderTitle]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <!-- leader -->
+  
+  <RulePackDef>
+    <defName>LeaderTitleMaker_Pathfinder</defName>
+    
+    <include>
+      <li>LeaderTitleMaker_PathfinderStructure</li>
+    </include>
+    
+    <rulePack>
+      <rulesStrings>
+        
+        <li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+        <li>cultureLeaderAdjective->first</li>
+
+        <li>cultureLeaderNoun->speaker</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Moralist -->
+<!--
+  <RulePackDef>
+    <defName>NamerRoleMoralist_Pathfinder</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>LeaderTitleMoralist_Pathfinder->[MoralistLeaderAdjective] [MoralistLeaderNoun]</li>
+        
+        <li>MoralistLeaderAdjective->independent</li>
+
+        <li>MoralistLeaderNoun->counsellor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+ --> 
+  
+</Defs>

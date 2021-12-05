@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="PathfinderFactionBase">
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+     <li>(0, 0, 0)</li>
+    </colorSpectrum>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+  </FactionDef>
+  
+  <FactionDef Parent="PathfinderFactionBase">
+    <defName>PathfinderPlayerColony</defName>
+    <label>Pathfinder Outpost</label>
+    <description>Your own community, lots of bi birds ayy? Overwhelmingly male too...</description>  <!-- I shouldn't keep this should I? -->
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Pathfinder</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+
+    <!-- <pawnNameMaker></pawnNameMaker> -->
+    <techLevel>Ultra</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>  <!-- TEMP -->
+    <settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>          <!-- TEMP -->
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- TEMP -->
+		<geneticVariance>1</geneticVariance>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+
+    <apparelStuffFilter>
+      <thingDefs>
+      <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    
+    <!-- Temp -->
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <RulePackDef>
+    <defName>NamerIdeoPathfinder</defName>
+    <rulePack>
+      <rulesStrings>
+
+
+        <li>r_ideoName(p=2.0)->[memeAdjective] [memeCreed]</li>
+        <li>r_ideoName(p=0.0)->[creed] of [packTheme]</li>
+        <li>r_ideoAdjective(priority=1)->[packAdjective]</li>
+        
+        <li>r_memberName->[packMember]</li>
+
+        <li>creed(priority=0.0)->[memeCreed]</li>
+        <li>creed(priority=0.0)->[genericCreed]</li>
+
+        <li>hyphenPrefix->[globalHyphenPrefix]</li>
+        <li>hyphenPrefix->[memeHyphenPrefix]</li>
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

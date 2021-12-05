@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Base -->
+	<PawnKindDef Name="BasePathfinderPawnKind">
+		<defName>Pathfinder</defName>
+		<label>colonist</label>
+		<race>Alien_Pathfinder</race>
+		<defaultFactionType>PathfinderPlayerColony</defaultFactionType>	
+		<combatPower>30</combatPower>
+		
+		<backstoryCategories>
+		<li>Pathfinder_Backstory</li>
+		</backstoryCategories>
+		
+		<apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+		</apparelTags>
+
+		<techHediffsTags>
+	    <li>Advanced</li>
+		</techHediffsTags>
+
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<apparelMoney>1700~1900</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+
+    <initialWillRange>16~23</initialWillRange>
+    <initialResistanceRange>12~19</initialResistanceRange>
+    
+	</PawnKindDef>
+  <!-- Civilians -->
+  
+  <!-- Settler -->
+  <PawnKindDef Name="PathfinderSettler">
+    <defName>PathfinderSettler</defName>
+    <label>Settler</label>
+    <race>Alien_Pathfinder</race>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <combatPower>20</combatPower>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+
+    <techHediffsChance>0.05</techHediffsChance>
+    <apparelMoney>1700~1900</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <weaponMoney>800~1800</weaponMoney>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    
+    <weaponTags>
+      <li>PathfinderEmergency</li>
+    </weaponTags>
+    
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+
+    
+    <invNutrition>3</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>85</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>125~170</countRange>
+        </li>
+        <li>
+          <choiceChance>15</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>720~1200</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+
+    <initialWillRange>16~23</initialWillRange>
+    <initialResistanceRange>22~39</initialResistanceRange>
+    
+  </PawnKindDef>
+  
+  <!-- Trader -->
+  <PawnKindDef ParentName="PathfinderSettler">
+    <defName>PathfinderTrader</defName>
+    <label>Pathfinder trader</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+  <!-- Military -->
+  
+  <!-- Guard -->
+  <PawnKindDef Name="PathfinderGuard">
+    <defName>PathfinderGuard</defName>
+    <label>Pathfinder Guard</label>
+    <race>Alien_Pathfinder</race>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <combatPower>150</combatPower>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    
+    <apparelRequired>
+      <li>Apparel_PathfinderAdvHelmet</li>
+      <li>Apparel_PathfinderArmour</li>
+      <li>Apparel_PathfinderBallisticLining</li>
+    </apparelRequired>
+    
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+
+    <techHediffsChance>0.15</techHediffsChance>
+    <apparelMoney>1700~1900</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>1800~2800</weaponMoney>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+
+    <weaponTags>
+      <li>PathfinderEmergency</li>
+      <li>PathfinderGeneral</li>
+    </weaponTags>
+
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+
+    <invNutrition>3</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>125~170</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>3</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+
+    <initialWillRange>20~30</initialWillRange>
+    <initialResistanceRange>12~28</initialResistanceRange>
+    
+  </PawnKindDef>
+
+  <!-- Light Guard -->
+  <PawnKindDef Name="PathfinderLightGuard">
+    <defName>PathfinderLightGuard</defName>
+    <label>Pathfinder Light Guard</label>
+    <race>Alien_Pathfinder</race>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <combatPower>40</combatPower>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+
+    <apparelRequired>
+      <li>Apparel_PathfinderStandardHelmet</li>
+      <li>Apparel_PathfinderBallisticLining</li>
+    </apparelRequired>
+
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+
+    <techHediffsChance>0.10</techHediffsChance>
+    <apparelMoney>1700~1900</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>1800~2800</weaponMoney>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+
+    <weaponTags>
+      <li>PathfinderEmergency</li>
+      <li>PathfinderGeneral</li>
+    </weaponTags>
+
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+
+    <invNutrition>3</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>125~170</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+
+    <initialWillRange>12~33</initialWillRange>
+    <initialResistanceRange>12~19</initialResistanceRange>
+    
+  </PawnKindDef>
+  
+  <!-- Base Trooper -->
+  <PawnKindDef Name="PathfinderTrooper">
+    <defName>PathfinderTrooper</defName>
+    <label>Pathfinder Base Soldier</label>
+    <race>Alien_Pathfinder</race>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <combatPower>180</combatPower>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+
+    <apparelRequired>
+      <li>Apparel_PathfinderAdvHelmet</li>
+      <li>Apparel_PathfinderArmour</li>
+      <li>Apparel_PathfinderBallisticLining</li>
+    </apparelRequired>
+
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+
+
+    <apparelMoney>1700~1900</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>2800~5800</weaponMoney>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>true</isFighter>
+    
+    <weaponTags>
+      <li></li>
+    </weaponTags>
+
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+
+    <invNutrition>3</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>125~170</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>3</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+
+    <initialWillRange>50~70</initialWillRange>
+    <initialResistanceRange>22~38</initialResistanceRange>
+    
+  </PawnKindDef>
+  
+  <!-- Soldier -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderSoldier</defName>
+    <label>Pathfinder Soldier</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    
+    <weaponTags>
+      <li>PathfinderGeneral</li>
+    </weaponTags>
+    </PawnKindDef>
+  
+  <!-- Marksman -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderMarksman</defName>
+    <label>Pathfinder Marksman</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+
+    <weaponTags>
+      <li>PathfinderMarksman</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- Gunner -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderGunner</defName>
+    <label>Pathfinder Gunner</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+
+    <weaponTags>
+      <li>PathfinderGunner</li>
+    </weaponTags>
+    
+  </PawnKindDef>
+  
+  <!-- Breacher -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderBreacher</defName>
+    <label>Pathfinder Breacher</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+
+    <weaponTags>
+      <li>PathfinderClose</li>
+    </weaponTags>
+
+  </PawnKindDef>
+  <!-- Demolitions -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderDemolitions</defName>
+    <label>Pathfinder Demolitions</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+
+    <weaponTags>
+      <li>PathfinderDemolitions</li>
+    </weaponTags>
+  
+  </PawnKindDef>
+  
+  <!-- Chancellor -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderChancellor</defName>
+    <label>Pathfinder Chancellor</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <factionLeader>true</factionLeader>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    
+    <weaponTags>
+      <li>PathfinderGeneral</li>
+    </weaponTags>
+    
+  </PawnKindDef>
+  
+  <!-- Melee -->
+  <PawnKindDef ParentName="PathfinderTrooper">
+    <defName>PathfinderMelee</defName>
+    <label>Pathfinder Melee Specialist</label>
+    <defaultFactionType>PathfinderSettlement</defaultFactionType>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+
+    <weaponTags>
+      <li>PathfinderMelee</li>
+    </weaponTags>
+
+  </PawnKindDef>
+  
+  <!-- Pirates/Mercenaries/Drifters -->
+  
+  <!-- Base Drifters -->
+  <PawnKindDef Name="PathfinderBaseDrifters">
+    <defName>PathfinderBaseDrifters</defName>
+    <label>Pathfinder Base Drifters</label>
+    <race>Alien_Pathfinder</race>
+    <maxGenerationAge>310</maxGenerationAge>
+    <combatPower>100</combatPower>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
+
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+
+
+    <apparelMoney>2700~3900</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <weaponMoney>3800~5800</weaponMoney>
+    <itemQuality>Good</itemQuality>
+    <isFighter>true</isFighter>
+
+    <weaponTags>
+      <li></li>
+    </weaponTags>
+
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+
+    <invNutrition>3</invNutrition>
+    <inventoryOptions>
+      <skipChance>0</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>125~170</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>3</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+
+    <initialWillRange>40~70</initialWillRange>
+    <initialResistanceRange>22~58</initialResistanceRange>
+    
+  </PawnKindDef>
+
+  <!-- Mercenaries -->
+  <PawnKindDef ParentName="PathfinderBaseDrifters">
+    <defName>PathfinderMercenaries</defName>
+    <label>Pathfinder Mercenary</label>
+    <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+    <combatPower>350</combatPower>
+    
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>AssaultRifle</li>
+      <li>LongShots</li>
+    </weaponTags>
+    
+    <apparelRequired>
+      <li>Apparel_PathfinderAdvHelmet</li>
+      <li>Apparel_PathfinderArmour</li>
+      <li>Apparel_PathfinderBallisticLining</li>
+    </apparelRequired>
+  </PawnKindDef>
+  
+  <!-- Drifters -->
+  <PawnKindDef ParentName="PathfinderBaseDrifters">
+    <defName>PathfinderDrifters</defName>
+    <label>Pathfinder Drifter</label>
+    <baseRecruitDifficulty>0.20</baseRecruitDifficulty>
+    <combatPower>100</combatPower>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>AssaultRifle</li>
+      <li>LongShots</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Pirates -->
+  <PawnKindDef ParentName="PathfinderBaseDrifters">
+    <defName>PathfinderPirates</defName>
+    <label>Pathfinder Pirate</label>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <combatPower>140</combatPower>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>AssaultRifle</li>
+      <li>LongShots</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

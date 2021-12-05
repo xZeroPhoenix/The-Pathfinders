@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>CoilgunSabot</defName>
+    <label>Coilgun sabot</label>
+    <labelShort>Sabot</labelShort>
+    <description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration.</description>
+    <advanced>true</advanced>
+  </CombatExtended.AmmoCategoryDef>
+  
+</Defs>

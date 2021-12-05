@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>PathfinderArtilleryShells</defName>
+    <label>Pathfinder Artillery Shells</label>
+    <parent>Manufactured</parent>
+    <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+  </ThingCategoryDef>
+  
+</Defs>

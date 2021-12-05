@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\P.CE",
+    "\\P.CE\\Defs",
+    "\\P.CE\\Defs\\ThingDefs_Ammo",
+    "\\Textures",
+    "\\Textures\\Things",
+    "\\Textures\\Things\\Shells",
+    "\\Textures\\Things\\Shells\\Pathfinder_Shell_EMP",
+    "\\v1.3",
+    "\\v1.3\\Defs",
+    "\\v1.3\\Defs\\ThingDefs_Buildings"
+  ],
+  "SelectedNode": "\\v1.3\\Defs\\ThingDefs_items\\ResourcesDefs\\PathfinderItems_Resource_Shell.xml",
+  "PreviewInSolutionExplorer": false
+}

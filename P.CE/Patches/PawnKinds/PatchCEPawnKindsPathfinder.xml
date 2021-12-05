@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>The Pathfinders</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAddModExtension">
+  <xpath>Defs/PawnKindDef[defName="PathfinderSettler"]</xpath>
+  <value>
+    <li Class="CombatExtended.LoadoutPropertiesExtension">
+      <primaryMagazineCount>
+        <min>2</min>
+        <max>5</max>
+      </primaryMagazineCount>   
+    </li> 
+  </value>
+</li>
+
+  <li Class="PatchOperationAddModExtension">
+  <xpath>Defs/PawnKindDef[defName="PathfinderTrooper"]</xpath>
+  <value>
+    <li Class="CombatExtended.LoadoutPropertiesExtension">
+      <primaryMagazineCount>
+        <min>2</min>
+        <max>5</max>
+      </primaryMagazineCount>
+    </li>
+  </value>
+</li>
+
+    <li Class="PatchOperationAddModExtension">
+  <xpath>Defs/PawnKindDef[defName="PathfinderBaseDrifters"]</xpath>
+  <value>
+    <li Class="CombatExtended.LoadoutPropertiesExtension">
+      <primaryMagazineCount>
+        <min>2</min>
+        <max>5</max>
+      </primaryMagazineCount>
+    </li>
+  </value>
+</li>
+
+        <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/PawnKindDef[defName="PathfinderGuard"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </li>
+        <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/PawnKindDef[defName="PathfinderLightGuard"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </li>
+        
+</operations>
+    </match>
+  </Operation>
+</Patch>

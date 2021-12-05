@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <thingDef Name="PathfinderArmorHelmetMakeableBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+  </thingDef>
+  
+  <thingDef Name="PathfinderApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+  </thingDef>
+  
+</Defs>

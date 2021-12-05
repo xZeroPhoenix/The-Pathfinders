@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<Defs>
+
+<!--Durgs-->
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>KatTaTeaLeafs</defName>
+    <label>Kat'Ta Tea Leafs</label>
+    <description>Raw cut leaves of a Kat'Ta plant. They can be brewed into a sweet tea native to the Pathfinder Homeworld.</description>
+    <graphicData>
+      <texPath>Things/Resources/KatTaTeaLeafs</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+  
+<!--Food-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>MalkaFruit</defName>
+    <label>Malka Fruit</label>
+    <description>The sweet fruit of the Malka plant, though hardly nutritious it is very enjoyable and a common Pathfinder treat.</description>
+    <graphicData>
+      <texPath>Things/Resources/MalkaFruit</texPath>
+    </graphicData>
+    
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>SolarPinesNuts</defName>
+    <label>Solar Pines Nuts</label>
+    <description>Assorted nuts. Nice to eat, even when raw.</description>
+    <graphicData>
+      <texPath>Things/Resources/SolarPinesNuts</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+      <Mass>0.027</Mass>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>44</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>SourCaneStock</defName>
+    <label>Sour Cane Stocks</label>
+    <description>Bushels of sour cane. Horrifically bitter and it can't be cooked or processed. But extremely nutritious and can last forever.</description> <!-- To Do -->
+    <graphicData>
+      <texPath>Things/Resources/SourCane</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <Nutrition>0.9</Nutrition>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <preferability>MealAwful</preferability>
+      <tasteThought>AteSourCane</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>
