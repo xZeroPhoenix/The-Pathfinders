@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>The Pathfinders</modName>
+      </li>
+      
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="PathfinderTurret_Base"]/thingClass</xpath>
+          <value>
+            <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+          </value>
+        </li>
+      
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="PathfinderTurret_Base"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName ="PathfinderTurret_Base"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+        </li>
+
+        
+        <!-- ========== Mortar ========== -->
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="PathfinderArtillery_TopTurret"]</xpath>
+          <value>
+            <statBases>
+              <SightsEfficiency>1.2</SightsEfficiency>
+            </statBases>
+          </value>
+        </li>
+
+      <li Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="PathfinderArtillery_TopTurret"]/comps</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PathfinderArtillery_TopTurret"]</xpath>
+            <value>
+              <comps />
+            </value>
+          </li>
+        </operations>
+      </li>
+      
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="PathfinderArtillery_TopTurret"]/comps</xpath>
+          <value>
+              <li Class="CombatExtended.CompProperties_Charges">
+                <chargeSpeeds>
+                  <li>30</li>
+                  <li>50</li>
+                  <li>70</li>
+                  <li>90</li>
+                </chargeSpeeds>
+              </li>
+              <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>3</magazineSize>
+                <reloadTime>7.8</reloadTime>
+                <ammoSet>AmmoSet_95mmCoilgunShell</ammoSet>
+              </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="PathfinderArtillery_TopTurret"]/verbs</xpath>
+          <value>
+            <verbs>
+              <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+                <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_95mmCannonShell_HE</defaultProjectile>
+                <warmupTime>8</warmupTime>
+                <minRange>32</minRange>
+                <range>700</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>Shot_ArtilleryPathfinder</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <circularError>0.1</circularError>
+                <indirectFirePenalty>0.1</indirectFirePenalty>
+                <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+              </li>
+            </verbs>
+          </value>
+        </li> 
+
+      </operations>
+  </Operation>
+</Patch>
