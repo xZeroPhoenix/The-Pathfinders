@@ -27,15 +27,15 @@
     <thingCategories>
       <li>Ammo95mmCannonShells</li>
     </thingCategories>
-    <stackLimit>25</stackLimit>
+    <stackLimit>55</stackLimit>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
       <li>CE_AutoEnableCrafting_TableMachining</li>
     </tradeTags>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <Mass>19</Mass>
-      <Bulk>22</Bulk>
+      <Mass>12</Mass>
+      <Bulk>16</Bulk>
     </statBases>
     <cookOffFlashScale>30</cookOffFlashScale>
     <cookOffSound>MortarBomb_Explode</cookOffSound>
@@ -48,7 +48,7 @@
     <defName>Ammo_95mmCannonShell_HE</defName>
     <label>95mm cannon shell (HE)</label>
     <graphicData>
-      <texPath>Things/Shells/Pathfinder_Shell_HE</texPath>
+      <texPath>Things/Ammo/Cannon/HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -75,7 +75,7 @@
     <defName>Ammo_95mmCannonShell_EMP</defName>
     <label>95mm cannon shell (EMP)</label>
     <graphicData>
-      <texPath>Things/Shells/Pathfinder_Shell_EMP</texPath>
+      <texPath>Things/Ammo/Cannon/EMP</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -104,15 +104,13 @@
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <speed>160</speed>
+      <speed>0</speed>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <flyOverhead>true</flyOverhead>
-      <dropsCasings>true</dropsCasings>
-      <casingMoteDefname>Mote_BigShell</casingMoteDefname>
-      <gravityFactor>5</gravityFactor>
+      <gravityFactor>1</gravityFactor>
     </projectile>
   </ThingDef>
 
@@ -126,7 +124,7 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>152</damageAmountBase>
+      <damageAmountBase>136</damageAmountBase>
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <explosionRadius>2.5</explosionRadius>
@@ -136,8 +134,8 @@
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Large>53</Fragment_Large>
-          <Fragment_Small>96</Fragment_Small>
+          <Fragment_Large>55</Fragment_Large>
+          <Fragment_Small>98</Fragment_Small>
         </fragments>
       </li>
     </comps>
@@ -153,10 +151,10 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>EMP</damageDef>
-      <damageAmountBase>152</damageAmountBase>
+      <damageAmountBase>145</damageAmountBase>
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <explosionRadius>5</explosionRadius>
+      <explosionRadius>4.8</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -164,8 +162,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_95mmCannonShell_HE</defName>
-    <label>make 95mm HE cannon shells x5</label>
-    <description>Craft 5 95mm HE cannon shells.</description>
+    <label>make 95mm HE cannon shells x10</label>
+    <description>Craft 10 95mm HE cannon shells.</description>
     <jobString>Making 95mm HE cannon shells.</jobString>
     <workAmount>24400</workAmount>
     <ingredients>
@@ -175,7 +173,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>170</count>
+        <count>270</count>
       </li>
       <li>
         <filter>
@@ -183,7 +181,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -191,7 +189,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -202,14 +200,14 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_95mmCannonShell_HE>5</Ammo_95mmCannonShell_HE>
+      <Ammo_95mmCannonShell_HE>10</Ammo_95mmCannonShell_HE>
     </products>
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_95mmCannonShell_EMP</defName>
-    <label>make 95mm EMP cannon shells x5</label>
-    <description>Craft 5 95mm EMP cannon shells.</description>
+    <label>make 95mm EMP cannon shells x10</label>
+    <description>Craft 10 95mm EMP cannon shells.</description>
     <jobString>Making 95mm EMP cannon shells.</jobString>
     <workAmount>27000</workAmount>
     <ingredients>
@@ -219,7 +217,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>192</count>
+        <count>292</count>
       </li>
       <li>
         <filter>
@@ -227,7 +225,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>13</count>
+        <count>19</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -237,7 +235,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_95mmCannonShell_EMP>5</Ammo_95mmCannonShell_EMP>
+      <Ammo_95mmCannonShell_EMP>10</Ammo_95mmCannonShell_EMP>
   </products>
   </RecipeDef>
   

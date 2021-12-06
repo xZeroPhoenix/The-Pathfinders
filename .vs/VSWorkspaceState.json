@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\P.CE",
-    "\\P.CE\\Defs",
-    "\\P.CE\\Defs\\ThingDefs_Ammo",
+    "\\P.CE\\Patches",
+    "\\P.CE\\Patches\\Race",
+    "\\P.CE\\Patches\\ThingDefs_Buildings",
+    "\\P.CE\\Patches\\Weapons",
+    "\\P.SRTS",
     "\\Textures",
     "\\Textures\\Things",
-    "\\Textures\\Things\\Shells",
-    "\\Textures\\Things\\Shells\\Pathfinder_Shell_EMP",
-    "\\v1.3",
-    "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\ThingDefs_Buildings"
+    "\\Textures\\Things\\Projectile"
   ],
+  "SelectedNode": "\\P.CE\\Patches\\ThingDefs_Buildings\\PatchCEPathfinderBuildings_Security_Turrets_Artillery.xml",
   "PreviewInSolutionExplorer": false
 }
