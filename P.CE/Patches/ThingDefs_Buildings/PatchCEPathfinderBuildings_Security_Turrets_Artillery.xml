@@ -55,15 +55,15 @@
           <value>
               <li Class="CombatExtended.CompProperties_Charges">
                 <chargeSpeeds>
-                  <li>15</li>
                   <li>30</li>
                   <li>50</li>
                   <li>70</li>
+                  <li>90</li>
                 </chargeSpeeds>
               </li>
               <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>3</magazineSize>
-                <reloadTime>7.8</reloadTime>
+                <reloadTime>7.3</reloadTime>
                 <ammoSet>AmmoSet_95mmCoilgunShell</ammoSet>
               </li>
           </value>

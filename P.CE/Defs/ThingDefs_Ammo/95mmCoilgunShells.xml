@@ -110,7 +110,7 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <flyOverhead>true</flyOverhead>
-      <gravityFactor>1</gravityFactor>
+      <gravityFactor>15</gravityFactor>
     </projectile>
   </ThingDef>
 

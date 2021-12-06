@@ -1,0 +1,18 @@
+1. "Automatically being compatible to surgery mods without specific patch" somthing about Applying things on body part nodes.
+2. Check that surgery options all work.
+3. That limb and organ regeneration system isn't going to write itself.
+4. I think that the Pathfinder Ideo still uses a random symbol and colour and that needs fixing.
+5. I'm fairly certain those ThoughtDefs don't work correctly.
+6. I should look into how wounds and bionics render on the pawn.
+7. Pathfinders are actually not supposed to show up as part of Royal faction but they still do anyway (but this is an extremely small issue).
+8. The BodyDefs and BodyPartDefs are not completely finalised, still debating on if the beak so be split into an "Upper Beak" (Nose), and "Lower Beak" (Jaw) and if Claws should be added.
+9. The starting scenario is effectively an easy mode placeholder
+10. The research projects are not organised
+11. I should make sure that their backstories don't show up on non-Pathfinders
+12. The Ideo MemesDefs don't look fully done.
+13. I still need to write more adult backstories
+14. Traders Kinds are not fully appropriate and still probably need some work 
+15. A once over the plants is needed.
+16. The races states are very human and dont stand out, Im not sure just how much diffreat I really want them to be then humans anyway.
+17. The Ideo Relics rarely make any sense for the Pathfinders and should be looked into
+18. All weapons and armour have been implemented but are almost certainly vastly unbalanced

@@ -125,17 +125,19 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Melee_Pathifnder_Vanguard_Sword</defName>
     <label>Pathifnder Vanguard</label>
-    <description>A standard issue Pathfinder Survival Spear, nothing special but very durable.</description>
+    <description>A Pathifnder crystal-metallic sword infused with nanites that allow it maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.</description>
+    <soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
+    <meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
     <graphicData>
       <texPath>Things/Items/Weapons/Pathifnder_Vanguard_Sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Ultra</techLevel>
     <weaponTags>
-      <li>PathfinderMeleeAdvancedWeaponManufacturing</li>
+      <li>PathfinderMeleeAdvanced</li>
     </weaponTags>
     <statBases>
       <MarketValue>2550</MarketValue>
