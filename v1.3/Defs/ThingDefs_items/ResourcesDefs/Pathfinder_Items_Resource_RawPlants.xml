@@ -39,6 +39,7 @@
     <description>The sweet fruit of the Malka plant, though hardly nutritious it is very enjoyable and a common Pathfinder treat.</description>
     <graphicData>
       <texPath>Things/Resources/MalkaFruit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     
     <soundInteract>Standard_Drop</soundInteract>

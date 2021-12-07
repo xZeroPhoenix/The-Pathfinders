@@ -6,15 +6,6 @@
     <colorSpectrum>
      <li>(245, 245, 245)</li>
     </colorSpectrum>
-    <raidLootValueFromPointsCurve>
-      <points>
-        <li>(35,     15)</li>
-        <li>(100,   120)</li>
-        <li>(1000,  500)</li>
-        <li>(2000,  800)</li>
-        <li>(4000, 1000)</li>
-      </points>
-    </raidLootValueFromPointsCurve>
   </FactionDef>
   
   <FactionDef Parent="PathfinderFactionBase">
@@ -48,6 +39,16 @@
       <li>Synthread</li>
       </thingDefs>
     </apparelStuffFilter>
+    
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
     
   </FactionDef>
 

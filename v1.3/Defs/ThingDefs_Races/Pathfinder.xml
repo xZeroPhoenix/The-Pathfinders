@@ -157,7 +157,7 @@
 		<bodyTypes>
 		 <Male>(0.015,-0.12)</Male>
 		 <Female>(0.12,-0.14)</Female>
-		 <Thin>(0.045,-0.1)</Thin>
+		 <Thin>(0.025,-0.1)</Thin>
 	  </bodyTypes>
 		<crownTypes>
 		 <Normal_Average>(0,0)</Normal_Average>
