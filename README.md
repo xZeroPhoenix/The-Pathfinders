@@ -1,5 +1,30 @@
 # The Pathfinders
- 
+
+Text go here :P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ========================================================================================
  Contributors:
  Zero Phoenix (Main Author)
  Rekkulani (Assistanted with some of the head sprite design)
@@ -7,3 +32,4 @@
  Automatic (Again essentially wrote 1 of the C# patches I needed)
  
  (Sorry If I forgot to list you, please contact me on Discord so I can fix the mistake)
+ ========================================================================================
