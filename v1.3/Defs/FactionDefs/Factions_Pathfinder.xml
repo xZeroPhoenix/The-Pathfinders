@@ -8,16 +8,15 @@
     <pawnSingular>Pathfinder</pawnSingular>
     <pawnsPlural>Pathfinders</pawnsPlural>
     <autoFlee>true</autoFlee>
-    <settlementGenerationWeight>0.3</settlementGenerationWeight>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <maxCountAtGameStart>50</maxCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Chancellor</leaderTitle>
     <permanentEnemy>false</permanentEnemy>
     <factionIconPath>Things/World/PathfinderFactionIcon</factionIconPath>
-
+    <techLevel>Ultra</techLevel>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">ThePathfinderCodex</li>
     </allowedMemes>
@@ -36,26 +35,34 @@
       <li>Caravan_Outlander_CombatSupplier</li>
       <li>Caravan_Outlander_Exotic</li>
     </caravanTraderKinds>
+    
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    
     <visitorTraderKinds>
       <li>Visitor_Pathfinder_Standard</li>
     </visitorTraderKinds>
+    
     <baseTraderKinds>
       <li>Base_Outlander_Standard</li>
     </baseTraderKinds>
 
     <colorSpectrum>
-      <li>(255, 255, 255)</li>
+      <li>(245, 245, 245)</li>
     </colorSpectrum>
 
     <factionNameMaker>NamerPathfinderFaction</factionNameMaker>
     <settlementNameMaker>NamerPathfinderBase</settlementNameMaker>
     <!-- <pawnNameMaker></pawnNameMaker> -->
-    <techLevel>Ultra</techLevel>
-
     <backstoryCategories>
       <li>Pathfinder_Backstory</li>
     </backstoryCategories>
-    <geneticVariance>1</geneticVariance>
+    
+    <geneticVariance>0.8</geneticVariance>
 
     <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
 
@@ -138,7 +145,9 @@
     </pawnGroupMakers>
 
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+    
     <!-- Temp -->
     <raidLootValueFromPointsCurve>
       <points>

@@ -35,13 +35,7 @@
         <li>Nudity_Female_NoRules</li>
       </li>
       <li>
-        <li>Nudity_Male_NoRules</li>
-      </li>
-      <li>
-        <li>Nudity_Female_NoRules</li>
-      </li>
-      <li>
-        <li>IdeoDiversity_Exalted</li>
+        <li>IdeoDiversity_Approved</li>
       </li>
       <li>
         <li>MarriageName_Random</li>
@@ -66,6 +60,21 @@
       </li>
       <li>
         <li>DrugUse_MedicalOrSocial</li>
+      </li>
+      <li>
+        <li>Charity_Worthwhile</li>
+      </li>
+      <li>
+        <li>HAR_EatingAliens_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_AlienDating_Acceptable</li>
+      </li>
+      <li>
+        <li>HAR_AlienSlavery_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_AlienRaces_Standard</li>
       </li>
     </requireOne>
 

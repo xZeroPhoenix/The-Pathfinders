@@ -16,11 +16,8 @@
     <renderOrder>-1</renderOrder>
     <generalRules>
         <rulesStrings>
-
             <li>memeCreed->Codex</li>
             <li>memeAdjective->Pathfinder</li>
-
-            
             <li>memeHyphenPrefix->ideo</li>
             <li>memeLeaderNoun->leader</li>
             <li>memeLeaderAdjective->awoken</li>

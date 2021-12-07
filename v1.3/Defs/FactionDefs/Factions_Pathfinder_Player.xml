@@ -4,7 +4,7 @@
   <FactionDef Abstract="True" Name="PathfinderFactionBase">
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <colorSpectrum>
-     <li>(0, 0, 0)</li>
+     <li>(245, 245, 245)</li>
     </colorSpectrum>
     <raidLootValueFromPointsCurve>
       <points>
@@ -24,7 +24,6 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>Pathfinder</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
-
     <!-- <pawnNameMaker></pawnNameMaker> -->
     <techLevel>Ultra</techLevel>
     <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>  <!-- TEMP -->
@@ -33,7 +32,9 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>          <!-- TEMP -->
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- TEMP -->
 		<geneticVariance>1</geneticVariance>
-
+    <allowedCultures>
+      <li>Pathifinder</li>
+    </allowedCultures>
     <backstoryCategories>
       <li>Pathfinder_Backstory</li>
     </backstoryCategories>
@@ -47,17 +48,6 @@
       <li>Synthread</li>
       </thingDefs>
     </apparelStuffFilter>
-    
-    <!-- Temp -->
-    <raidLootValueFromPointsCurve>
-      <points>
-        <li>(35,     15)</li>
-        <li>(100,   120)</li>
-        <li>(1000,  500)</li>
-        <li>(2000,  800)</li>
-        <li>(4000, 1000)</li>
-      </points>
-    </raidLootValueFromPointsCurve>
     
   </FactionDef>
 

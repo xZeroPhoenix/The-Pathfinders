@@ -1,16 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\P.CE",
-    "\\P.CE\\Patches",
-    "\\P.CE\\Patches\\Race",
-    "\\P.CE\\Patches\\ThingDefs_Buildings",
-    "\\P.CE\\Patches\\Weapons",
-    "\\P.SRTS",
-    "\\Textures",
-    "\\Textures\\Things",
-    "\\Textures\\Things\\Projectile"
+    "\\Textures"
   ],
-  "SelectedNode": "\\P.CE\\Patches\\ThingDefs_Buildings\\PatchCEPathfinderBuildings_Security_Turrets_Artillery.xml",
+  "SelectedNode": "\\Sounds",
   "PreviewInSolutionExplorer": false
 }

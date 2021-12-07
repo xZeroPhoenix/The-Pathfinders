@@ -396,7 +396,7 @@
     <MarketValue>3550</MarketValue>
     <MoveSpeed>6</MoveSpeed>
     <ResearchSpeed>1.30</ResearchSpeed>
-    <SocialImpact>1.10</SocialImpact>
+    <SocialImpact>1.05</SocialImpact>
     <ComfyTemperatureMin>5</ComfyTemperatureMin>
     <ComfyTemperatureMax>35</ComfyTemperatureMax>
     <LeatherAmount>60</LeatherAmount>
@@ -511,7 +511,7 @@
       <ageGenerationCurve>
         <points>
           <li>(18,0)</li>
-          <li>(18,340)</li>
+          <li>(20,340)</li>
           <li>(38,220)</li>
           <li>(58,120)</li>
           <li>(85,120)</li>
