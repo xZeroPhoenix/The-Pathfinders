@@ -44,7 +44,7 @@ namespace ThePathfinders
             }
         }
     }
-    // Credit to ???
+    // Credit to AUTOMATIC for this
     [HarmonyPatch(typeof(LovePartnerRelationUtility), "LovinMtbSinglePawnFactor")]
     class PathfinderPatchLovinPostfix
     {

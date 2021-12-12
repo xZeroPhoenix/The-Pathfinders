@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\v1.3",
+    "\\About",
+    "\\Assemblies",
+    "\\Source",
+    "\\Source\\ThePathfinders",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\BackstoryDefs",
-    "\\v1.3\\Defs\\BodyPartDefs",
-    "\\v1.3\\Defs\\MemesDefs",
+    "\\v1.3\\Defs\\FactionDefs",
     "\\v1.3\\Defs\\PawnKindDefs",
-    "\\v1.3\\Defs\\RecipeDefs",
-    "\\v1.3\\Defs\\TraderKindDefs",
-    "\\v1.3\\Patches"
+    "\\v1.3\\Defs\\ThingDefs_items",
+    "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs"
   ],
-  "SelectedNode": "\\v1.3\\Defs\\CultureDefs\\PathfinderCulturesDefs.xml",
+  "SelectedNode": "\\Source\\ThePathfinders\\ThePathfindersPatchingClass.cs",
   "PreviewInSolutionExplorer": false
 }
