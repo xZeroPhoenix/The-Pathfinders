@@ -21,7 +21,7 @@
    </ThingDef>
 
   <HediffDef ParentName="AddedBodyPartBase">
-    <defName>PathfinderClothTail</defName>
+    <defName>ClothPathTail</defName>
     <label>cloth Pathfinder tail</label>
     <description>A simple cloth prosthesis made to replace a missing tail. It still helps with balance but not as good as the real thing.</description>
     <addedPartProps>

@@ -75,9 +75,9 @@
     <appliedOnFixedBodyParts>
       <li>PathfinderClothTail</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>PathTail</addsHediff>
+    <addsHediff>ClothPathTail</addsHediff>
   </RecipeDef>
-
+  
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>InstallPathfinderBionicTail</defName>
     <label>install bionic tail</label>

@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\About",
-    "\\Assemblies",
-    "\\Source",
-    "\\Source\\ThePathfinders",
+    "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\FactionDefs",
-    "\\v1.3\\Defs\\PawnKindDefs",
+    "\\v1.3\\Defs\\BodyPartDefs",
+    "\\v1.3\\Defs\\HairDefs",
+    "\\v1.3\\Defs\\HediffDefs",
+    "\\v1.3\\Defs\\ThingCategoryDefs",
+    "\\v1.3\\Defs\\ThingDefs_Buildings",
     "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs"
+    "\\v1.3\\Defs\\ThingDefs_items\\BodyDefs"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders\\ThePathfindersPatchingClass.cs",
+  "SelectedNode": "\\v1.3\\Defs\\RecipeDefs\\Recipies_Pathfinder_Surgery.xml",
   "PreviewInSolutionExplorer": false
 }
