@@ -17,14 +17,24 @@
 		<iconColor>(1, 1, 1)</iconColor>
     
 		<styleItemTags>
-			<li>
-				<tag>PathfinderFeathers</tag>
-				<baseWeight>1</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
       <li>
         <tag>NoBeard</tag>
         <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardUrban</tag>
+        <baseWeight>0.2</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
       <li>

@@ -38,6 +38,7 @@
 
 	<weaponTags>
 	<li>PathfinderEmergency</li>
+  <li>PathfinderGun</li>
 	</weaponTags>
 
 	<statBases>
@@ -138,6 +139,7 @@
 
     <weaponTags>
       <li>PathfinderGeneral</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -237,6 +239,7 @@
 
     <weaponTags>
       <li>PathfinderDemolitions</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -329,6 +332,7 @@
 
     <weaponTags>
       <li>PathfinderGeneral</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -428,6 +432,7 @@
 
     <weaponTags>
       <li>PathfinderDemolitions</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -529,6 +534,7 @@
 
     <weaponTags>
       <li>PathfinderMarksman</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -629,6 +635,7 @@
 
     <weaponTags>
       <li>PathfinderEmergency</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -720,6 +727,7 @@
 
     <weaponTags>
       <li>PathfinderGunner</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -820,6 +828,7 @@
 
     <weaponTags>
       <li>PathfinderMarksman</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -920,6 +929,7 @@
 
     <weaponTags>
       <li>PathfinderClose</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -1020,6 +1030,7 @@
 
     <weaponTags>
       <li>PathfinderClose</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>
@@ -1120,6 +1131,7 @@
 
     <weaponTags>
       <li>PathfinderEmergency</li>
+      <li>PathfinderGun</li>
     </weaponTags>
 
     <statBases>

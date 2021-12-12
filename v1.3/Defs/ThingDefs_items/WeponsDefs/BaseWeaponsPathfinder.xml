@@ -3,9 +3,45 @@
 <!-- TEMP -->
 
 <Defs>
-  <ThingDef Name="PathfinderTechRanged" ParentName="BaseHumanMakeableGun" Abstract="True">
+  
+  <ThingDef Name="PathfinderBaseGun" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <weaponClasses>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <smeltable>true</smeltable>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="PathfinderTechRanged" ParentName="PathfinderBaseGun" Abstract="True">
     <recipeMaker>
-      <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
+  
+  
+  
 </Defs>

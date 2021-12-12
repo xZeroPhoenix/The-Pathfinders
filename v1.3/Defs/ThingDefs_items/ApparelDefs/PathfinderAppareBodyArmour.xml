@@ -6,7 +6,7 @@
     <defName>Apparel_PathfinderBallisticLining</defName>
     <label>Pathfinder Ballistic Lining</label>
     <description>A typical Pathfinder Ballistic Lining, provides for good overall protection and allows for limited exposure to toxic or extreme environments, does not fit humans</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>PathfinderArmourManufacturing</researchPrerequisite>
@@ -89,7 +89,7 @@
     <defName>Apparel_PathfinderArmour</defName>
     <label>Pathfinder Power Armour</label>
     <description>A set of Pathfinder power armour, it provides excellent overall protection, and is suitable for use in extreme or toxic environments without hindering the user's mobility, however does not fit humans</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>PathfinderArmourManufacturing</researchPrerequisite>
@@ -251,7 +251,7 @@
     <defName>Apparel_PathfinderAdvHelmet</defName>
     <label>Pathfinder Power Armour Helmet</label>
     <description>The Helmet off a set of Pathfinder power armour, it provides excellent full head protection and is suitable for use in extreme or toxic environments, doesn't fit humans</description>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>PathfinderArmourManufacturing</researchPrerequisite>

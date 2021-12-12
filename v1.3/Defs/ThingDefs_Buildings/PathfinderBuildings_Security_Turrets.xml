@@ -114,9 +114,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>Mortars</li>
-      <li>GunTurrets</li>
-      <li>MicroelectronicsBasics</li>
+      <li>PathfinderArtilleryManufacturing</li>
     </researchPrerequisites>
   </ThingDef>
 

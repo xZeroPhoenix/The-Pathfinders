@@ -1,19 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+  <!-- Tail-->
    <ThingDef ParentName="BodyPartNaturalBase">
       <defName>PathTail</defName>
       <label>Pathfinder tail</label>
-      <description>A Pathfinders tail.</description>
+      <description>A Pathfinder tail.</description>
       <graphicData>
          <texPath>Things/Item/Health/HealthItem</texPath>
          <graphicClass>Graphic_Single</graphicClass>
       </graphicData>
-	  
+     
+     <descriptionHyperlinks>
+       <RecipeDef>InstallPathTailTail</RecipeDef>
+     </descriptionHyperlinks>
+     
       <statBases>
          <MarketValue>200</MarketValue>
 		 <Mass>2</Mass>
       </statBases>
    </ThingDef>
 
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PathfinderClothTail</defName>
+    <label>cloth Pathfinder tail</label>
+    <description>A simple cloth prosthesis made to replace a missing tail. It still helps with balance but not as good as the real thing.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.9</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PathfinderBionicTail</defName>
+    <label>bionic Pathfinder tail</label>
+    <description>A highly advanced tail replacement for a Pathfinder. It provides superior balance compared to the natural thing, allowing for faster movement.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PathfinderBionicTail</defName>
+    <label>bionic Pathfinder tail</label>
+    <spawnThingOnRemoved>PathTail</spawnThingOnRemoved>
+    <description>Comes with integrated compensators to improve balance.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.1</partEfficiency>
+      <betterThanNatural>True</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <!-- Beak -->
+  
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>PathfinderBeak</defName>
+    <label>Pathfinder Beak</label>
+    <description>A Pathfinder Beak.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPathTailTail</RecipeDef>
+    </descriptionHyperlinks>
+
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PathfinderBionicBeak</defName>
+    <label>bionic Pathfinder Beak</label>
+    <description>A highly advanced Beak replacement for a Pathfinder. It providing minor benefit to oratory skills compared to the natural thing.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PathfinderBionicBeak</defName>
+    <label>bionic Pathfinder Beak</label>
+    <spawnThingOnRemoved>PathTail</spawnThingOnRemoved>
+    <description>Much more than an adventure speaker.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>True</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
 </Defs>

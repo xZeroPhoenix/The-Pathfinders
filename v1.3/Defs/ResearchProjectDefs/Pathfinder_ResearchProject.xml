@@ -42,7 +42,7 @@
     <defName>PathfinderMeleeAdvancedWeaponManufacturing</defName>
     <label>Pathfinder Vanguard Manufacturing</label>
     <description>Gain the ability to produce highly advance Vanguard Monosword available to the Pathfinders. Though it lacks a persona variant, it can be manufactured at any sufficiently advanced colony.</description>
-    <baseCost>4000</baseCost>
+    <baseCost>3000</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>PathfinderResearch</tab>
     <prerequisites>
@@ -75,4 +75,23 @@
   <researchViewX>3.5</researchViewX>
   <researchViewY>1</researchViewY>
 </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>PathfinderArtilleryManufacturing</defName>
+    <label>Pathfinder Artillery Manufacturing</label>
+    <description>Gain the ability to produce highly advance Pathfinder Artillery pieces, able to give highly accurate fire at a rapid rate, the Pathfinder's artillery is able to devastate targets more efficiently than your average mortar.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>PathfinderResearch</tab>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+      <li>PathfinderWeaponManufacturing</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
 </Defs>

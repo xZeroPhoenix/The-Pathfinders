@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Textures"
+    "\\v1.3",
+    "\\v1.3\\Defs",
+    "\\v1.3\\Defs\\BackstoryDefs",
+    "\\v1.3\\Defs\\BodyPartDefs",
+    "\\v1.3\\Defs\\MemesDefs",
+    "\\v1.3\\Defs\\PawnKindDefs",
+    "\\v1.3\\Defs\\RecipeDefs",
+    "\\v1.3\\Defs\\TraderKindDefs",
+    "\\v1.3\\Patches"
   ],
-  "SelectedNode": "\\Sounds",
+  "SelectedNode": "\\v1.3\\Defs\\CultureDefs\\PathfinderCulturesDefs.xml",
   "PreviewInSolutionExplorer": false
 }

@@ -43,6 +43,7 @@
 	  <maleGenderProbability>0.7</maleGenderProbability>
     <maxDamageForSocialfight>6</maxDamageForSocialfight>
     <humanRecipeImport>true</humanRecipeImport> <!-- TBD -->
+    <allowHumanBios>false</allowHumanBios>
      
   <chemicalSettings>
     <li>
@@ -86,8 +87,8 @@
         <li>PathfinderSettlement</li>
       </factions>
       <goodwill>
-        <min>60</min>
-        <max>90</max>
+        <min>95</min>
+        <max>100</max>
       </goodwill>
     </li>
       <li>
@@ -157,7 +158,7 @@
 		<bodyTypes>
 		 <Male>(0.015,-0.12)</Male>
 		 <Female>(0.12,-0.14)</Female>
-		 <Thin>(0.025,-0.1)</Thin>
+		 <Thin>(0.012,-0.1)</Thin>
 	  </bodyTypes>
 		<crownTypes>
 		 <Normal_Average>(0,0)</Normal_Average>
@@ -282,7 +283,7 @@
    <headOffsetDirectional>
     <north>(0.00, 0.09)</north>
     <south>(0.00, 0.09)</south>
-    <east>(0.00, 0.14)</east>
+    <east>(0.00, 0.12)</east>
     <west>(0.00, 0.14)</west>
    </headOffsetDirectional>
    <body>Things/Pathfinder/Body/</body>
@@ -393,7 +394,7 @@
   </alienRace>
 
   <statBases>
-    <MarketValue>3550</MarketValue>
+    <MarketValue>230</MarketValue>
     <MoveSpeed>6</MoveSpeed>
     <ResearchSpeed>1.30</ResearchSpeed>
     <SocialImpact>1.05</SocialImpact>
@@ -512,10 +513,10 @@
         <points>
           <li>(18,0)</li>
           <li>(20,340)</li>
-          <li>(38,220)</li>
-          <li>(58,120)</li>
-          <li>(85,120)</li>
-          <li>(185,100)</li>
+          <li>(38,320)</li>
+          <li>(58,230)</li>
+          <li>(85,235)</li>
+          <li>(185,120)</li>
           <li>(250,40)</li>
           <li>(350,2)</li>
           <li>(370,1)</li>
@@ -561,6 +562,7 @@
       <li>Anesthetize</li>
       <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
       <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+      
     </recipes>
 
   </AlienRace.ThingDef_AlienRace>

@@ -17,7 +17,7 @@
     <value>
       <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
       <PathfinderMercenaries>0.5</PathfinderMercenaries>
-      <PathfinderDrifters>2</PathfinderDrifters>
+      <PathfinderDrifters>5</PathfinderDrifters>
     </value>
   </Operation>
 
@@ -52,4 +52,6 @@
     </value>
   </Operation>
 
+
+  
 </Patch>

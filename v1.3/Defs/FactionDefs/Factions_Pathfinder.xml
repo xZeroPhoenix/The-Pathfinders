@@ -31,9 +31,9 @@
 
 
     <caravanTraderKinds>
-      <li>Caravan_Outlander_BulkGoods</li>
-      <li>Caravan_Outlander_CombatSupplier</li>
-      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Pathfinder_BulkGoods</li>
+      <li>Caravan_Pathfinder_CombatSupplier</li>
+      <li>Caravan_Pathfinder_Exotic</li>
     </caravanTraderKinds>
     
     <apparelStuffFilter>
@@ -48,7 +48,7 @@
     </visitorTraderKinds>
     
     <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
+      <li>Base_Pathfinder_Standard</li>
     </baseTraderKinds>
 
     <colorSpectrum>
@@ -58,9 +58,21 @@
     <factionNameMaker>NamerPathfinderFaction</factionNameMaker>
     <settlementNameMaker>NamerPathfinderBase</settlementNameMaker>
     <!-- <pawnNameMaker></pawnNameMaker> -->
-    <backstoryCategories>
-      <li>Pathfinder_Backstory</li>
-    </backstoryCategories>
+    
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+    </backstoryFilters>
     
     <geneticVariance>0.8</geneticVariance>
 

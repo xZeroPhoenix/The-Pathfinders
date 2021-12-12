@@ -8,7 +8,7 @@
 8. The BodyDefs and BodyPartDefs are not completely finalised, still debating on if the beak so be split into an "Upper Beak" (Nose), and "Lower Beak" (Jaw) and if Claws should be added.
 9. The starting scenario is effectively an easy mode placeholder
 10. The research projects are not organised
-11. I should make sure that their backstories don't show up on non-Pathfinders
+11. (Done)
 12. The Ideo MemesDefs don't look fully done.
 13. I still need to write more adult backstories
 14. Traders Kinds are not fully appropriate and still probably need some work 
