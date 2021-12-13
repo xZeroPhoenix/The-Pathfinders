@@ -58,7 +58,7 @@
     <pathCost>50</pathCost>
     
     <costList>
-      <Steel>250</Steel>
+      <Steel>350</Steel>
       <Plasteel>50</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
       <ComponentIndustrial>5</ComponentIndustrial>
@@ -87,11 +87,11 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>240</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <WorkToBuild>5000</WorkToBuild>
-      <Mass>250</Mass>
-      <Beauty>-60</Beauty>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <WorkToBuild>5500</WorkToBuild>
+      <Mass>160</Mass>
+      <Beauty>-20</Beauty>
     </statBases>
     <damageMultipliers>
       <li>
@@ -271,11 +271,11 @@
       <li>BuildingsSecurity</li>
     </thingCategories>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>0.4</Flammability>
-      <WorkToBuild>1800</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <WorkToBuild>2500</WorkToBuild>
       <Mass>8</Mass>
-      <Beauty>-20</Beauty>
+      <Beauty>-10</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <tickerType>Normal</tickerType>
@@ -321,8 +321,10 @@
     <hasTooltip>true</hasTooltip>
 
     <costList>
-      <Steel>130</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>120</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
@@ -340,7 +342,7 @@
     </placeWorkers>
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
-      <li>GunTurrets</li>
+      <li>PathfinderWeaponManufacturing</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -382,7 +384,7 @@
         <defaultProjectile>Bullet_PathfinderTurret</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>31</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>Shot_MediumRiflePathfinder</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>

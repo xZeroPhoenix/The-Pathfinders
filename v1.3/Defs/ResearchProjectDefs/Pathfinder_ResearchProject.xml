@@ -42,7 +42,7 @@
     <defName>PathfinderMeleeAdvancedWeaponManufacturing</defName>
     <label>Pathfinder Vanguard Manufacturing</label>
     <description>Gain the ability to produce highly advance Vanguard Monosword available to the Pathfinders. Though it lacks a persona variant, it can be manufactured at any sufficiently advanced colony.</description>
-    <baseCost>3000</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>PathfinderResearch</tab>
     <prerequisites>

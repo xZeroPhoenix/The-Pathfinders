@@ -166,10 +166,112 @@
 		</east>
 	 </offsets>
   </li>
-  
-  
-</bodyAddons> 
 
+
+  
+</bodyAddons>
+
+     <anchorReplacements>
+       <li>
+         <originalTag>RightEye</originalTag>
+         <!--<originalGroup>Torso</originalGroup>-->
+         <replacement>
+           <rotation>South</rotation>
+           <tag>RightEye</tag>
+           <canMirror>true</canMirror>
+           <crownType>Normal</crownType>
+           <offset>(-0.1,0,-0.30)</offset>
+           <range>0</range>
+           <layer>Head</layer>
+           <debugColor>(0,0,0,1)</debugColor>
+         </replacement>
+         <offsets>
+           <south>
+             <bodyTypes>
+               <Male>(0.0,0.30)</Male>
+               <Female>(0.0,0.30)</Female>
+               <!-- compatibility for folks using the 'female' sprite -->
+               <Thin>(0.0,0.30)</Thin>
+
+             </bodyTypes>
+           </south>
+         </offsets>
+       </li>
+       <li>
+         <originalTag>LeftEye</originalTag>
+         <!--<originalGroup>Torso</originalGroup>-->
+         <replacement>
+           <rotation>South</rotation>
+           <tag>LeftEye</tag>
+           <canMirror>true</canMirror>
+           <crownType>Normal</crownType>
+           <offset>(-0.1,0,-0.30)</offset>
+           <range>0</range>
+           <layer>Head</layer>
+           <debugColor>(0,0,0,1)</debugColor>
+         </replacement>
+         <offsets>
+           <south>
+             <bodyTypes>
+               <Male>(0,0.30)</Male>
+               <Female>(0.0,0.30)</Female>
+               <!-- compatibility -->
+               <Thin>(0,0.30)</Thin>
+             
+           </bodyTypes>
+           </south>
+         </offsets>
+       </li>
+       <li>
+         <originalTag>RightEye</originalTag>
+         <!--<originalGroup>Torso</originalGroup>-->
+         <replacement>
+           <rotation>East</rotation>
+           <tag>RightEye</tag>
+           <canMirror>false</canMirror>
+           <crownType>Normal</crownType>
+           <offset>(0.2,0,-0.30)</offset>
+           <range>0</range>
+           <layer>Head</layer>
+           <debugColor>(0,0,0,1)</debugColor>
+         </replacement>
+         <offsets>
+           <east>
+             <bodyTypes>
+               <Male>(0.15,0.32)</Male>
+               <Female>(0.25,0.32)</Female>
+               <Thin>(0.22,0.32)</Thin>
+             </bodyTypes>
+           </east>
+         </offsets>
+       </li>
+       <li>
+         <originalTag>LeftEye</originalTag>
+         <!--<originalGroup>Torso</originalGroup>-->
+         <replacement>
+           <rotation>West</rotation>
+           <!-- Because the left eye should not be visible facing east! It took me way too long to figure that out -->
+           <tag>LeftEye</tag>
+           <canMirror>false</canMirror>
+           <crownType>Normal</crownType>
+           <offset>(-0.2,0,-0.30)</offset>
+           <range>0</range>
+           <layer>Head</layer>
+           <debugColor>(0,0,0,1)</debugColor>
+         </replacement>
+         <offsets>
+           <west>
+             <bodyTypes>
+               <Male>(-0.15,0.32)</Male>
+               <Female>(-0.25,0.32)</Female>
+               <!-- compatibility for folks using the old female sprite -->
+               <Thin>(-0.22,0.32)</Thin>
+             </bodyTypes>
+           </west>
+         </offsets>
+       </li>
+     </anchorReplacements>
+     
 <colorChannels>
 	 <li>
    <name>skin</name>
@@ -528,7 +630,9 @@
         <li>OrganicStandard</li>
         <li>Human</li>
       </hediffGiverSets>
-
+    
+    <fleshType>PathfinderNormal</fleshType>
+    
     </race>
 
     <recipes>
