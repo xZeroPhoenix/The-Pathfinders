@@ -104,7 +104,7 @@
 
    <alienPartGenerator>
    <aliencrowntypes>
-	 <li>Average_Normal</li>
+	 <li>Pathfinder_Average</li>
 	 </aliencrowntypes>
      
 	 <alienbodytypes>
@@ -139,7 +139,7 @@
 		<Thin>(0,-0.015)</Thin>
 	</bodyTypes>
 	<crownTypes>
-		<Normal_Average>(0,0)</Normal_Average>
+    <Average>(0,0)</Average>
 	</crownTypes>
 	</south>
 
@@ -150,8 +150,8 @@
 		<Thin>(0.0,-0.0065)</Thin>
 	 </bodyTypes>
 	 <crownTypes>
-		<Normal_Average>(0,0)</Normal_Average>
-	 </crownTypes>
+     <Average>(0,0)</Average>
+   </crownTypes>
 	 </north>
 
 		<east>
@@ -161,8 +161,8 @@
 		 <Thin>(0.012,-0.1)</Thin>
 	  </bodyTypes>
 		<crownTypes>
-		 <Normal_Average>(0,0)</Normal_Average>
-		</crownTypes>
+      <Average>(0,0)</Average>
+  </crownTypes>
 		</east>
 	 </offsets>
   </li>
@@ -179,8 +179,8 @@
            <rotation>South</rotation>
            <tag>RightEye</tag>
            <canMirror>true</canMirror>
-           <crownType>Normal</crownType>
-           <offset>(-0.1,0,-0.30)</offset>
+           <crownType>Average</crownType>
+           <offset>(-0.9,0,-0.9)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -204,8 +204,8 @@
            <rotation>South</rotation>
            <tag>LeftEye</tag>
            <canMirror>true</canMirror>
-           <crownType>Normal</crownType>
-           <offset>(-0.1,0,-0.30)</offset>
+           <crownType>Average</crownType>
+           <offset>(-0.9,0,-0.9)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -229,8 +229,8 @@
            <rotation>East</rotation>
            <tag>RightEye</tag>
            <canMirror>false</canMirror>
-           <crownType>Normal</crownType>
-           <offset>(0.2,0,-0.30)</offset>
+           <crownType>Average</crownType>
+           <offset>(0.9,0,-0.9)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -253,8 +253,8 @@
            <!-- Because the left eye should not be visible facing east! It took me way too long to figure that out -->
            <tag>LeftEye</tag>
            <canMirror>false</canMirror>
-           <crownType>Normal</crownType>
-           <offset>(-0.2,0,-0.30)</offset>
+           <crownType>Average</crownType>
+           <offset>(-0.9,0,-0.9)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
