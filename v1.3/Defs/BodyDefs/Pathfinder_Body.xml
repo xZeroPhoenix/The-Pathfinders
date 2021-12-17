@@ -153,6 +153,7 @@
                 <li>
                   <def>Eye</def>
                   <customLabel>left eye</customLabel>
+                  <woundAnchorTag>LeftEye</woundAnchorTag>
                   <coverage>0.07</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -162,6 +163,7 @@
                 <li>
                   <def>Eye</def>
                   <customLabel>right eye</customLabel>
+                  <woundAnchorTag>RightEye</woundAnchorTag>
                   <coverage>0.07</coverage>
                   <groups>
                     <li>FullHead</li>

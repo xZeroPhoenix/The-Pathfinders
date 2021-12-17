@@ -67,7 +67,7 @@
             <flipOnRotation>South</flipOnRotation>
             <tintWithSkinColor>true</tintWithSkinColor>
             <missingBodyPartFresh>false</missingBodyPartFresh>
-            <scale>6</scale>
+            <scale>1</scale>
           </li>
           <li>
             <textureSouth>Things/Pawn/Wounds/MissingEye_Fresh</textureSouth>
@@ -79,7 +79,7 @@
             <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
             <flipOnRotation>South</flipOnRotation>
             <missingBodyPartFresh>true</missingBodyPartFresh>
-            <scale>6</scale>
+            <scale>1</scale>
           </li>
         </wounds>
       </li>

@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThePathfindersRegenerationClass.cs" />
+    <None Include="ThePathfindersRegenerationClass.cs.d" />
     <Compile Include="ThePathfindersPlantClass.cs" />
     <Compile Include="ThePathfindersPatchingClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

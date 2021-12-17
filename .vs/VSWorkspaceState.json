@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\.github\\workflows",
-    "\\Assemblies",
     "\\Source",
+    "\\Source\\ThePathfinders",
+    "\\v1.3",
     "\\v1.3\\Defs",
+    "\\v1.3\\Defs\\HediffDefs",
     "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\ResourcesDefs",
-    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
-    "\\v1.3\\Defs\\ThingDefs_Plants"
+    "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs",
+    "\\v1.3\\Defs\\ThingDefs_Plants",
+    "\\v1.3\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders.sln",
+  "SelectedNode": "\\Source\\ThePathfinders\\ThePathfindersRegenerationClass.cs.d",
   "PreviewInSolutionExplorer": false
 }

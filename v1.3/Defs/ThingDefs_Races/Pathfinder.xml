@@ -104,7 +104,7 @@
 
    <alienPartGenerator>
    <aliencrowntypes>
-	 <li>Pathfinder_Average</li>
+	 <li>Average_Normal</li>
 	 </aliencrowntypes>
      
 	 <alienbodytypes>
@@ -167,7 +167,6 @@
 	 </offsets>
   </li>
 
-
   
 </bodyAddons>
 
@@ -180,7 +179,7 @@
            <tag>RightEye</tag>
            <canMirror>true</canMirror>
            <crownType>Average</crownType>
-           <offset>(-0.9,0,-0.9)</offset>
+           <offset>(0.0,0,0.0)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -188,12 +187,10 @@
          <offsets>
            <south>
              <bodyTypes>
-               <Male>(0.0,0.30)</Male>
-               <Female>(0.0,0.30)</Female>
-               <!-- compatibility for folks using the 'female' sprite -->
-               <Thin>(0.0,0.30)</Thin>
-
-             </bodyTypes>
+               <Male>(-0.125,0.42)</Male>
+               <Female>(-0.125,0.42)</Female>
+               <Thin>(-0.125,0.42)</Thin>
+           </bodyTypes>
            </south>
          </offsets>
        </li>
@@ -205,7 +202,7 @@
            <tag>LeftEye</tag>
            <canMirror>true</canMirror>
            <crownType>Average</crownType>
-           <offset>(-0.9,0,-0.9)</offset>
+           <offset>(0.0,0,0.0)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -213,11 +210,10 @@
          <offsets>
            <south>
              <bodyTypes>
-               <Male>(0,0.30)</Male>
-               <Female>(0.0,0.30)</Female>
-               <!-- compatibility -->
-               <Thin>(0,0.30)</Thin>
-             
+               <Male>(0.125,0.42)</Male>
+               <Female>(0.125,0.42)</Female>
+               <Thin>(0.125,0.42)</Thin>
+           
            </bodyTypes>
            </south>
          </offsets>
@@ -230,7 +226,7 @@
            <tag>RightEye</tag>
            <canMirror>false</canMirror>
            <crownType>Average</crownType>
-           <offset>(0.9,0,-0.9)</offset>
+           <offset>(0.0,0,0.0)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -238,9 +234,9 @@
          <offsets>
            <east>
              <bodyTypes>
-               <Male>(0.15,0.32)</Male>
-               <Female>(0.25,0.32)</Female>
-               <Thin>(0.22,0.32)</Thin>
+               <Male>(0.10,0.45)</Male>
+               <Female>(0.15,0.44)</Female>
+               <Thin>(0.15,0.44)</Thin>
              </bodyTypes>
            </east>
          </offsets>
@@ -254,7 +250,7 @@
            <tag>LeftEye</tag>
            <canMirror>false</canMirror>
            <crownType>Average</crownType>
-           <offset>(-0.9,0,-0.9)</offset>
+           <offset>(0.0,0,0.0)</offset>
            <range>0</range>
            <layer>Head</layer>
            <debugColor>(0,0,0,1)</debugColor>
@@ -262,10 +258,9 @@
          <offsets>
            <west>
              <bodyTypes>
-               <Male>(-0.15,0.32)</Male>
-               <Female>(-0.25,0.32)</Female>
-               <!-- compatibility for folks using the old female sprite -->
-               <Thin>(-0.22,0.32)</Thin>
+               <Male>(-0.10,0.45)</Male>
+               <Female>(-0.15,0.44)</Female>
+               <Thin>(-0.15,0.44)</Thin>
              </bodyTypes>
            </west>
          </offsets>
@@ -386,7 +381,7 @@
     <north>(0.00, 0.09)</north>
     <south>(0.00, 0.09)</south>
     <east>(0.00, 0.12)</east>
-    <west>(0.00, 0.14)</west>
+    <west>(0.00, 0.12)</west>
    </headOffsetDirectional>
    <body>Things/Pathfinder/Body/</body>
   </li>
@@ -629,6 +624,7 @@
       <hediffGiverSets>
         <li>OrganicStandard</li>
         <li>Human</li>
+       <!-- <li>PathfinderRegen</li> -->
       </hediffGiverSets>
     
     <fleshType>PathfinderNormal</fleshType>
