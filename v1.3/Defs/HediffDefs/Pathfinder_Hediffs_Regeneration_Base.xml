@@ -9,6 +9,10 @@
   <isBad>false</isBad>
   <scenarioCanAdd>false</scenarioCanAdd>
     <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="ThePathfinders.HediffCompProperties_Regeneration">
+      </li>
+    </comps>
     <stages>
       <li>
         <minSeverity>1</minSeverity>

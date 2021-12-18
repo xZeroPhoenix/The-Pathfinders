@@ -19,12 +19,22 @@ namespace ThePathfinders
         public static HediffDef PathfinderRegenerationProgress;
     }
 
+    public class Hediff_LevelWithComps : HediffWithComps
+    {
+ 
+        public override void PostAdd(DamageInfo? dinfo)
+        {
 
-        public class HediffCompProperties_Regeneration : HediffCompProperties
+        }
+
+
+    }
+    public class HediffCompProperties_Regeneration : HediffCompProperties
         {
             public HediffCompProperties_Regeneration()
-            {
+            { 
                 compClass = typeof(HediffComp_Regeneration);
+
             }
         }
 
@@ -37,10 +47,10 @@ namespace ThePathfinders
             private int _ticks;
             private int _ticksFullCharge;
             private const int HourTickInterval = 2500;
-        private IntRange _healingCooldownRange = new IntRange(1, 24);
+        private IntRange _healingCooldownRange = new IntRange(2, 55);
 
 
-            private BodyPartRecord FindBiggestMissingBodyPart(float minCoverage = 0.0f)
+        private BodyPartRecord FindBiggestMissingBodyPart(float minCoverage = 0.0f)
             {
                 BodyPartRecord bodyPartRecord = null;
                 foreach (var partsCommonAncestor in Pawn.health.hediffSet.GetMissingPartsCommonAncestors().Where(
@@ -104,6 +114,11 @@ namespace ThePathfinders
                     return true;
 
                 }
+                if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderRegenerationProgress))
+                {
+                    return false;
+                }
+
                 return false;
             }
 
