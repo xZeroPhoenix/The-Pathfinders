@@ -53,10 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ThePathfindersRegenerationClass.cs.d" />
     <Compile Include="ThePathfindersPlantClass.cs" />
     <Compile Include="ThePathfindersPatchingClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThePathfindersRegeneration_Hediff.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

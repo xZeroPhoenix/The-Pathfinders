@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="DiseaseBase">
+  <defName>PathfinderBaseRegeneration</defName>
+  <defaultLabelColor>(0.3, 0.7, 0.7)</defaultLabelColor>
+  <description>Pathfinders are able to regenerated limbs, organs or any permanent injury as long as they have not suffered brain death or total cardiovascular failure. This process can be quite lengthy and arduous depending on the severity of the wound. Newly regenerated tissue is quite fragile and attempting to remove is without a suitable replacement will result in the destruction of the tissue and possible death of the patient. Their ability to regenerate diminishes with age and age-related ailments do not regenerate.</description>
+  <label>Pathfinder Regeneration</label>
+  <isBad>false</isBad>
+  <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <naturalHealingFactor>1.0</naturalHealingFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

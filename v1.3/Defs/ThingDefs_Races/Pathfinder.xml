@@ -624,7 +624,7 @@
       <hediffGiverSets>
         <li>OrganicStandard</li>
         <li>Human</li>
-       <!-- <li>PathfinderRegen</li> -->
+        <li>PathfinderRegenerationGiver</li>
       </hediffGiverSets>
     
     <fleshType>PathfinderNormal</fleshType>
