@@ -4,7 +4,7 @@
   <HediffDef ParentName="DiseaseBase">
     <defName>PathfinderRegenerationProgress</defName>
     <label>Regenerating</label>
-    <description>Archotech mechanites are restoring this non-functional bodypart.</description>
+    <description>This Pathfinders regeneration system are currently restoring this non-functional bodypart.</description>
     <isBad>false</isBad>
     <priceImpact>false</priceImpact>
     <initialSeverity>1</initialSeverity>
@@ -14,7 +14,7 @@
         <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.25</severityPerDay>
+        <severityPerDay>-0.15</severityPerDay>
       </li>
     </comps>
     <stages>

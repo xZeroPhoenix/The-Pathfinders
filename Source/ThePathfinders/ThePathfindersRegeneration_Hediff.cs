@@ -69,7 +69,7 @@ namespace ThePathfinders
             private Hediff FindRandomPermanentWound()
             {
                 return !Pawn.health.hediffSet.hediffs.Where(hd =>
-                        hd.def == HediffDefOf.ResurrectionPsychosis || hd.IsPermanent() || hd.def.chronic)
+                        hd.def == HediffDefOf.ResurrectionPsychosis || hd.IsPermanent())
                     .TryRandomElement(out var result)
                     ? null
                     : result;
@@ -109,19 +109,22 @@ namespace ThePathfinders
             }
             private bool PawnHasRegenerationHediff(Pawn pawn)
             {
-                if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderBaseRegeneration))
+                if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderBaseRegeneration)) 
                 {
                     return true;
 
                 }
-                if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderRegenerationProgress))
-                {
-                    return false;
-                }
-
                 return false;
             }
+            private bool IsPawnRegenerating(Pawn pawn)
+            {
+                if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderRegenerationProgress))
+                {
+                    return true;
 
+                }
+                return false;
+             }
             private bool IsPawnInjured()
             {
                 _bodyPartRegenerationTarget = FindBiggestMissingBodyPart();
@@ -136,19 +139,24 @@ namespace ThePathfinders
                     return false;
                 }
 
+                if (IsPawnRegenerating(Pawn) == true)
+                {
+                      return false;
+                }
+                
                 Pawn.health.RestorePart(_bodyPartRegenerationTarget);
                 Pawn.health.AddHediff(RegenerationProgress, _bodyPartRegenerationTarget);
-                if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
-                {
-                    return true;
-                }
+            /*  if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
+             {
+                  return true;
+             }
 
-                Messages.Message(
-                    "ArchotechPlusPartRegenerated".Translate((NamedArgument)parent.LabelCap,
-                        (NamedArgument)Pawn.LabelShort, (NamedArgument)_bodyPartRegenerationTarget.Label,
-                        Pawn.Named("PAWN")), Pawn,
-                    MessageTypeDefOf.PositiveEvent);
-                return true;
+            Messages.Message(
+                  "PartRegenerated".Translate((NamedArgument)parent.LabelCap,
+                      (NamedArgument)Pawn.LabelShort, (NamedArgument)_bodyPartRegenerationTarget.Label,
+                      Pawn.Named("PAWN")), Pawn,
+                  MessageTypeDefOf.PositiveEvent); */
+            return true; 
             }
 
             private bool TryHealRandomPermanentWound()
@@ -159,15 +167,15 @@ namespace ThePathfinders
                 }
 
                 _woundRegenerationTarget.Severity = 0.0f;
-                if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
+            /* if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
                 {
                     return true;
                 }
 
                 Messages.Message(
-                    "ArchotechPlusMessagePermanentWoundHealed".Translate((NamedArgument)parent.LabelCap,
+                    "PermanentWoundHealed".Translate((NamedArgument)parent.LabelCap,
                         (NamedArgument)Pawn.LabelShort, (NamedArgument)_woundRegenerationTarget.Label,
-                        Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.PositiveEvent);
+                        Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.PositiveEvent); */
                 return true;
             }
 

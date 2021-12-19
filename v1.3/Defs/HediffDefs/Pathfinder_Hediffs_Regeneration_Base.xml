@@ -4,7 +4,14 @@
   <HediffDef ParentName="DiseaseBase">
   <defName>PathfinderBaseRegeneration</defName>
   <defaultLabelColor>(0.3, 0.7, 0.7)</defaultLabelColor>
-  <description>Pathfinders are able to regenerated limbs, organs or any permanent injury as long as they have not suffered brain death or total cardiovascular failure. This process can be quite lengthy and arduous depending on the severity of the wound. Newly regenerated tissue is quite fragile and attempting to remove is without a suitable replacement will result in the destruction of the tissue and possible death of the patient. Their ability to regenerate diminishes with age and age-related ailments do not regenerate.</description>
+  <description>
+    Pathfinders are able to regenerated limbs, organs and many permanent injuries as long as they have not suffered brain death or total cardiovascular failure.
+    This process can be quite lengthy and arduous depending on the severity of the wound.
+    Newly regenerated tissue is quite fragile and attempting to remove is without a suitable replacement will result in the destruction of the tissue and possible death of the patient.
+    Though are able to regenerate new limbs, organs and can repair scarred tissue, chronic illnesses will not regenerate.
+
+    ##As of This Test Version, regenerating has no consequences nor penalties for organ farming.
+  </description>
   <label>Pathfinder Regeneration</label>
   <isBad>false</isBad>
   <scenarioCanAdd>false</scenarioCanAdd>
