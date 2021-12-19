@@ -8,13 +8,9 @@
 		<defaultFactionType>PathfinderPlayerColony</defaultFactionType>	
 		<combatPower>25</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+    <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
 		<apparelTags>
       <li>IndustrialBasic</li>
@@ -46,13 +42,9 @@
     <defaultFactionType>PathfinderSettlement</defaultFactionType>
     <combatPower>25</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -122,13 +114,9 @@
     <defaultFactionType>PathfinderSettlement</defaultFactionType>
     <combatPower>150</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -195,13 +183,9 @@
     <defaultFactionType>PathfinderSettlement</defaultFactionType>
     <combatPower>40</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -260,13 +244,9 @@
     <defaultFactionType>PathfinderSettlement</defaultFactionType>
     <combatPower>200</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -418,13 +398,9 @@
     <maxGenerationAge>310</maxGenerationAge>
     <combatPower>100</combatPower>
 
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pathfinder_Backstory</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <apparelTags>
       <li>IndustrialBasic</li>

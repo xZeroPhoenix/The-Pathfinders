@@ -58,21 +58,10 @@
     <factionNameMaker>NamerPathfinderFaction</factionNameMaker>
     <settlementNameMaker>NamerPathfinderBase</settlementNameMaker>
     <!-- <pawnNameMaker></pawnNameMaker> -->
-    
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Outlander</li>
-        </categories>
-        <commonality>0.5</commonality>
-      </li>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-        <commonality>0.5</commonality>
-      </li>
-    </backstoryFilters>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
     
     <geneticVariance>0.8</geneticVariance>
 
