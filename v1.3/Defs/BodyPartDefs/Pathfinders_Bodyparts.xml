@@ -17,7 +17,7 @@
 
   <BodyPartDef>
     <defName>PathfinderBeak</defName>
-    <label>Pathfinder Beak</label>
+    <label>beak</label>
     <description>The beak of a Pathfinder, its hard to eat or speak without it.</description>
     <hitPoints>35</hitPoints>
     <skinCovered>false</skinCovered>

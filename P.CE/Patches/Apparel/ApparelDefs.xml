@@ -40,6 +40,24 @@
           </value>
           
         </li>
+
+		  <!-- PathfinderHighShirt-->
+
+		  <li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="Apparel_PathfinderHighShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
+			  <value>
+				  <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+			  </value>
+		  </li>
+
+		  <li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="Apparel_PathfinderHighShirt"]/costStuffCount</xpath>
+			  <value>
+				  <costStuffCount>20</costStuffCount>
+			  </value>
+		  </li>
+
+
         <!-- Pathfinder Basic Helmet -->
 
         <li Class="PatchOperationAdd">
@@ -208,31 +226,6 @@
             <li>OnHead</li>
             <li>StrappedHead</li>
             <li>MiddleHead</li>
-          </value>
-        </li>
-        
-        <!-- Pathfinder Combat Package -->
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="Apparel_PathfinderCombatPackage"]/statBases</xpath>
-          <value>
-            <Bulk>5</Bulk>
-            <WornBulk>1</WornBulk>
-          </value>
-        </li>
-        
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="Apparel_PathfinderCombatPackage"]/statBases/Mass</xpath>
-          <value>
-            <Mass>8.2</Mass>
-          </value>
-        </li>
-        
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="Apparel_PathfinderCombatPackage"]/equippedStatOffsets</xpath>
-          <value>
-            <CarryWeight>22</CarryWeight>
-            <CarryBulk>18</CarryBulk>
           </value>
         </li>
         

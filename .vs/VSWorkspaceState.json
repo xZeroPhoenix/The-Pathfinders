@@ -1,16 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Source",
-    "\\Source\\ThePathfinders",
+    "\\Textures",
+    "\\Textures\\Things",
+    "\\Textures\\Things\\Items\\Apparel",
+    "\\Textures\\Things\\Items\\Apparel\\PathfinderHighShirt",
     "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\HediffDefs",
-    "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs",
-    "\\v1.3\\Defs\\ThingDefs_Plants",
     "\\v1.3\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml",
+  "SelectedNode": "\\Textures\\Pathfinders_Apparel_Raw.afdesign",
   "PreviewInSolutionExplorer": false
 }

@@ -15,6 +15,8 @@
 		<apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
+	  <li>PathfinderBasic</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
 		</apparelTags>
 
 		<techHediffsTags>
@@ -49,6 +51,8 @@
     <apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
+	  <li>PathfinderBasic</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
     </apparelTags>
 
     <techHediffsTags>
@@ -121,6 +125,7 @@
     <apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
+	  <li>PathfinderBasic</li>
     </apparelTags>
     
     <apparelRequired>
@@ -190,6 +195,8 @@
     <apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
+	  <li>PathfinderBasic</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
     </apparelTags>
 
     <apparelRequired>
@@ -251,6 +258,7 @@
     <apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
+		<li>PathfinderBasic</li>
     </apparelTags>
 
     <apparelRequired>
@@ -298,7 +306,7 @@
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
-
+	<biocodeWeaponChance>0.85</biocodeWeaponChance>
     <initialWillRange>50~70</initialWillRange>
     <initialResistanceRange>22~38</initialResistanceRange>
     
@@ -407,6 +415,8 @@
       <li>IndustrialAdvanced</li>
       <li>IndustrialMilitaryBasic</li>
       <li>IndustrialMilitaryAdvanced</li>
+	  <li>PathfinderBasic</li>
+	  <li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
     </apparelTags>
 
     <techHediffsTags>
@@ -451,7 +461,7 @@
 
     <initialWillRange>40~70</initialWillRange>
     <initialResistanceRange>22~58</initialResistanceRange>
-    
+	<biocodeWeaponChance>0.15</biocodeWeaponChance>
   </PawnKindDef>
 
   <!-- Mercenaries -->

@@ -378,8 +378,8 @@
 	<li>
    <head>Things/Pathfinder/Heads/</head>
    <headOffsetDirectional>
-    <north>(0.00, 0.09)</north>
-    <south>(0.00, 0.09)</south>
+    <north>(0.0, 0.07)</north>
+    <south>(0.0, 0.07)</south>
     <east>(0.00, 0.12)</east>
     <west>(0.00, 0.12)</west>
    </headOffsetDirectional>
@@ -453,6 +453,7 @@
       <li>Apparel_PathfinderArmour</li>
       <li>Apparel_PathfinderAdvHelmet</li>
       <li>Apparel_PathfinderBallisticLining</li>
+	  <li>Apparel_PathfinderHighShirt</li>
     </apparelList>
 
     <blackApparelList>
