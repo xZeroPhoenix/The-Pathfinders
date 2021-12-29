@@ -37,11 +37,9 @@
       <Insulation_Heat>12</Insulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-	  
-	  <comps>
-		  <li Class="CompProperties_Biocodable"/>
-	  </comps>
-	  
+	<comps>
+	 <li Class="CompProperties_Biocodable"/>
+	</comps>
     <equippedStatOffsets>
       <MoveSpeed>0.0</MoveSpeed>
       <ToxicSensitivity>-0.2</ToxicSensitivity>
@@ -183,9 +181,7 @@
           <li>PathTailArmour</li>
         </hediffDefnames>
       </li>
-
 	  <li Class="CompProperties_Biocodable"/>
-
     </comps>
     
     <costList>
@@ -373,7 +369,7 @@
     </apparel>
 	  
 	  <comps>
-		  <li Class="CompProperties_Biocodable"/>
+		 <li Class="CompProperties_Biocodable"/>
 	  </comps>
 	  
   </ThingDef>

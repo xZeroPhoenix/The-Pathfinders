@@ -25,6 +25,7 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
+		<li Class="CompProperties_Biocodable"/>
     </comps>
   </ThingDef>
   
