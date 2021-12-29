@@ -309,7 +309,6 @@
 	<biocodeWeaponChance>0.85</biocodeWeaponChance>
     <initialWillRange>50~70</initialWillRange>
     <initialResistanceRange>22~38</initialResistanceRange>
-    
   </PawnKindDef>
   
   <!-- Soldier -->
@@ -460,7 +459,7 @@
     </inventoryOptions>
 
     <initialWillRange>40~70</initialWillRange>
-    <initialResistanceRange>22~58</initialResistanceRange>
+    <initialResistanceRange>15~38</initialResistanceRange>
 	<biocodeWeaponChance>0.15</biocodeWeaponChance>
   </PawnKindDef>
 

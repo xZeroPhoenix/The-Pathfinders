@@ -14,33 +14,33 @@
         <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.15</severityPerDay>
+        <severityPerDay>-0.10</severityPerDay>
       </li>
     </comps>
     <stages>
       <li>
         <label>finalizing regeneration</label>
-        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.0</partEfficiencyOffset>
       </li>
       <li>
         <minSeverity>0.2</minSeverity>
         <label>regenerating muscleclature</label>
-        <partEfficiencyOffset>-0.2</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
       </li>
       <li>
         <minSeverity>0.4</minSeverity>
         <label>establishing neural connections</label>
-        <partEfficiencyOffset>-0.4</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.2</partEfficiencyOffset>
       </li>
       <li>
         <minSeverity>0.6</minSeverity>
         <label>reconnecting blood flow</label>
-        <partEfficiencyOffset>-0.8</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.6</partEfficiencyOffset>
       </li>
       <li>
         <minSeverity>0.8</minSeverity>
         <label>generating cellular scaffold</label>
-        <partEfficiencyOffset>-0.9</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.8</partEfficiencyOffset>
       </li>
     </stages>
   </HediffDef>

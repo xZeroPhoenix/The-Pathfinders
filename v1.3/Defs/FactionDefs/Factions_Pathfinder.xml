@@ -35,14 +35,17 @@
       <li>Caravan_Pathfinder_CombatSupplier</li>
       <li>Caravan_Pathfinder_Exotic</li>
     </caravanTraderKinds>
-    
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>Synthread</li>
-        <li>Hyperweave</li>
-      </thingDefs>
-    </apparelStuffFilter>
-    
+
+	  <apparelStuffFilter>
+		  <stuffCategoriesToAllow>
+			  <li>Metallic</li>
+			  <li>Fabric</li>
+		  </stuffCategoriesToAllow>
+		  <disallowedThingDefs>
+			  <li>DevilstrandCloth</li>
+		  </disallowedThingDefs>
+	  </apparelStuffFilter>
+	  
     <visitorTraderKinds>
       <li>Visitor_Pathfinder_Standard</li>
     </visitorTraderKinds>
