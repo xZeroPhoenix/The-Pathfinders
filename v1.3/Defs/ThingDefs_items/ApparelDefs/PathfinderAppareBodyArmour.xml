@@ -37,7 +37,9 @@
       <Insulation_Heat>12</Insulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-
+	<comps>
+	 <li Class="CompProperties_Biocodable"/>
+	</comps>
     <equippedStatOffsets>
       <MoveSpeed>0.0</MoveSpeed>
       <ToxicSensitivity>-0.2</ToxicSensitivity>
@@ -72,7 +74,7 @@
       </layers>
 
       <tags>
-        <li>Pathfinder</li>
+        <li>PathfinderMilitary</li>
       </tags>
        
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
@@ -83,6 +85,53 @@
     </thingSetMakerTags>
     
   </ThingDef>
+	<!-- PathfinderHighShirt -->
+	<!-- ================================================================================================================= -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_PathfinderHighShirt</defName>
+		<label>Pathfinder High Shirt</label>
+		<description>A simple T-shirt made for Pathfinders, does not fit humans.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/PathfinderHighShirt/PathfinderHighShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/PathfinderHighShirt/PathfinderHighShirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>PathfinderBasic</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		
+	</ThingDef>
    <!-- Pathfinder Power Armour -->
  <!-- ================================================================================================================= -->
   <ThingDef ParentName="PathfinderApparelArmorPowerBase">
@@ -132,6 +181,7 @@
           <li>PathTailArmour</li>
         </hediffDefnames>
       </li>
+	  <li Class="CompProperties_Biocodable"/>
     </comps>
     
     <costList>
@@ -317,7 +367,11 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
 
     </apparel>
-
+	  
+	  <comps>
+		 <li Class="CompProperties_Biocodable"/>
+	  </comps>
+	  
   </ThingDef>
   
   </Defs>

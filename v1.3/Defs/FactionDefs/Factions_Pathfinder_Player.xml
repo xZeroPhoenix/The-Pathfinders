@@ -26,21 +26,10 @@
     <allowedCultures>
       <li>Pathifinder</li>
     </allowedCultures>
-    
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Outlander</li>
-        </categories>
-        <commonality>0.5</commonality>
-      </li>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-        <commonality>0.5</commonality>
-      </li>
-    </backstoryFilters>
+
+    <backstoryCategories>
+      <li>Pathfinder_Backstory</li>
+    </backstoryCategories>
 
     <startingResearchTags>
       <li>ClassicStart</li>

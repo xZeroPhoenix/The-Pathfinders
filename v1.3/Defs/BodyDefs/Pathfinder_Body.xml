@@ -192,7 +192,7 @@
                   <def>PathfinderBeak</def>
                   <coverage>0.35</coverage>
                   <groups>
-                    <li>Teeth</li>
+                    <li>PathfinderBeak</li>
                     <li>FullHead</li>
                   </groups>
                   <parts>
