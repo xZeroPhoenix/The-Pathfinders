@@ -97,7 +97,7 @@
             <li Class="CombatExtended.ToolCE">
               <label>handle</label>
               <capacities>
-                <li>poke</li>
+                <li>Poke</li>
               </capacities>
               <power>2</power>
               <cooldownTime>1.5</cooldownTime>
@@ -129,7 +129,33 @@
           </tools>
         </value>
       </li>
-      
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Sword"]/statBases</xpath>
+			<value>
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Sword"]</xpath>
+			<value>
+				<equippedStatOffsets>
+					<MeleeCritChance>1.00</MeleeCritChance>
+					<MeleeParryChance>0.40</MeleeParryChance>
+					<MeleeDodgeChance>0.27</MeleeDodgeChance>
+				</equippedStatOffsets>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Sword"]/weaponTags</xpath>
+			<value>
+				<li>CE_OneHandedWeapon</li>
+			</value>
+		</li>
+		
      </operations>
   </Operation>
 </Patch>

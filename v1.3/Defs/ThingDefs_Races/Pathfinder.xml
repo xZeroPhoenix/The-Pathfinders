@@ -40,7 +40,7 @@
       
     <generalSettings>
     <minAgeForAdulthood>20</minAgeForAdulthood>
-	  <maleGenderProbability>0.7</maleGenderProbability>
+	<maleGenderProbability>0.7</maleGenderProbability>
     <maxDamageForSocialfight>6</maxDamageForSocialfight>
     <humanRecipeImport>true</humanRecipeImport> <!-- TBD -->
     <allowHumanBios>false</allowHumanBios>
@@ -56,13 +56,13 @@
     <li>
     <defName>Bisexual</defName>
     <chance>90</chance>
-    <commonalityMale>80</commonalityMale>
+    <commonalityMale>100</commonalityMale>
     <commonalityFemale>20</commonalityFemale>
     </li>
     <li>
     <defName>Beauty</defName>
     <degree>1</degree>
-    <chance>15</chance>
+    <chance>35</chance>
     </li>
   </forcedRaceTraitEntries>
      

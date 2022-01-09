@@ -106,8 +106,16 @@
             <Bulk>85</Bulk>
             <WornBulk>12</WornBulk>
           </value>
+			
         </li>
-        
+		  <li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Apparel_PathfinderArmour"]/apparel/layers</xpath>
+			  <value>
+				  <li>Backpack</li>
+				  <li>Webbing</li>
+			  </value>
+		  </li>
+		  
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Apparel_PathfinderArmour"]/statBases/MaxHitPoints</xpath>
           <value>
@@ -147,7 +155,8 @@
           <xpath>Defs/ThingDef[defName="Apparel_PathfinderArmour"]/equippedStatOffsets</xpath>
           <value>
             <CarryWeight>85</CarryWeight>
-            <CarryBulk>25</CarryBulk>
+            <CarryBulk>60</CarryBulk>
+			<ReloadSpeed>0.1</ReloadSpeed>
           </value>
         </li>
         

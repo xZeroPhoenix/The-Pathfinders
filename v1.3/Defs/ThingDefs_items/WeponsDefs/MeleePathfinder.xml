@@ -125,7 +125,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="Pathfinder_MeleeWeapon_Makeable_HighTech">
     <defName>Melee_Pathifnder_Vanguard_Sword</defName>
     <label>Pathifnder Vanguard</label>
     <description>A Pathifnder crystal-metallic sword infused with nanites that allow it maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.</description>
@@ -145,8 +145,8 @@
       <Mass>2</Mass>
     </statBases>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>105</Plasteel>
+      <Plasteel>100</Plasteel>
+	  <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <equippedAngleOffset>-30</equippedAngleOffset>
     <tools>

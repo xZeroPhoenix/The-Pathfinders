@@ -8,5 +8,13 @@
     <description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration.</description>
     <advanced>true</advanced>
   </CombatExtended.AmmoCategoryDef>
-  
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>CoilgunIon</defName>
+		<label>Coilgun Ion</label>
+		<labelShort>Ion</labelShort>
+		<description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration. These ones have been modified specifically to disable electronics, reducing penetration but increasing versatility.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+	
 </Defs>

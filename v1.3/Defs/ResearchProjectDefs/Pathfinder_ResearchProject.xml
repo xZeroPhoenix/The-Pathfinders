@@ -15,8 +15,8 @@
   <requiredResearchFacilities>
     <li>MultiAnalyzer</li>
   </requiredResearchFacilities>
-  <researchViewX>2</researchViewX>
-  <researchViewY>2</researchViewY>
+	<researchViewX>1.00</researchViewX>
+	<researchViewY>3.70</researchViewY>
 </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -34,8 +34,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>2.2</researchViewX>
-    <researchViewY>2.2</researchViewY>
+	  <researchViewX>1.00</researchViewX>
+	  <researchViewY>2.60</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -53,8 +53,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>2.5</researchViewX>
-    <researchViewY>2.5</researchViewY>
+	  <researchViewX>2.00</researchViewX>
+	  <researchViewY>2.60</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -72,8 +72,8 @@
   <requiredResearchFacilities>
     <li>MultiAnalyzer</li>
   </requiredResearchFacilities>
-  <researchViewX>3.5</researchViewX>
-  <researchViewY>1</researchViewY>
+	  <researchViewX>1.00</researchViewX>
+	  <researchViewY>1.65</researchViewY>
 </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -91,7 +91,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>2.5</researchViewX>
-    <researchViewY>4</researchViewY>
+	  <researchViewX>2.00</researchViewX>
+	  <researchViewY>3.70</researchViewY>
   </ResearchProjectDef>
 </Defs>

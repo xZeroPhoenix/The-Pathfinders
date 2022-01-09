@@ -14,6 +14,7 @@
     <label>5mm Coilgun</label>
     <ammoTypes>
       <Ammo_5mmCoilgun_Sabot>Bullet_5mmCoilgun_Sabot</Ammo_5mmCoilgun_Sabot>
+		<Ammo_5mmCoilgun_Ion>Bullet_5mmCoilgun_Ion</Ammo_5mmCoilgun_Ion>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
   
@@ -26,7 +27,7 @@
     <statBases>
       <Mass>0.008</Mass>
       <Bulk>0.01</Bulk>
-      <MarketValue>0.06</MarketValue>
+      <MarketValue>0.05</MarketValue>
     </statBases>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
@@ -37,7 +38,7 @@
     <thingCategories>
       <li>Ammo5mmCoilgun</li>
     </thingCategories>
-    <stackLimit>500</stackLimit>
+    <stackLimit>5000</stackLimit>
     <graphicData>
       <texPath>Things/Ammo/Railgun/Pistol</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -45,6 +46,32 @@
     <ammoClass>CoilgunSabot</ammoClass>
   </ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_5mmCoilgun_Ion</defName>
+		<label>5mm Coilgun cartridge (Ion)</label>
+		<description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for coilgun assault rifles. These produce an EMI distortions on impact.</description>
+		<statBases>
+			<Mass>0.008</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>0.7</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo5mmCoilgun</li>
+		</thingCategories>
+		<stackLimit>5000</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Pistol</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>CoilgunIon</ammoClass>
+	</ThingDef>
+	
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
@@ -56,13 +83,35 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>13</damageAmountBase>
+      <damageAmountBase>15</damageAmountBase>
       <armorPenetrationSharp>38</armorPenetrationSharp>
       <armorPenetrationBlunt>26</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
   </ThingDef>
-
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+		<defName>Bullet_5mmCoilgun_Ion</defName>
+		<label>5mm Coilgun bullet (Ion)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>4</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>25</armorPenetrationSharp>
+			<armorPenetrationBlunt>24</armorPenetrationBlunt>
+			<empShieldBreakChance>0.2</empShieldBreakChance>
+			<speed>220</speed>
+		</projectile>
+	</ThingDef>
   <!-- ==================== Recipes ========================== -->
 
   <RecipeDef ParentName="AmmoRecipeBase">
@@ -70,7 +119,7 @@
     <label>make 5mm Coilgun cartridge (Sabot) x500</label>
     <description>Craft 500 5mm Railgun (Sabot) cartridges.</description>
     <jobString>Making 5mm Coilgun (Sabot) cartridges.</jobString>
-    <workAmount>1000</workAmount>
+    <workAmount>1800</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -99,4 +148,58 @@
       <Ammo_5mmCoilgun_Sabot>500</Ammo_5mmCoilgun_Sabot>
     </products>
   </RecipeDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_5mmCoilgun_Ion</defName>
+		<label>make 5mm Coilgun cartridge (Ion) x500</label>
+		<description>Craft 500 5mm Railgun (Ion) cartridges.</description>
+		<jobString>Making 5mm Coilgun (Ion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_5mmCoilgun_Ion>500</Ammo_5mmCoilgun_Ion>
+		</products>
+		<workAmount>3800</workAmount>
+	</RecipeDef>
+	
 </Defs>

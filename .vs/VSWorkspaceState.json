@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Textures",
-    "\\Textures\\Things",
+    "\\P.CE",
+    "\\P.CE\\Patches",
+    "\\P.CE\\Patches\\Apparel",
     "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\HediffDefs",
-    "\\v1.3\\Defs\\PawnKindDefs",
+    "\\v1.3\\Defs\\FactionDefs",
     "\\v1.3\\Defs\\ThingDefs_items",
     "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs",
+    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
     "\\v1.3\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\v1.3\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder.xml",
+  "SelectedNode": "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs\\BaseWeaponsPathfinder.xml",
   "PreviewInSolutionExplorer": false
 }

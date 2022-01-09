@@ -13,6 +13,7 @@
     <label>10mm Coilgun</label>
     <ammoTypes>
       <Ammo_10mmCoilgun_Sabot>Bullet_10mmCoilgun_Sabot</Ammo_10mmCoilgun_Sabot>
+	  <Ammo_10mmCoilgun_Ion>Bullet_10mmCoilgun_Ion</Ammo_10mmCoilgun_Ion>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
   
@@ -43,7 +44,32 @@
     </graphicData>
     <ammoClass>CoilgunSabot</ammoClass>
   </ThingDef>
-
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_10mmCoilgun_Ion</defName>
+		<label>10mm Coilgun cartridge (Ion)</label>
+		<description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for Heavy Coilguns. These produce an EMI distortions on impact.</description>
+		<statBases>
+			<Mass>0.012</Mass>
+			<Bulk>0.04</Bulk>
+			<MarketValue>0.7</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo10mmCoilgun</li>
+		</thingCategories>
+		<stackLimit>200</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Pistol</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>CoilgunIon</ammoClass>
+	</ThingDef>
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
@@ -69,7 +95,7 @@
     <label>make 10mm Coilgun cartridge (Sabot) x200</label>
     <description>Craft 200 10mm Railgun (Sabot) cartridges.</description>
     <jobString>Making 10mm Coilgun (Sabot) cartridges.</jobString>
-    <workAmount>1000</workAmount>
+    <workAmount>6000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -99,5 +125,57 @@
     </products>
   </RecipeDef>
 
-
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_10mmCoilgun_Ion</defName>
+		<label>make 10mm Coilgun cartridge (Ion) x200</label>
+		<description>Craft 200 10mm Railgun (Ion) cartridges.</description>
+		<jobString>Making 10mm Coilgun (Ion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_10mmCoilgun_Ion>200</Ammo_10mmCoilgun_Ion>
+		</products>
+		<workAmount>14000</workAmount>
+	</RecipeDef>
+	
 </Defs>

@@ -13,7 +13,8 @@
     <label>12mm Flechette Coilgun Shell</label>
     <ammoTypes>
       <Ammo_12mmCoilgun_Sabot>Bullet_12mmCoilgun_Sabot</Ammo_12mmCoilgun_Sabot>
-    </ammoTypes>
+		<Ammo_12mmCoilgun_Ion>Bullet_12mmCoilgun_Ion</Ammo_12mmCoilgun_Ion>
+</ammoTypes>
   </CombatExtended.AmmoSetDef>
   
   <!-- ==================== Ammo ========================== -->
@@ -43,7 +44,32 @@
     </graphicData>
     <ammoClass>CoilgunSabot</ammoClass>
   </ThingDef>
-
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_12mmCoilgun_Ion</defName>
+		<label>12mm Coilgun Flechette (Ion)</label>
+		<description>A bundle of Fin-stabilized tungsten carbide penetrators with discarding sabot, designed for shotgun like coilguns. These produce an EMI distortions on impact.</description>
+		<statBases>
+			<Mass>0.018</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>1.65</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo12mmCoilgun</li>
+		</thingCategories>
+		<stackLimit>200</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Pistol</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>CoilgunIon</ammoClass>
+	</ThingDef>
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
@@ -55,15 +81,39 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>7</damageAmountBase>
+      <damageAmountBase>8</damageAmountBase>
       <armorPenetrationSharp>14</armorPenetrationSharp>
-      <armorPenetrationBlunt>5</armorPenetrationBlunt>
+      <armorPenetrationBlunt>15</armorPenetrationBlunt>
       <pelletCount>8</pelletCount>
       <spreadMult>8.8</spreadMult>
       <speed>220</speed>
     </projectile>
   </ThingDef>
-
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+		<defName>Bullet_12mmCoilgun_Ion</defName>
+		<label>12mm Coilgun Flechette (Ion)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>5</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>11</armorPenetrationBlunt>
+			<pelletCount>8</pelletCount>
+			<spreadMult>8.8</spreadMult>
+			<empShieldBreakChance>0.025</empShieldBreakChance>
+			<speed>220</speed>
+		</projectile>
+	</ThingDef>
   <!-- ==================== Recipes ========================== -->
 
   <RecipeDef ParentName="AmmoRecipeBase">
@@ -71,7 +121,7 @@
     <label>make 12mm Coilgun Flechette cartridge (Sabot) x500</label>
     <description>Craft 500 12mm Railgun Flechette (Sabot) cartridges.</description>
     <jobString>Making 12mm Coilgun Flechette (Sabot) cartridges.</jobString>
-    <workAmount>1000</workAmount>
+    <workAmount>2000</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -97,9 +147,61 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_12mmCoilgun_Sabot>500</Ammo_12mmCoilgun_Sabot>
+      <Ammo_12mmCoilgun_Sabot>200</Ammo_12mmCoilgun_Sabot>
     </products>
   </RecipeDef>
 
-
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_12mmCoilgun_Ion</defName>
+		<label>make 12mm Coilgun Flechette cartridge (Sabot) x500</label>
+		<description>Craft 500 12mm Railgun Flechette (Sabot) cartridges.</description>
+		<jobString>Making 12mm Coilgun Flechette (Sabot) cartridges.</jobString>
+		<workAmount>8700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_12mmCoilgun_Ion>200</Ammo_12mmCoilgun_Ion>
+	</products>
+	</RecipeDef>
+	
 </Defs>

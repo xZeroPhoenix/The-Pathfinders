@@ -155,6 +155,9 @@
       <drawSize>1.15</drawSize>
     </graphicData>
     <generateCommonality>1</generateCommonality>
+	  <tags>
+		  <li>EVA</li>
+	  </tags>
     <statBases>
       <WorkToMake>76000</WorkToMake>
       <MaxHitPoints>350</MaxHitPoints>
@@ -312,6 +315,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
+	  <tags>
+		  <li>EVA</li>
+	  </tags>
     <graphicData>
       <texPath>Things/Items/Apparel/PathfinderAdvHelmet/PathfinderAdvHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -336,6 +342,8 @@
     <equippedStatOffsets>
       <MoveSpeed>0.0</MoveSpeed>
       <ToxicSensitivity>-0.4</ToxicSensitivity>
+	  <AimingDelayFactor>-0.25</AimingDelayFactor>
+	  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
     <costList>

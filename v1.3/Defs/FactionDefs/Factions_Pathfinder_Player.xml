@@ -18,11 +18,14 @@
     <!-- <pawnNameMaker></pawnNameMaker> -->
     <techLevel>Ultra</techLevel>
     <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>  <!-- TEMP -->
-    <settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>          <!-- TEMP -->
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker> <!-- TEMP -->
 		<geneticVariance>1</geneticVariance>
+	  <colorSpectrum>
+		  <li>(0, 0.737, 0.847)</li>
+	  </colorSpectrum>
     <allowedCultures>
       <li>Pathifinder</li>
     </allowedCultures>
