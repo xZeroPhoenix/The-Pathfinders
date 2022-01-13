@@ -42,7 +42,7 @@
 <ThingDef ParentName="PlantBase">
     <defName>Plant_MalkaFruitPlant</defName>
     <label>Malka Fruit Plant</label>
-    <description>An alien plant native to the sky-high waterfalls on the Pathfinders homeplanet. The Malka Plant naturally produces a very sweet, blue, caramel-like substance inside it's barry. it's considered much a treat like chocolate.</description>
+    <description>A bioluminescent alien plant native to the sky-high waterfalls on the homeplanet of the Pathfinders. The Malka Plant naturally produces a very sweet blue substance reminiscent of caramel within its fruit. It is considered a treat similar in nature to chocolate.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>1.5</Nutrition>
@@ -61,8 +61,8 @@
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>MalkaFruit</harvestedThingDef>
-      <harvestYield>10</harvestYield>
-      <harvestFailable>true</harvestFailable>
+      <harvestYield>20</harvestYield>
+      <harvestFailable>false</harvestFailable>
       <sowMinSkill>8</sowMinSkill>
       <sowTags>
         <li>Ground</li>
@@ -71,8 +71,13 @@
       <topWindExposure>0.1</topWindExposure>
       <visualSizeRange>0.3~1.0</visualSizeRange>
       <wildOrder>2</wildOrder>
-
     </plant>
+	<comps>
+	<li Class="CompProperties_Glower">
+		<glowRadius>1.75</glowRadius>
+		<glowColor>(110,116,125,0)</glowColor>
+	</li>
+	</comps>
 </ThingDef>
 
   <ThingDef ParentName="PlantBase">

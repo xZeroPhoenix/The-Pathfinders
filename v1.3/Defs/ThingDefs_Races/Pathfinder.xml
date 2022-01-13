@@ -44,7 +44,7 @@
     <maxDamageForSocialfight>6</maxDamageForSocialfight>
     <humanRecipeImport>true</humanRecipeImport> <!-- TBD -->
     <allowHumanBios>false</allowHumanBios>
-     
+		
   <chemicalSettings>
     <li>
     <chemical>Luciferium</chemical>
@@ -115,6 +115,7 @@
     
    <useGenderedHeads>false</useGenderedHeads> <!-- Vanilla just doesn't use this -->
    <useGenderedBodies>false</useGenderedBodies> <!-- Vanilla does this through the backstories, for some reason -->
+   <getsGreyAt>500</getsGreyAt>
   
 <bodyAddons>	
   <li>

@@ -3,7 +3,7 @@
   <!-- Tail-->
    <ThingDef ParentName="BodyPartNaturalBase">
       <defName>PathTail</defName>
-      <label>Pathfinder tail</label>
+      <label>pathfinder tail</label>
       <description>A Pathfinder tail.</description>
       <graphicData>
          <texPath>Things/Item/Health/HealthItem</texPath>
@@ -32,7 +32,7 @@
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>PathfinderBionicTail</defName>
-    <label>bionic Pathfinder tail</label>
+    <label>bionic pathfinder tail</label>
     <description>A highly advanced tail replacement for a Pathfinder. It provides superior balance compared to the natural thing, allowing for faster movement.</description>
     <graphicData>
       <texPath>Things/Item/Health/HealthItem</texPath>
@@ -58,15 +58,18 @@
     <description>Comes with integrated compensators to improve balance.</description>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>1.1</partEfficiency>
+      <partEfficiency>1.0</partEfficiency>
       <betterThanNatural>True</betterThanNatural>
     </addedPartProps>
     <stages>
       <li>
+		  <statOffsets>
+			  <PawnBeauty>1</PawnBeauty>
+		  </statOffsets>
         <capMods>
           <li>
             <capacity>Manipulation</capacity>
-            <offset>0.2</offset>
+            <offset>0.05</offset>
           </li>
         </capMods>
       </li>

@@ -8,6 +8,9 @@
     <tradeTags>
       <li>HiTechArmor</li>
     </tradeTags>
+	  <tags>
+		  
+	  </tags>
   </thingDef>
   
   <thingDef Name="PathfinderApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
@@ -17,6 +20,9 @@
     <tradeTags>
       <li>HiTechArmor</li>
     </tradeTags>
+	  <tags>
+
+	  </tags>
   </thingDef>
 
 </Defs>
