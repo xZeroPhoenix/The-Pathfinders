@@ -61,7 +61,7 @@
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>MalkaFruit</harvestedThingDef>
-      <harvestYield>20</harvestYield>
+      <harvestYield>6</harvestYield>
       <harvestFailable>false</harvestFailable>
       <sowMinSkill>8</sowMinSkill>
       <sowTags>

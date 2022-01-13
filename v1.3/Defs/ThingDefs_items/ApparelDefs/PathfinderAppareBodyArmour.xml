@@ -155,9 +155,7 @@
       <drawSize>1.15</drawSize>
     </graphicData>
     <generateCommonality>1</generateCommonality>
-	  <tags>
-		  <li>EVA</li>
-	  </tags>
+	  
     <statBases>
       <WorkToMake>76000</WorkToMake>
       <MaxHitPoints>350</MaxHitPoints>
@@ -218,6 +216,7 @@
 
       <tags>
         <li>PathfinderMilitary</li>
+		<li>EVA</li>
       </tags>
        
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
@@ -315,9 +314,6 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
-	  <tags>
-		  <li>EVA</li>
-	  </tags>
     <graphicData>
       <texPath>Things/Items/Apparel/PathfinderAdvHelmet/PathfinderAdvHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -354,6 +350,7 @@
 
     <tradeTags>
       <li>HiTechArmor</li>
+	  <li>EVA</li>
     </tradeTags>
 
     <apparel>
