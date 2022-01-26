@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\P.CE\\Patches",
+    "\\P.CE\\Patches\\ThingDefs_Buildings",
+    "\\Sounds",
+    "\\Source",
     "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\FactionDefs",
-    "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\ApparelDefs",
-    "\\v1.3\\Defs\\ThingDefs_items\\ResourcesDefs",
-    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
-    "\\v1.3\\Defs\\ThingDefs_Plants",
-    "\\v1.3\\Defs\\ThingDefs_Races"
+    "\\v1.3\\Defs\\HediffDefs",
+    "\\v1.3\\Defs\\ResearchProjectDefs",
+    "\\v1.3\\Defs\\ThingCategoryDefs"
   ],
-  "SelectedNode": "\\v1.3\\Defs\\ThingDefs_Races\\Pathfinder.xml",
+  "SelectedNode": "\\Source\\ThePathfinders.sln",
   "PreviewInSolutionExplorer": false
 }

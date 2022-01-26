@@ -29,7 +29,7 @@
       <preferability>DesperateOnly</preferability>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
     </ingestible>
-  </ThingDef>
+  </ThingDef>w
   
 <!--Food-->
   

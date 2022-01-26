@@ -350,7 +350,6 @@
 
     <tradeTags>
       <li>HiTechArmor</li>
-	  <li>EVA</li>
     </tradeTags>
 
     <apparel>
@@ -367,6 +366,7 @@
 
       <tags>
         <li>PathfinderMilitary</li>
+		<li>EVA</li>
       </tags>
 
       <useDeflectMetalEffect>true</useDeflectMetalEffect>

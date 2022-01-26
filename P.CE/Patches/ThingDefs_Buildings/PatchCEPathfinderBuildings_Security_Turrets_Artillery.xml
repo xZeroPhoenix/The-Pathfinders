@@ -66,7 +66,13 @@
                 <reloadTime>7.3</reloadTime>
                 <ammoSet>AmmoSet_95mmCoilgunShell</ammoSet>
               </li>
-          </value>
+			  <li Class="CombatExtended.CompProperties_FireModes">
+				  <aimedBurstShotCount>3</aimedBurstShotCount>
+				  <aiUseBurstMode>FALSE</aiUseBurstMode>
+				  <aiAimMode>AimedShot</aiAimMode>
+				  <noSnapshot>true</noSnapshot>
+			  </li>
+		  </value>
         </li>
 
         <li Class="PatchOperationReplace">

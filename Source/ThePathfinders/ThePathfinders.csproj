@@ -53,8 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThePathfindersPlantClass.cs" />
     <Compile Include="ThePathfindersPatchingClass.cs" />
+    <Compile Include="ThePathfindersPlantClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThePathfindersRegeneration_Hediff.cs" />
   </ItemGroup>

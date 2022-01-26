@@ -44,6 +44,7 @@
     <maxDamageForSocialfight>6</maxDamageForSocialfight>
     <humanRecipeImport>true</humanRecipeImport> <!-- TBD -->
     <allowHumanBios>false</allowHumanBios>
+
 		
   <chemicalSettings>
     <li>
@@ -389,6 +390,7 @@
  </graphicPaths>
   
  <!-- Thought Settings -->
+
   <thoughtSettings>
     <replacerList>
       <li>
@@ -438,9 +440,10 @@
         <ingredientThought>Pathfinder_AtePathfinderAsIngredient</ingredientThought>
       </li>
     </ateThoughtSpecific>
-    
+
   </thoughtSettings>
-      
+
+	
   <!-- Relation Settings -->
   <relationSettings>
 

@@ -48,8 +48,8 @@
     <defName>Ammo_95mmCannonShell_HE</defName>
     <label>95mm cannon shell (HE)</label>
     <graphicData>
-      <texPath>Things/Ammo/Cannon/HE</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Shells/PathfinderHE</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>109.83</MarketValue>
@@ -75,8 +75,8 @@
     <defName>Ammo_95mmCannonShell_EMP</defName>
     <label>95mm cannon shell (EMP)</label>
     <graphicData>
-      <texPath>Things/Ammo/Cannon/EMP</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Shells/PathfinderEMP</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>160.66</MarketValue>
@@ -110,7 +110,7 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <flyOverhead>true</flyOverhead>
-      <gravityFactor>15</gravityFactor>
+      <gravityFactor>5</gravityFactor>
     </projectile>
   </ThingDef>
 

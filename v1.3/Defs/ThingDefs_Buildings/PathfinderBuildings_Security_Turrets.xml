@@ -32,7 +32,7 @@
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Building/Security/Pathfinder_Artillery_Base</texPath>
-      <drawSize>(2.5,2.5)</drawSize>
+      <drawSize>(3,3)</drawSize>
       <damageData>
         <rect>(0.38,0.2,0.56375,0.8)</rect>
         <cornerTL>Damage/Corner</cornerTL>
@@ -106,6 +106,7 @@
       <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
       <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
       <turretInitialCooldownTime>3.0</turretInitialCooldownTime>
+	  <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <uiIconPath>UI/Pathfinder_Artillery_Top</uiIconPath>
     <placeWorkers>
@@ -122,7 +123,7 @@
     <defName>PathfinderTurret_Base</defName>
     <thingClass>Building_TurretGun</thingClass>
     <label>Pathfinder Artillery</label>
-    <description>A piece of manually operated pathfinder artillery capable of firing proprietary HE and EMP a shells. Though unable to load a wide variety of shells, it can fire 3 rounds in rapid succession significantly more accurately then a mortar, though the rounds are slightly less powerful. Requires electricity to operate however does not require barrel changes as frequently.</description>
+    <description>A piece of manually operated pathfinder artillery capable of firing HE and EMP a shells. it can fire 3 rounds in rapid succession significantly more accurately then a mortar.</description>
     <comps>
       <li Class="CompProperties_Explosive">
         <wickTicks>240</wickTicks>
@@ -163,10 +164,11 @@
       <difficultyVar>classicMortars</difficultyVar>
       <invert>true</invert>
       <costList>
-        <ComponentIndustrial>6</ComponentIndustrial>
-        <ReinforcedBarrel>1</ReinforcedBarrel>
+		  <Steel>250</Steel>
+		  <Plasteel>150</Plasteel>
+		  <ComponentSpacer>3</ComponentSpacer>
+		  <ComponentIndustrial>5</ComponentIndustrial>
       </costList>
-      <costStuffCount>50</costStuffCount>
     </costListForDifficulty>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
