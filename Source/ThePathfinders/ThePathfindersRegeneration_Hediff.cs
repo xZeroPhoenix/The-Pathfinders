@@ -41,12 +41,12 @@ namespace ThePathfinders
 
     public class HediffComp_Regeneration : HediffComp
         {
-            private BodyPartRecord _bodyPartRegenerationTarget;
-            private static readonly HediffDef RegenerationProgress = DefDatabase<HediffDef>.GetNamed("PathfinderRegenerationProgress");
-            private Hediff _woundRegenerationTarget;
-            private int _ticks;
-            private int _ticksFullCharge;
-            private const int HourTickInterval = 2500;
+        private BodyPartRecord _bodyPartRegenerationTarget;
+        private static readonly HediffDef RegenerationProgress = DefDatabase<HediffDef>.GetNamed("PathfinderRegenerationProgress");
+        private Hediff _woundRegenerationTarget;
+        private int _ticks;
+        private int _ticksFullCharge;
+        private const int HourTickInterval = 2500;
         private IntRange _healingCooldownRange = new IntRange(2, 55);
 
 
@@ -95,7 +95,7 @@ namespace ThePathfinders
                 {
                     if (TryRestoreMissingPart() || TryHealRandomPermanentWound())
                     {
-                        _ticks = 0;
+                        _ticks = 1000;
                         IsPawnInjured();
                         return;
                     }
@@ -116,6 +116,17 @@ namespace ThePathfinders
                 }
                 return false;
             }
+
+            private bool PathIsPawnBleeding(Pawn pawn)
+            {
+                if (pawn.health.hediffSet.HasHediff(HediffDefOf.BloodLoss))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
             private bool IsPawnRegenerating(Pawn pawn)
             {
                 if (pawn.health.hediffSet.HasHediff(PathifinderDefOf.PathfinderRegenerationProgress))
@@ -141,22 +152,18 @@ namespace ThePathfinders
 
                 if (IsPawnRegenerating(Pawn) == true)
                 {
-                      return false;
+                    return false;
                 }
-                
+
+                if (PathIsPawnBleeding(Pawn) == true)
+                {
+                    return false;
+                }
+
                 Pawn.health.RestorePart(_bodyPartRegenerationTarget);
                 Pawn.health.AddHediff(RegenerationProgress, _bodyPartRegenerationTarget);
-            /*  if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
-             {
-                  return true;
-             }
 
-            Messages.Message(
-                  "PartRegenerated".Translate((NamedArgument)parent.LabelCap,
-                      (NamedArgument)Pawn.LabelShort, (NamedArgument)_bodyPartRegenerationTarget.Label,
-                      Pawn.Named("PAWN")), Pawn,
-                  MessageTypeDefOf.PositiveEvent); */
-            return true; 
+              return true; 
             }
 
             private bool TryHealRandomPermanentWound()
@@ -167,15 +174,6 @@ namespace ThePathfinders
                 }
 
                 _woundRegenerationTarget.Severity = 0.0f;
-            /* if (!PawnUtility.ShouldSendNotificationAbout(Pawn))
-                {
-                    return true;
-                }
-
-                Messages.Message(
-                    "PermanentWoundHealed".Translate((NamedArgument)parent.LabelCap,
-                        (NamedArgument)Pawn.LabelShort, (NamedArgument)_woundRegenerationTarget.Label,
-                        Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.PositiveEvent); */
                 return true;
             }
 

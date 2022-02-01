@@ -4,8 +4,8 @@
   <ThingDef ParentName="NECShipBase">
     <defName>PathfinderRaven</defName>
     <label>Pathfinder: L2A Raven</label>
-    <description>An aerial military vessel designed to scout, quest, and minor assaults. Liable to breakdown.
-
+    <description>L2A Raven is the mainstay of civilian exploration forces for the Pathfinder due to it's exceptional speed, large carrying capacity and utility for colonial defence.
+		
 Passenger cap: 1 - 15
 Space flight: Yes, Shuttlebay Only
 
@@ -99,7 +99,7 @@ Internal power plant: 4000w</description>
     </comps>
     
     <researchPrerequisites>
-      <li>Research_SRTSMk3</li>
+      <li>PathfinderAdvancedAviation</li>
     </researchPrerequisites>
     
     <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
@@ -114,7 +114,7 @@ Internal power plant: 4000w</description>
 		<defName>PathfinderZero</defName>
 		<label>Pathfinder: 7C Zero</label>
 		<description>
-An aerial military vessel designed to scout, quest, and minor assaults. Liable to breakdown.
+An aerial military vessel designed to scout, quest, and minor assaults. Small but very capable for a vessel of its size.
 
 Passenger cap: 1-2
 Space flight: Yes
@@ -129,8 +129,7 @@ Fuel cap: 100 Kg (1000 uints)
 Fuel efficiency: Excellent
 ----------------------------
 Cargo cap: 650kg
-Internal power plant: 1500w
-		</description>
+Internal power plant: 1500w</description>
 
 		<graphicData>
 			<texPath>Things/Building/PathSRTS/Path_Zero</texPath>
@@ -211,7 +210,7 @@ Internal power plant: 1500w
 		</comps>
 
 		<researchPrerequisites>
-			<li>Research_SRTSMk2</li>
+			<li>PathfinderBasicAviation</li>
 		</researchPrerequisites>
 
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>

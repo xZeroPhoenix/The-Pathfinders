@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 <!-- Pathfinders -->
-
+<!-- Note for Other modders -->
+<!-- if you're patching my mod for another mod that requires/could do with info on the race I didn't include, feel free to DM me on Discord, especially if it's biological because you will probably get it wrong and my mod must be perfect :P-->	
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Pathfinder</defName>
 		<label>Pathfinder</label>
-		<description>Pathfinder</description> <!-- Not Done -->
+		<description>A typical baseline Pathfinder largely inline within typical genetic variation common amongst the species. Despite being avian appearance, the Pathfinders are near identical to humans biologically and anatomically on a surface level, but have a much longer lifespan and are able to regenerate from almost any injury. Evolving on Cyris Prime, 2nd planet of a binary star system, the warm, wet and geologically active conditions gave some unique conditions that lead the species to lose its wings long ago however gaining a remarkable intellect in return. Often curious to a fault, many Pathfinders join independent groups of explorers to seek out new cultures and discoveries.</description> <!-- Not Done -->
 
 <!-- To Do -->
     <alienRace>
@@ -496,7 +497,7 @@
   </alienRace>
 
   <statBases>
-    <MarketValue>230</MarketValue>
+    <MarketValue>2300</MarketValue>
     <MoveSpeed>6</MoveSpeed>
     <ResearchSpeed>1.30</ResearchSpeed>
     <SocialImpact>1.05</SocialImpact>

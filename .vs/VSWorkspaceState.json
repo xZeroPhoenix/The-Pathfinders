@@ -1,16 +1,18 @@
 {
   "ExpandedNodes": [
     "",
-    "\\P.CE\\Patches",
-    "\\P.CE\\Patches\\ThingDefs_Buildings",
-    "\\Sounds",
-    "\\Source",
+    "\\P.SRTS",
+    "\\P.SRTS\\Defs",
+    "\\P.SRTS\\Defs\\ResearchProjectDefs",
     "\\v1.3",
     "\\v1.3\\Defs",
     "\\v1.3\\Defs\\HediffDefs",
-    "\\v1.3\\Defs\\ResearchProjectDefs",
-    "\\v1.3\\Defs\\ThingCategoryDefs"
+    "\\v1.3\\Defs\\ThingDefs_items",
+    "\\v1.3\\Defs\\ThingDefs_items\\ResourcesDefs",
+    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
+    "\\v1.3\\Defs\\ThingDefs_Races",
+    "\\v1.3\\Defs\\ThoughtDefs"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders.sln",
+  "SelectedNode": "\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml",
   "PreviewInSolutionExplorer": false
 }
