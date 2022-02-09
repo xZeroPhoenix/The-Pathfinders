@@ -4,7 +4,7 @@
     <defName>Ammo15mmCoilgunGrenade</defName>
     <label>15mm Coilgun Grenade</label>
     <parent>AmmoAdvanced</parent>
-    <iconPath>UI/Icons/ThingCategories/CaliberRailgunPistol</iconPath>
+    <iconPath>UI/Icons/ThingCategories/AmmoGrenades</iconPath>
   </ThingCategoryDef>
   <!-- ==================== AmmoSet ========================== -->
 
@@ -12,25 +12,25 @@
     <defName>AmmoSet_15mmCoilgunGrenade</defName>
     <label>15mm Megnetic Grenade Coilgun</label>
     <ammoTypes>
-      <Ammo_15mmCoilgun_Grenade>Bullet_15mmCoilgun_Grenade</Ammo_15mmCoilgun_Grenade>
+      <Ammo_15mmCoilgun_GrenadeHE>Bullet_15mmCoilgun_GrenadeHE</Ammo_15mmCoilgun_GrenadeHE>
+	  <Ammo_15mmCoilgun_GrenadeEMI>Bullet_15mmCoilgun_GrenadeEMI</Ammo_15mmCoilgun_GrenadeEMI>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
   
   <!-- ==================== Ammo ========================== -->
   
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-    <defName>Ammo_15mmCoilgun_Grenade</defName>
-    <label>15mm Coilgun Megnetic Grenade (Sabot)</label>
-    <description>Fin-stabilized Megnetic Grenade with a discarding sabot, designed for coilgun automatic grenade launchers.</description>
+    <defName>Ammo_15mmCoilgun_GrenadeHE</defName>
+    <label>15mm Coilgun Megnetic Grenade (HE)</label>
+    <description>Fin-stabilized Megnetic Grenade, designed for coilgun automatic grenade launchers.</description>
     <statBases>
       <Mass>0.150</Mass>
       <Bulk>0.01</Bulk>
-      <MarketValue>1.8</MarketValue>
+      <MarketValue>2.3</MarketValue>
     </statBases>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
       <li>CE_AutoEnableCrafting_FabricationBench</li>
-      <li>CE_AutoEnableCrafting_TableMachining</li>
       <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
     </tradeTags>
     <thingCategories>
@@ -38,17 +38,42 @@
     </thingCategories>
     <stackLimit>200</stackLimit>
     <graphicData>
-      <texPath>Things/Ammo/Railgun/Pistol</texPath>
+      <texPath>Things/Ammo/PlasmaCell\Rifle</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
-    <ammoClass>CoilgunSabot</ammoClass>
+    <ammoClass>GrenadeHE</ammoClass>
   </ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_15mmCoilgun_GrenadeEMI</defName>
+		<label>15mm Coilgun Megnetic Grenade (EMI)</label>
+		<description>Fin-stabilized Megnetic Grenade, designed for coilgun automatic grenade launchers. These produce an EMI distortions on impact.</description>
+		<statBases>
+			<Mass>0.150</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>4.24</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo15mmCoilgun</li>
+		</thingCategories>
+		<stackLimit>200</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/PlasmaCell\Rifle</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>CoilgunSabot</ammoClass>
+	</ThingDef>
+	
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
-    <defName>Bullet_15mmCoilgun_Grenade</defName>
-    <label>15mm Coilgun Grenade</label>
+    <defName>Bullet_15mmCoilgun_GrenadeHE</defName>
+    <label>15mm Coilgun Grenade (HE)</label>
     <graphicData>
       <texPath>Things/Projectile/ChargeATShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -68,14 +93,27 @@
     </comps>
   </ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+		<defName>Bullet_15mmCoilgun_GrenadeEMI</defName>
+		<label>15mm Coilgun Grenade (EMI)</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeATShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1.5</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+		</projectile>
+	</ThingDef>
   <!-- ==================== Recipes ========================== -->
 
   <RecipeDef ParentName="AmmoRecipeBase">
-    <defName>MakeAmmo_15mmCoilgun_Grenade</defName>
-    <label>make 15mm Coilgun cartridge Grenade x500</label>
-    <description>Craft 500 15mm Railgun Grenade cartridges.</description>
-    <jobString>Making 15mm Coilgun Grenade cartridges.</jobString>
-    <workAmount>1000</workAmount>
+    <defName>MakeAmmo_15mmCoilgun_GrenadeHE</defName>
+    <label>make 15mm Coilgun high explosive grenades x100</label>
+    <description>Craft 100 15mm Coilgun high explosive grenades.</description>
+    <jobString>Making 15mm Coilgun explosive grenades.</jobString>
+    <workAmount>9500</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -83,27 +121,70 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>Uranium</li>
+            <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>7</count>
       </li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
-        <li>Uranium</li>
+        <li>FSX</li>
+	    <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_15mmCoilgun_Grenade>500</Ammo_15mmCoilgun_Grenade>
+      <Ammo_15mmCoilgun_GrenadeHE>100</Ammo_15mmCoilgun_GrenadeHE>
     </products>
   </RecipeDef>
 
-
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_15mmCoilgun_GrenadeEMI</defName>
+		<label>make 15mm Coilgun EMI grenades x100</label>
+		<description>Craft 100 15mm Coilgun EMI grenades.</description>
+		<jobString>Making 15mm Coilgun EMI grenades.</jobString>
+		<workAmount>11500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_15mmCoilgun_GrenadeEMI>100</Ammo_15mmCoilgun_GrenadeEMI>
+		</products>
+	</RecipeDef>
+	
 </Defs>

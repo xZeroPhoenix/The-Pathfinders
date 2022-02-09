@@ -390,9 +390,10 @@
   </li>
  </graphicPaths>
   
- <!-- Thought Settings -->
+ <!-- Thought Settings 
 
   <thoughtSettings>
+   
     <replacerList>
       <li>
         <original>Naked</original>
@@ -404,7 +405,7 @@
       </li>
     </replacerList>
     
-<!-- Humanlike -->
+
     <butcherThoughtSpecific>
       <li>
         <raceList>
@@ -413,7 +414,7 @@
         <thought>Pathfinder_ButcheredHumanlikeCorpse</thought>
         <knowThought>Pathfinder_KnowButcheredHumanlikeCorpse</knowThought>
       </li>
-<!-- Pathfinder -->
+
       <li>
         <raceList>
           <li>Alien_Pathfinder</li>
@@ -423,7 +424,7 @@
       </li>
     </butcherThoughtSpecific>
     
-<!-- Humanlike -->
+
     <ateThoughtSpecific>
       <li>
         <raceList>
@@ -432,7 +433,7 @@
         <thought>Pathfinder_AteHumanlikeMeatDirect</thought>
         <ingredientThought>Pathfinder_AteHumanlikeMeatAsIngredient</ingredientThought>
       </li>
-<!-- Pathfinder -->
+
       <li>
         <raceList>
           <li>Alien_Pathfinder</li>
@@ -440,12 +441,13 @@
         <thought>Pathfinder_AtePathfinderMeatDirect</thought>
         <ingredientThought>Pathfinder_AtePathfinderAsIngredient</ingredientThought>
       </li>
-    </ateThoughtSpecific>
+    </ateThoughtSpecific> 
+
 
   </thoughtSettings>
+		-->
 
-	
-  <!-- Relation Settings -->
+<!-- Relation Settings -->
   <relationSettings>
 
   </relationSettings>

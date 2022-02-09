@@ -236,7 +236,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_7mmCoilgun_Sabot</defaultProjectile>
                 <warmupTime>1.1</warmupTime>
-                <range>55</range>
+                <range>58</range>
                 <burstShotCount>6</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <soundCast>Shot_LightRiflePathfinder</soundCast>
@@ -454,7 +454,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_10mmCoilgun_Sabot</defaultProjectile>
                 <warmupTime>1.5</warmupTime>
-                <range>75</range>
+                <range>86</range>
                 <burstShotCount>1</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <soundCast>Shot_HeavySniperPathfinder</soundCast>

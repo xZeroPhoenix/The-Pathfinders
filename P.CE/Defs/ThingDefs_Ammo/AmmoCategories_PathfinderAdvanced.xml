@@ -16,5 +16,13 @@
 		<description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration. These ones have been modified specifically to disable electronics, reducing penetration but increasing versatility.</description>
 		<advanced>true</advanced>
 	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>CoilgunExplosiveAP</defName>
+		<label>Coilgun Explosive AP</label>
+		<labelShort>AP</labelShort>
+		<description>Uses a discarding sabot to fire an undersized projectile at higher muzzle velocities, greatly improving armor penetration. These ones contain a small explosive charge, reducing penetration but increasing lethality.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
 	
 </Defs>

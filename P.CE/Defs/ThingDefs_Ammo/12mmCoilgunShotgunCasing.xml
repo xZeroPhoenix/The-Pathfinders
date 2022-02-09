@@ -39,7 +39,7 @@
     </thingCategories>
     <stackLimit>200</stackLimit>
     <graphicData>
-      <texPath>Things/Ammo/Railgun/Pistol</texPath>
+      <texPath>Things/Ammo/Railgun/HighCaliber</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
     <ammoClass>CoilgunSabot</ammoClass>
@@ -103,13 +103,13 @@
 			<secondaryDamage>
 				<li>
 					<def>EMP</def>
-					<amount>5</amount>
+					<amount>3</amount>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
 			<armorPenetrationBlunt>11</armorPenetrationBlunt>
-			<pelletCount>8</pelletCount>
-			<spreadMult>8.8</spreadMult>
+			<pelletCount>6</pelletCount>
+			<spreadMult>9.8</spreadMult>
 			<empShieldBreakChance>0.025</empShieldBreakChance>
 			<speed>220</speed>
 		</projectile>
@@ -129,7 +129,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>12</count>
       </li>
       <li>
         <filter>
@@ -137,7 +137,7 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -164,7 +164,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -172,7 +172,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>11</count>
 			</li>
 			<li>
 				<filter>
@@ -188,7 +188,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

@@ -78,9 +78,9 @@
 
   <ResearchProjectDef>
     <defName>PathfinderArtilleryManufacturing</defName>
-    <label>Pathfinder Artillery Manufacturing</label>
-    <description>Gain the ability to produce highly advance Pathfinder Artillery pieces, able to give highly accurate fire at a rapid rate, the Pathfinder's artillery is able to devastate targets more efficiently than your average mortar.</description>
-    <baseCost>1000</baseCost>
+    <label>Pathfinder Heavy Weapons Manufacturing</label>
+    <description>Gain the ability to produce the highly advance Pathfinder Artillery and Autocannon turrets, expensive but powerful.</description>
+    <baseCost>5000</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>PathfinderResearch</tab>
     <prerequisites>

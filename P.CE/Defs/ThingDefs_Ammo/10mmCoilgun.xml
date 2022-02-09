@@ -65,7 +65,7 @@
 		</thingCategories>
 		<stackLimit>200</stackLimit>
 		<graphicData>
-			<texPath>Things/Ammo/Railgun/Pistol</texPath>
+			<texPath>Things/Ammo/Railgun/HighCaliber</texPath>
 			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
 		</graphicData>
 		<ammoClass>CoilgunIon</ammoClass>

@@ -128,7 +128,7 @@
   <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="Pathfinder_MeleeWeapon_Makeable_HighTech">
     <defName>Melee_Pathifnder_Vanguard_Sword</defName>
     <label>Pathifnder Vanguard</label>
-    <description>A Pathifnder crystal-metallic sword infused with nanites that allow it maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.</description>
+    <description>The Pathifnder version of a monosword. It cuts through even thick armor with ease, and its light weight permits fast attacks just like the versions from the Empire, however it lacks the ability to hold a an AI persona.</description>
     <soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
     <meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
     <graphicData>

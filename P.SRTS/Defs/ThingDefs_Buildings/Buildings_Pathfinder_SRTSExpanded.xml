@@ -113,8 +113,7 @@ Internal power plant: 4000w</description>
 	<ThingDef ParentName="NECShipBase">
 		<defName>PathfinderZero</defName>
 		<label>Pathfinder: 7C Zero</label>
-		<description>
-An aerial military vessel designed to scout, quest, and minor assaults. Small but very capable for a vessel of its size.
+		<description>An aerial military vessel designed to scout, quest, and minor assaults. Small but very capable for a vessel of its size.
 
 Passenger cap: 1-2
 Space flight: Yes
