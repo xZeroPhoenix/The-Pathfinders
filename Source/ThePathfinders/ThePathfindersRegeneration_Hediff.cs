@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 using System.Linq;
 using UnityEngine;
-
+using System.Collections.Generic;
 
 namespace ThePathfinders
 {
@@ -17,6 +17,11 @@ namespace ThePathfinders
     {
         public static HediffDef PathfinderBaseRegeneration;
         public static HediffDef PathfinderRegenerationProgress;
+    }
+
+    public static class Common
+    {
+        public static HediffDef RegenerationProgress = DefDatabase<HediffDef>.GetNamed("WhatEverTheNameIs");
     }
 
     public class Hediff_LevelWithComps : HediffWithComps
@@ -160,13 +165,39 @@ namespace ThePathfinders
                     return false;
                 }
 
-                Pawn.health.RestorePart(_bodyPartRegenerationTarget);
-                Pawn.health.AddHediff(RegenerationProgress, _bodyPartRegenerationTarget);
+              Pawn.health.RestorePart(_bodyPartRegenerationTarget);
+              HediffDef regenerationhediff = DetermineRegenerationHediff(_bodyPartRegenerationTarget);
+              Pawn.health.AddHediff(regenerationhediff, _bodyPartRegenerationTarget);
 
-              return true; 
+            return true; 
             }
 
-            private bool TryHealRandomPermanentWound()
+            private HediffDef DetermineRegenerationHediff(BodyPartRecord part)
+            {
+                PathFinderRegenerationVariation extension = part.def.GetModExtension<PathFinderRegenerationVariation>();
+                // no extension ? return base regeneration hediff
+                if (extension == null)
+                    return Common.RegenerationProgress;
+                // extension exists, use it to retrieve a random hediff
+                return extension.GetHediff();
+            }
+            public class PathFinderRegenerationVariation : DefModExtension
+            {
+                List<RegenerationVariation> variations = new List<RegenerationVariation>();
+                public HediffDef GetHediff()
+                {
+                    return variations   // of all the variations
+                        .RandomElementByWeight(variant => variant.weight)  
+                        .hediff;    // then return the hediff of the variant
+                }
+            }
+
+            public class RegenerationVariation
+            {
+                public HediffDef hediff;
+                public float weight;
+            }
+        private bool TryHealRandomPermanentWound()
             {
                 if (_woundRegenerationTarget == null)
                 {

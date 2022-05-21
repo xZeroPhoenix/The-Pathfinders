@@ -3,7 +3,7 @@ using RimWorld;
 using System;
 using Verse;
 
-// this was made partially obsolete however the framework version doesn't work as well
+// this was made partially obsolete however the framework version doesn't seem to work as well to me
 
 
 

@@ -3,14 +3,14 @@
     "",
     "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\DamageDefs",
-    "\\v1.3\\Defs\\ThingDefs_Buildings",
-    "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
+    "\\v1.3\\Defs\\BodyDefs",
+    "\\v1.3\\Defs\\BodyPartDefs",
+    "\\v1.3\\Defs\\HediffDefs",
     "\\v1.3\\Defs\\ThingDefs_Plants",
+    "\\v1.3\\Defs\\ThingDefs_Races",
     "\\v1.3\\Defs\\ThoughtDefs",
     "\\v1.3\\Patches"
   ],
-  "SelectedNode": "\\v1.3\\Defs\\ThingDefs_Buildings\\PathfinderBuildings_Security_Turrets.xml",
+  "SelectedNode": "\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Misc.xml",
   "PreviewInSolutionExplorer": false
 }
