@@ -12,3 +12,9 @@ F:\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The-Pathfinders\Source\TheP
 F:\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The-Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.CoreCompileInputs.cache
 F:\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The-Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.dll
 F:\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The-Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Assemblies\ThePathfinders.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Assemblies\ThePathfinders.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.pdb

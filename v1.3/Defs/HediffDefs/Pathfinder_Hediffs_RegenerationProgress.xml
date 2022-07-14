@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- All WIP -->
+	<!-- Minor -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>PathfinderRegenerationProgress</defName>
+		<label>Regenerating (Minor)</label>
+		<description>This Pathfinders regeneration system are currently restoring this non-functional bodypart. The body is currently trying to restor a relatively minor body part and will only require some of the body's resources and should not take to long.</description>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~120000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.10</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>finalizing regeneration</label>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<label>regenerating muscleclature</label>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>establishing neural connections</label>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>reconnecting blood flow</label>
+				<partEfficiencyOffset>-1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>generating cellular scaffold</label>
+				<partEfficiencyOffset>-1</partEfficiencyOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Moderate -->
+
+
+	<!-- Severe -->
+
+	
+</Defs>

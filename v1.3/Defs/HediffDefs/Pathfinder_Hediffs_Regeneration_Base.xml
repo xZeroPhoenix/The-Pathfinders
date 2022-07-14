@@ -1,29 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- Base -->
   <HediffDef ParentName="DiseaseBase">
-  <defName>PathfinderBaseRegeneration</defName>
-  <defaultLabelColor>(0.3, 0.7, 0.7)</defaultLabelColor>
-  <description>Pathfinders are able to regenerated limbs, organs and many permanent injuries as long as they have not suffered brain death or total cardiovascular failure.
+	 <defName>PathfinderBaseRegeneration</defName>
+	   <hediffClass>HediffWithComps</hediffClass>
+	 <label>Pathfinder Regeneration</label>
+	 <description>Pathfinders are able to regenerated limbs, organs and many permanent injuries as long as they have not suffered brain death or total cardiovascular failure.
 This process can be quite lengthy and arduous depending on the severity of the wound.
-Newly regenerated tissue is quite fragile and attempting to remove is without a suitable replacement will result in the destruction of the tissue and possible death of the patient.
+Newly regenerated tissue is quite fragile and attempting to remove is without a suitable replacement will result in the destruction of the tissue and possible death of the patient. 
 Though are able to regenerate new limbs, organs and can repair scarred tissue, chronic illnesses will not regenerate.
-
 ##As of This Test Version, regenerating has no consequences nor penalties for organ farming.</description>
-  <label>Pathfinder Regeneration</label>
-  <isBad>false</isBad>
-  <scenarioCanAdd>false</scenarioCanAdd>
-    <initialSeverity>1</initialSeverity>
+	 <isBad>false</isBad>
+	 <priceImpact>false</priceImpact>
+	 <initialSeverity>1</initialSeverity>
+	 <maxSeverity>1</maxSeverity>
     <comps>
-      <li Class="ThePathfinders.HediffCompProperties_Regeneration">
-      </li>
+      <li Class="ThePathfinders.HediffCompProperties_PathfinderRegeneration"/>
     </comps>
     <stages>
-      <li>
-        <minSeverity>1</minSeverity>
-        <naturalHealingFactor>1.0</naturalHealingFactor>
-      </li>
     </stages>
-  </HediffDef>
-
+ </HediffDef>
+	
+	<!-- Sickness -->
+	<!--	<HediffDef ParentName="DiseaseBase">
+		<defName>PathfindeRegenerationSickness</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Pathfinder Regeneration Sickness</label>
+		<description></description>
+		<isBad>ture</isBad>
+		<priceImpact>ture</priceImpact>
+		<initialSeverity>0.1</initialSeverity>
+		<maxSeverity>4</maxSeverity>
+		<comps>
+			<li Class="ThePathfinders.#######"/>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>minimal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>major</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			
+		</stages>
+	</HediffDef> -->
 </Defs>
