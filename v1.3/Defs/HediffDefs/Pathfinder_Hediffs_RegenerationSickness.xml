@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Sickness Minor -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>PathfinderRegenerationSicknessMinor</defName>
+		<label>Regeneration Sickness (Minor)</label>
+		<description>This Pawn is currently regenerating from a relatively minor injury and it's body is diverting few resources to restore a missing body part, as the process finalises less resources will be required and the pawn will start to recover.</description>
+		<isBad>true</isBad>
+		<priceImpact>true</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.10</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.02</painOffset>
+				<hungerRateFactorOffset>0.02</hungerRateFactorOffset>
+				<restFallFactorOffset>0.02</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<painOffset>0.04</painOffset>
+				<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+				<restFallFactorOffset>0.05</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<painOffset>0.08</painOffset>
+				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<restFallFactorOffset>0.1</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<painOffset>0.08</painOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painOffset>0.1</painOffset>
+				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- Sickness Moderate -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>PathfinderRegenerationSicknessModerate</defName>
+		<label>Regeneration Sickness (Moderate)</label>
+		<description>This Pawn is currently regenerating from a relatively significant injury and it's body is diverting some resources to restore a missing body part, as the process finalises less resources will be required and the pawn will start to recover.</description>
+		<isBad>true</isBad>
+		<priceImpact>true</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.04</painOffset>
+				<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+				<restFallFactorOffset>0.05</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<painOffset>0.06</painOffset>
+				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<restFallFactorOffset>0.1</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<painOffset>0.08</painOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<painOffset>0.10</painOffset>
+				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painOffset>0.15</painOffset>
+				<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
+				<restFallFactorOffset>0.4</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- Sickness Severe -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>PathfinderRegenerationSicknessSevere</defName>
+		<label>Regeneration Sickness (Severe)</label>
+		<description>This Pawn is currently regenerating from a relatively very significant injury and it's body is diverting much of it's resources to restore a missing body part, as the process finalises less resources will be required and the pawn will start to recover.</description>
+		<isBad>true</isBad>
+		<priceImpact>true</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.02</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.02</painOffset>
+				<hungerRateFactorOffset>0.05</hungerRateFactorOffset>
+				<restFallFactorOffset>0.05</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<painOffset>0.05</painOffset>
+				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<restFallFactorOffset>0.1</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<painOffset>0.1</painOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<painOffset>0.15</painOffset>
+				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painOffset>0.2</painOffset>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<restFallFactorOffset>0.5</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

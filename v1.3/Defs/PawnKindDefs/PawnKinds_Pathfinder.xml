@@ -42,7 +42,7 @@
     <label>Settler</label>
     <race>Alien_Pathfinder</race>
     <defaultFactionType>PathfinderSettlement</defaultFactionType>
-    <combatPower>25</combatPower>
+    <combatPower>35</combatPower>
 
     <backstoryCategories>
       <li>Pathfinder_Backstory</li>

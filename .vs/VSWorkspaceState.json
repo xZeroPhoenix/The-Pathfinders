@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source",
+    "\\Source\\ThePathfinders",
+    "\\Source\\ThePathfinders\\Common",
+    "\\Source\\ThePathfinders\\Extensions",
+    "\\Source\\ThePathfinders\\Hediffs",
+    "\\Source\\ThePathfinders\\Patches",
+    "\\Source\\ThePathfinders\\Properties",
+    "\\v1.3",
+    "\\v1.3\\Defs",
+    "\\v1.3\\Defs\\HediffDefs"
   ],
+  "SelectedNode": "\\Source\\ThePathfinders.sln",
   "PreviewInSolutionExplorer": false
 }

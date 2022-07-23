@@ -9,10 +9,13 @@ using System;
 
 namespace ThePathfinders
 
-/// much of the code here is form ArchotechPlus so all credit gose to Biscuits and Mlie's
+/// ZERO-PHOENIX: much of the code here is form ArchotechPlus so all credit gose to Biscuits and Mlie's (Out-Of-Date)
+/// ZERO-PHOENIX: NABBER was of great help with this, after he got sick of me asking 20 billion questions :P
+/// ZERO-PHOENIX: The neat file structure is his doing and if hee commented on the code he rewrote it and helped explained what it does
+
 {
     /// <summary>
-    /// I dont really know why I need this, but I do 
+    /// ZERO-PHOENIX: I dont really know why I need this, but I do 
     /// </summary>
     /// // NABBER: Yes, a HediffComp must have an accompanying HediffCompProperties, them's the rules. You put constant values into these, which are applied to all hediffComp instances
     /// // you could for example move your tick constant values into here, because they never change across all your regeneration handlers. stuff like that.
@@ -26,8 +29,10 @@ namespace ThePathfinders
 
 
     /// <summary>
-    /// This is the main part, mostly copyed form ArchotechPlus but with changes 
+    /// ZERO-PHOENIX: This is the main part, mostly copyed form ArchotechPlus but with changes 
     /// </summary>
+    /// ZERO-PHOENIX: This really isnt the case anymore but some of the code is still the same.
+
     public class HediffComp_PathfinderRegeneration : HediffComp
     {
         // NABBER: unused
@@ -87,22 +92,26 @@ namespace ThePathfinders
         }
 
         /// <summary>
-        /// This just check that a pawn is not already regenerated, as they are only supposed to regenerate one part at a time.
+        /// ZERO-PHOENIX: This just check that a pawn is not already regenerated, as they are only supposed to regenerate one part at a time.
         /// </summary>
         /// // NABBER: you don't need to pass Pawn pawn into these methods, the HediffComp has access to the Hediff, which has access to the pawn it's on
         private bool AlreadyRegenerating()
         {
+            
             // NABBER: the previous check didn't ignore THIS hediff, meaning the hediff will detect itself and then assume something else is generating already, so we need to consider that
             bool isSomethingElseRegenerating = parent.pawn.health.hediffSet.hediffs    // take all hediffs
                 .Except(parent)    // ignore THIS hediff (parent is the Hediff of any HediffComp)
-                .Any(hediff => hediff.def == PathfinderHediffDefOf.PathfinderRegenerationProgress);   //check if any other hediff is regeneration
+                .Any(hediff => hediff.def == HediffDefIsAnyOf.PathfinderRegenerationProgressAny);
+            // ZERO-PHOENIX: HediffDefIsAnyOf is one of my methods, this is likely a poor way to do this but it seems to work. 
+
+            //check if any other hediff is regeneration
             // NABBER: instead of doing if(){} else{} for your logging, do this instead:
             // I disabled it for now, cause it spams like crazy :D
             //Log.Message("Pawn is already regenerating ? " + isSomethingElseRegenerating);
             return isSomethingElseRegenerating;
         }
         /// <summary>
-        /// This makes sure the a pawn isnt able to start Regrowing a limb in combat, at least in the majority of circumstances.
+        /// ZERO-PHOENIX: This makes sure the a pawn isnt able to start Regrowing a limb in combat, at least in the majority of circumstances.
         /// (A better solution would be to check for untreated injuries)
         /// </summary>
         private bool CurrentlyBleeding()
@@ -157,7 +166,7 @@ namespace ThePathfinders
         }
 
         /// <summary>
-        /// This look for the biggest missing body part using C# magic I don't understand fully.
+        /// ZERO-PHOENIX: This look for the biggest missing body part using C# magic I don't understand fully.
         /// </summary>
         private BodyPartRecord FindBiggestMissingBodyPart(float minCoverage = 0.0f)
         {
@@ -179,26 +188,30 @@ namespace ThePathfinders
         {
             Log.Message("using fallback");
             Pawn.health.RestorePart(part);
-            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgress, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressMinor, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessMinor);
 
         }
         private void RestoreBodyPart_TierOne(BodyPartRecord part)
         {
             Log.Message("using tier 1");
             Pawn.health.RestorePart(part);
-            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgress, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressMinor, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessMinor);
         }
         private void RestoreBodyPart_TierTwo(BodyPartRecord part)
         {
             Log.Message("using tier 2");
             Pawn.health.RestorePart(part);
-            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgress, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressModerate, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessModerate);
         }
         private void RestoreBodyPart_TierThree(BodyPartRecord part)
         {
             Log.Message("using tier 3");
             Pawn.health.RestorePart(part);
-            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgress, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressSevere, part);
+            Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessSevere);
         }
 
         #endregion
@@ -228,7 +241,7 @@ namespace ThePathfinders
             }
         }
         /// <summary>
-        /// This looks for a Random PermanentWound, that is not ResurrectionPsychosis (I think)
+        /// ZERO-PHOENIX: This looks for a Random PermanentWound, that is not ResurrectionPsychosis (I think)
         /// </summary>
         private Hediff FindRandomPermanentWound()
         {
@@ -241,7 +254,7 @@ namespace ThePathfinders
         }
         #endregion
 
-        /// debug stuff
+        /// ZERO-PHOENIX: debug stuff
         // NABBER: ExposeData is definitely not debug, it handles saving the persistable data of your hediffComp, which right now is just the remaining ticks
         public override void CompExposeData()
         {

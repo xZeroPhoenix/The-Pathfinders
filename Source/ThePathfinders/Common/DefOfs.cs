@@ -17,11 +17,19 @@ namespace ThePathfinders
     public static class PathfinderHediffDefOf
     {
         public static HediffDef PathfinderBaseRegeneration;
-        public static HediffDef PathfinderRegenerationProgress;
+
+        public static HediffDef PathfinderRegenerationProgressMinor;
+        public static HediffDef PathfinderRegenerationProgressModerate;
+        public static HediffDef PathfinderRegenerationProgressSevere;
+
+        public static HediffDef PathfinderRegenerationSicknessMinor;
+        public static HediffDef PathfinderRegenerationSicknessModerate;
+        public static HediffDef PathfinderRegenerationSicknessSevere;
 
         static PathfinderHediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(PathfinderHediffDefOf));
         }
     }
+
 }

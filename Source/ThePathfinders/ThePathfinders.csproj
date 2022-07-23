@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\DefOfs.cs" />
+    <Compile Include="Common\HediffDefIsAnyOf.cs" />
     <Compile Include="Extensions\PathfinderDefModExtension.cs" />
     <Compile Include="Hediffs\HediffComp_PathfinderSetSeveritySinkness.cs" />
     <Compile Include="Hediffs\HediffComp_PathfinderRegeneration.cs" />

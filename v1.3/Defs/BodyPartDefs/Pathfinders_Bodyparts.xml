@@ -13,6 +13,9 @@
 		<tags>
 			<li>MovingLimbSegment</li>
 		</tags>
+		<modExtensions>
+   		<li Class="ThePathfinders.BodyPartExtension_Tier"> <tier>2</tier> </li>
+                </modExtensions>
 	</BodyPartDef>
 
   <BodyPartDef>
@@ -30,6 +33,9 @@
       <li>EatingSource</li>
       <li>TalkingSource</li>
     </tags>
+    <modExtensions>
+    <li Class="ThePathfinders.BodyPartExtension_Tier"> <tier>2</tier> </li>
+    </modExtensions>
   </BodyPartDef>
 
 </Defs>

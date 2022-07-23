@@ -13,8 +13,56 @@
 		
 		<value>
 			<li Class="ThePathfinders.BodyPartExtension_Tier">
-				<tier>-1</tier>
+				<tier>1</tier>
 			</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>
+			/Defs/BodyPartDef[
+			defName="Foot"
+			or defName = "Hand"
+			or defName = "Jaw"
+			or defName = "Eye"
+			or defName = "Ear"
+			or defName = "Clavicle"
+			or defName = "Sternum"
+			or defName = "Humerus"
+			or defName = "Radius"
+			or defName = "Tibia"
+			or defName = "Lung"
+			or defName = "Kidney"
+			or defName = "Stomach"
+			]
+		</xpath>
+
+		<value>
+			<li Class="ThePathfinders.BodyPartExtension_Tier">
+				<tier>2</tier>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>
+			/Defs/BodyPartDef[
+			defName="Spine"
+			or defName = "Leg"
+			or defName = "Shoulder"
+			or defName = "Arm"
+			or defName = "Pelvis"
+			or defName = "Liver"
+			or defName = "Heart"
+			or defName = "Brain"
+			]
+		</xpath>
+
+		<value>
+			<li Class="ThePathfinders.BodyPartExtension_Tier">
+				<tier>3</tier>
+			</li>
+		</value>
+	</Operation>
+	
 </Patch>
