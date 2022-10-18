@@ -248,6 +248,13 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.15</drawSize>
     </graphicData>
+
+	  <modExtensions>
+		  <li Class="ThePathfinders.ApparelGraphicRaceExtension">
+		  <RaceAltWornGraphicPath>Things/Items/Apparel/PathfinderBHelmet/PathfinderBHelmet</RaceAltWornGraphicPath>
+		  </li>
+	  </modExtensions>
+	  
     <generateCommonality>1</generateCommonality>
     <statBases>
       <WorkToMake>9500</WorkToMake>

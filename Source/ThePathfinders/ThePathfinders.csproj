@@ -53,8 +53,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="ThePathfindersPlantClass.cs" />
     <Compile Include="ThePathfindersPatchingClass.cs" />
+=======
+    <Compile Include="Patches\ThePathfindersPatchingApparelForRace.cs" />
+    <Compile Include="Common\DefOfs.cs" />
+    <Compile Include="Common\HediffDefIsAnyOf.cs" />
+    <Compile Include="Extensions\PathfinderApparelDefModExtension.cs" />
+    <Compile Include="Extensions\PathfinderTierDefModExtension.cs" />
+    <Compile Include="Hediffs\HediffComp_PathfinderSetSeveritySinkness.cs" />
+    <Compile Include="Hediffs\HediffComp_PathfinderRegeneration.cs" />
+    <Compile Include="Patches\ThePathfindersPatchingRelationship.cs" />
+    <Compile Include="Plants\ThePathfindersPlantClass.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThePathfindersRegeneration_Hediff.cs" />
   </ItemGroup>
