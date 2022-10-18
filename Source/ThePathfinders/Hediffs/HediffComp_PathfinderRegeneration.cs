@@ -41,6 +41,7 @@ namespace ThePathfinders
         //private static readonly HediffDef RegenerationProgress = DefDatabase<HediffDef>.GetNamed("PathfinderRegenerationProgress");
 
         // NABBER: Stop prefacing everything with Pathfinder, it's unnecessary because you are already in your own ThePathfinders namespace
+        // ZERO-PHOENIX: NEVER! 
         private const int ticksToRestoreBodyPart = 3500;
         private const int ticksToHealRandomPermanentWound = 3500;
 

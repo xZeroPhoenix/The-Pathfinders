@@ -3,20 +3,16 @@ using RimWorld;
 using System;
 using Verse;
 
-// this was made partially obsolete however the framework version doesn't seem to work as well to me
-
-
-
 namespace ThePathfinders
 {
     [StaticConstructorOnStartup]
-    public class ThePathfindersPatchingClass
+    public class ThePathfindersPatchingRelationship
     {
-        static ThePathfindersPatchingClass()
+        static ThePathfindersPatchingRelationship()
         {
-            var harmony = new Harmony("ThePathfindersMod.ZeroPhoenix.patch");
+            var harmony = new Harmony("ThePathfindersMod.ZeroPhoenix.patch1");
             harmony.PatchAll();
-            Log.Message("Pathfinder Patching Initialisation");
+            Log.Message("Pathfinder Relationship Patching Initialisation");
         }
     }
     // Credit to ???

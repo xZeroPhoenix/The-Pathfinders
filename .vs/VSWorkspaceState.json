@@ -3,15 +3,14 @@
     "",
     "\\Source",
     "\\Source\\ThePathfinders",
-    "\\Source\\ThePathfinders\\Common",
     "\\Source\\ThePathfinders\\Extensions",
-    "\\Source\\ThePathfinders\\Hediffs",
-    "\\Source\\ThePathfinders\\Patches",
-    "\\Source\\ThePathfinders\\Properties",
     "\\v1.3",
     "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\HediffDefs"
+    "\\v1.3\\Defs\\NameMakerDefs",
+    "\\v1.3\\Defs\\ThingDefs_items",
+    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
+    "\\v1.3\\Patches"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders.sln",
+  "SelectedNode": "\\Source\\ThePathfinders\\Extensions\\PathfinderApparelDefModExtension.cs",
   "PreviewInSolutionExplorer": false
 }
