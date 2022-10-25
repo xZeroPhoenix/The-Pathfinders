@@ -14,7 +14,6 @@ using Verse;
 
 namespace ThePathfinders
 {
-    [StaticConstructorOnStartup]
     public class ThePathfindersPatchingApparelForRace
     {
         static ThePathfindersPatchingApparelForRace()
@@ -24,32 +23,31 @@ namespace ThePathfinders
             Log.Message("Pathfinder Apparel Patching Initialisation");
         }
 
-    }
-
-    [HarmonyPatch(typeof(Apparel),"WornGraphicPath")]
-    internal class WornGraphicPath
-    {
-        bool IsPawnPathfinderRace(Pawn pawn)
+        [HarmonyPatch(typeof(Apparel), "WornGraphicPath")]
+        internal static class WornGraphicPath
         {
-            return pawn.def.defName == "Alien_Pathfinder";
-        }
-
-        bool ApparelHasModExtension(Pawn pawn, Apparel apparel)
-        {
-            return pawn.apparel.Contains(apparel) == apparel.def.HasModExtension<ApparelGraphicRaceExtension>();
-        }
-
-        public string Postfix(ref string __result, Pawn ___pawn, Apparel ___apparel)
-        {
-            Pawn pawn = ___pawn;
-            Apparel apparel = ___apparel;
-
-            if (IsPawnPathfinderRace(pawn) || ApparelHasModExtension(pawn, apparel))
+            static bool IsPawnPathfinderRace(Pawn pawn)
             {
-                return __result = ApparelGraphicRaceUtility.GetAltPathString(apparel);
+                return pawn.def.defName == "Alien_Pathfinder";
             }
-            return __result;
-        }
-    }
 
+            static bool ApparelHasModExtension(Pawn pawn, Apparel apparel)
+            {
+                return pawn.apparel.Contains(apparel) == apparel.def.HasModExtension<ApparelGraphicRaceExtension>();
+            }
+
+            public static void Postfix(ref string __result, Pawn ___pawn, Apparel ___apparel)
+            {
+                Pawn pawn = ___pawn;
+                Apparel apparel = ___apparel;
+
+                if (IsPawnPathfinderRace(pawn) || ApparelHasModExtension(pawn, apparel))
+                {
+                    __result = ApparelGraphicRaceUtility.GetAltPathString(apparel);
+                }
+
+            }
+        }
+
+    }
 }

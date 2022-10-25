@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MemeDef>
+    <defName>ThePathfinderCodex</defName>
+    <label>The Pathfinder Codex</label>
+    <description>The Pathfinder Codex contains all of the ideological principles set out at the unification of Pathfinder’s Homeworld. Since then the young race has experienced extraordinary technological and social growth, settling numerous worlds and exploring countless more. And though even world has its own challenges, The Pathfinder Codex is always there to guide them.</description>
+    <iconPath>UI/PathfinderCodexIcon</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>3</impact>
+    <exclusionTags>
+      <li>AnimalPersonhood</li>
+      <li>Transhumanist</li>
+      <li>FleshPurity</li>
+    </exclusionTags>
+    
+    <generalRules>
+    <rulesStrings>
+      <li>memeAdjective->Pathfinder</li>
+      <li>memeCreed->Codex</li>
+    </rulesStrings>
+    </generalRules>
+    
+    <requireOne>
+      <li>
+        <li>Lovin_FreeApproved</li>
+      </li>
+      <li>
+        <li>Execution_Abhorrent</li>
+      </li>
+      <li>
+        <li>Nudity_Male_NoRules</li>
+      </li>
+      <li>
+        <li>Nudity_Female_NoRules</li>
+      </li>
+      <li>
+        <li>IdeoDiversity_Approved</li>
+      </li>
+      <li>
+        <li>MarriageName_Random</li>
+      </li>
+      <li>
+        <li>OrganUse_HorribleNoSell</li>
+      </li>
+      <li>
+        <li>Research_VeryFast</li>
+      </li>
+      <li>
+        <li>Scarification_Horrible</li>
+      </li>
+      <li>
+        <li>OrganUse_HorribleNoSell</li>
+      </li>
+      <li>
+        <li>Slavery_Abhorrent</li>
+      </li>
+      <li>
+        <li>Blinding_Horrible</li>
+      </li>
+      <li>
+        <li>DrugUse_MedicalOrSocial</li>
+      </li>
+      <li>
+        <li>Charity_Worthwhile</li>
+      </li>
+      <li>
+        <li>HAR_EatingAliens_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_AlienDating_Acceptable</li>
+      </li>
+      <li>
+        <li>HAR_AlienSlavery_Abhorrent</li>
+      </li>
+      <li>
+        <li>HAR_AlienRaces_Standard</li>
+      </li>
+    </requireOne>
+
+    <!-- Temp -->
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Individualist)           ->Oppressed by distant rulers who demanded uniform obedience from the people, [founderName] created a rebel movement that smashed the state and built a new land of liberty in its place.</li>
+          <li>story(uses=1,tag=meme_Individualist)    ->[founderName] broke every social rule the oppressors tried to enforce, just to show that [founder_pronoun] could.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Individualist)         ->My family, my clan, my team - they all tried to keep a shroud over my eyes to stop me from seeing a simple fact:</li>
+          <li>lesson(tag=meme_Individualist)              ->each person is unique and valuable and must walk his or her own path</li>
+          <li>lessonReinforcement(tag=meme_Individualist) ->But that was only my path - What will yours be?</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>pathfinder</theme>
+        <adjective>pathfinder</adjective>
+        <member>pathfinder</member>
+      </li>
+    </symbolPacks>
+
+    <thingStyleCategories>
+      <li>
+        <category>PathfinderStyle</category>
+        <priority>4</priority>
+      </li>
+    </thingStyleCategories>
+
+    <addDesignators>
+      <li>Tile_Transhumanist</li>
+      <li>SleepAccelerator</li>
+      <li>NeuralSupercharger</li>
+    </addDesignators>
+    
+  </MemeDef>
+ 
+</Defs>

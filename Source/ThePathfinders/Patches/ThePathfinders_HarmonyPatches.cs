@@ -2,23 +2,23 @@
 using RimWorld;
 using System;
 using Verse;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
-// this was made partially obsolete however the framework version doesn't seem to work as well to me
 
-
-
-namespace ThePathfinders
+namespace ThePathfinders.Patches
 {
     [StaticConstructorOnStartup]
-    public class ThePathfindersPatchingRelationship
+    public class ThePathfinders_HarmonyPatches
     {
-        static ThePathfindersPatchingRelationship()
+        static ThePathfinders_HarmonyPatches()
         {
             var harmony = new Harmony("ThePathfindersMod.ZeroPhoenix.patch1");
             harmony.PatchAll();
-            Log.Message("Pathfinder Relationship Patching Initialisation");
+            Log.Message("Pathfinder Patching Initialisation");
         }
-        // Credit to ???
+        #region
         [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
         class PathfinderPatchLovinPrefix
         {
@@ -61,7 +61,7 @@ namespace ThePathfinders
                 {
                     num /= level * 2f;
                 }
-                return num / GenMath.FlatHill(0f, 14f, 16f, 300f, 380f, 0.2f, pawn.ageTracker.AgeBiologicalYearsFloat);
+                return num / GenMath.FlatHill(0f, 14f, 16f, 300f, 380f, 0.6f, pawn.ageTracker.AgeBiologicalYearsFloat);
             }
             public static bool Prefix(Pawn pawn, ref float __result)
             {
@@ -97,7 +97,7 @@ namespace ThePathfinders
                         float lower = ageBiologicalYearsFloat - 10f;
                         float upper = ageBiologicalYearsFloat + 3f;
                         float max = ageBiologicalYearsFloat + 10f;
-                        originalNum = GenMath.FlatHill(0.2f, min, lower, upper, max, 0.2f, ageBiologicalYearsFloat2);
+                        originalNum = GenMath.FlatHill(0.2f, min, lower, upper, max, 0.6f, ageBiologicalYearsFloat2);
                     }
                     else if (pawn.gender == Gender.Female)
                     {
@@ -105,7 +105,7 @@ namespace ThePathfinders
                         float lower2 = ageBiologicalYearsFloat - 3f;
                         float upper2 = ageBiologicalYearsFloat + 10f;
                         float max2 = ageBiologicalYearsFloat + 30f;
-                        originalNum = GenMath.FlatHill(0.2f, min2, lower2, upper2, max2, 0.2f, ageBiologicalYearsFloat2);
+                        originalNum = GenMath.FlatHill(0.2f, min2, lower2, upper2, max2, 0.6f, ageBiologicalYearsFloat2);
                     }
                     float newNum = PathfinderRaceCalculation();
                     float PathfinderRaceCalculation()
@@ -117,7 +117,7 @@ namespace ThePathfinders
                             float lower = ageBiologicalYearsFloat - 47f;
                             float upper = ageBiologicalYearsFloat + 14f;
                             float max = ageBiologicalYearsFloat + 47f;
-                            tempNum = GenMath.FlatHill(0.2f, min, lower, upper, max, 0.2f, ageBiologicalYearsFloat2);
+                            tempNum = GenMath.FlatHill(0.2f, min, lower, upper, max, 0.6f, ageBiologicalYearsFloat2);
                         }
                         else if (pawn.gender == Gender.Female)
                         {
@@ -125,7 +125,7 @@ namespace ThePathfinders
                             float lower2 = ageBiologicalYearsFloat - 14f;
                             float upper2 = ageBiologicalYearsFloat + 47f;
                             float max2 = ageBiologicalYearsFloat + 142f;
-                            tempNum = GenMath.FlatHill(0.2f, min2, lower2, upper2, max2, 0.2f, ageBiologicalYearsFloat2);
+                            tempNum = GenMath.FlatHill(0.2f, min2, lower2, upper2, max2, 0.6f, ageBiologicalYearsFloat2);
                         }
                         return tempNum;
                     }
@@ -134,5 +134,39 @@ namespace ThePathfinders
                 }
             }
         }
+        #endregion 
+
+        #region
+
+        [HarmonyPatch(typeof(Apparel), "WornGraphicPath", MethodType.Getter)]
+        class PathfinderWornGraphicPathPostfix
+        {
+            static bool WearerIsPawnPathfinderRace(Thing thing, Pawn pawn)
+            {
+                if(thing.def.IsApparel
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            static bool ApparelHasModExtension(Apparel apparel)
+            {
+                return apparel.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>();
+            }
+
+            public static void Postfix(Thing thing, ref string __result)
+            {
+                string AltWornGraphicPath =
+                if (thing.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>())
+                {
+                    Log.Message(__result);
+                    __result = ApparelGraphicRaceUtility.GetAltPathString();
+                       
+                         //ApparelGraphicRaceUtility.GetAltPathString(apparel);
+                }
+            }
+        }
+        #endregion
     }
 }

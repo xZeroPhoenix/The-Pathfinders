@@ -1,16 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Source",
     "\\Source\\ThePathfinders",
     "\\Source\\ThePathfinders\\Extensions",
-    "\\v1.3",
-    "\\v1.3\\Defs",
-    "\\v1.3\\Defs\\NameMakerDefs",
-    "\\v1.3\\Defs\\ThingDefs_items",
-    "\\v1.3\\Defs\\ThingDefs_items\\WeponsDefs",
-    "\\v1.3\\Patches"
+    "\\v1.4"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders\\Extensions\\PathfinderApparelDefModExtension.cs",
+  "SelectedNode": "\\v1.4",
   "PreviewInSolutionExplorer": false
 }
