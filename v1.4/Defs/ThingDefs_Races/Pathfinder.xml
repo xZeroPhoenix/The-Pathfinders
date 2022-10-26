@@ -264,87 +264,75 @@
        </li>
      </anchorReplacements> 
      
-  <colorChannels> <!--Temp-->
-	 <li>
-   <name>skin</name>
-	 <first Class="ColorGenerator_Options">
-	 <options>
-   
+ <colorChannels Inherit="False"> <!--Temp-->
+  <li>
+  <name>skin</name>
+   <first Class="ColorGenerator_Options">
+	<options>
   <!-- Whites -->
 	 <li>
 	 <weight>15</weight>
 	 <only>(255, 255, 255)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>15</weight>
 	 <only>(210, 210, 210)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(190, 190, 190)</only>
 	 </li>
-
 <!-- Blacks -->
-   <li>
+     <li>
 	 <weight>15</weight>
 	 <only>(110, 110, 110)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(185, 185, 185)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(65, 65, 65)</only>
 	 </li>
 <!-- Bules -->
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(20, 60, 180)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(25, 115, 185)</only>
 	 </li>
-
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(15, 85, 145)</only>
 	 </li>
 <!-- Purple -->
-   <li>
+     <li>
 	 <weight>15</weight>
 	 <only>(155, 85, 255)</only>
 	 </li>
 <!-- Red -->
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(175, 5, 10)</only>
 	 </li>
-     
-    <li>
-    <weight>10</weight>
-    <only>(200, 45, 55)</only>
-    </li>
-     
+     <li>
+     <weight>10</weight>
+     <only>(200, 45, 55)</only>
+     </li>
 <!-- Yellow -->
-   <li>
+     <li>
 	 <weight>10</weight>
 	 <only>(195, 146, 30)</only>
 	 </li>
-   <li>
-   <weight>10</weight>
-   <only>(230, 170, 25)</only>
-   </li>
-     
-	 </options>
-	 </first>
+     <li>
+     <weight>10</weight>
+     <only>(230, 170, 25)</only>
+     </li>
+	</options>
+   </first>
 
    <second Class="ColorGenerator_Options">
    <options>
@@ -367,13 +355,16 @@
  </li>
 
  </colorChannels> 
+	   
  </alienPartGenerator>
  </generalSettings>
-<!--Tmep? Look at using a Custom HeadTypes -->
+<!--Tmep?-->
  <graphicPaths>
+	 
    <head>
    <path>Things/Pawn/Humanlike/Heads/PathfinderHead/</path>
    </head>
+   <skinShader>Cutout</skinShader>
    <body>Things/Pathfinder/Body/</body>
  </graphicPaths>
   

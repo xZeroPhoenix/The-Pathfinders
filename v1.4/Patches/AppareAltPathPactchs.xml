@@ -4,8 +4,8 @@
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/ThingDef[defName="Apparel_AdvancedHelmet"]</xpath>
 		<value>
-			<li Class="ThePathfinders.ApparelGraphicRaceExtension">
-				<RaceAltWornGraphicPath>Things/Pawn/Humanlike/ApparelStyles/HelmetAdvancedHindu/HelmetAdvancedHindu</RaceAltWornGraphicPath>
+			<li Class="ThePathfinders.ThingDefExtension_CustomWornApparelGraphicForRace">
+				<AltWornGraphicPath>Things/Pawn/Humanlike/ApparelStyles/HelmetAdvancedHindu/HelmetAdvancedHindu</AltWornGraphicPath>
 			</li>
 		</value>
 	</Operation>

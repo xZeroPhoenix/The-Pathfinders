@@ -1,10 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Source\\ThePathfinders",
-    "\\Source\\ThePathfinders\\Extensions",
-    "\\v1.4"
+    "\\Textures",
+    "\\Textures\\Things",
+    "\\Textures\\Things\\Items",
+    "\\Textures\\Things\\Items\\Apparel",
+    "\\Textures\\Things\\Items\\Apparel\\AltPathsForRace",
+    "\\v1.4",
+    "\\v1.4\\Defs",
+    "\\v1.4\\Defs\\HediffDefs",
+    "\\v1.4\\Defs\\ThingDefs_items",
+    "\\v1.4\\Defs\\ThingDefs_items\\ApparelDefs"
   ],
-  "SelectedNode": "\\v1.4",
+  "SelectedNode": "\\v1.4\\Defs\\ThingDefs_Races\\Pathfinder.xml",
   "PreviewInSolutionExplorer": false
 }

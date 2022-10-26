@@ -13,11 +13,11 @@ namespace ThePathfinders
     public static class ApparelGraphicRaceUtility
     {
         private static Dictionary<ThingDef, string> cachedAltPath = new Dictionary<ThingDef, string>();
-        public static string GetAltPathString(ThingDef altPath)
+        public static string GetAltPathStringForWornApparel(ThingDef WornApparelThingDef)
         {
-            if (!cachedAltPath.ContainsKey(altPath))
+            if (!cachedAltPath.ContainsKey(WornApparelThingDef))
             {
-                ThingDefExtension_CustomWornApparelGraphicForRace stringExtension = altPath.GetModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>();
+                ThingDefExtension_CustomWornApparelGraphicForRace stringExtension = WornApparelThingDef.GetModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>();
                 string AltWornGraphicPath;
                 if (stringExtension == null)
                     throw new ArgumentNullException();
@@ -25,9 +25,9 @@ namespace ThePathfinders
                 else
                     AltWornGraphicPath = stringExtension.AltWornGraphicPath;
 
-                cachedAltPath.SetOrAdd(altPath, AltWornGraphicPath);
+                cachedAltPath.SetOrAdd(WornApparelThingDef, AltWornGraphicPath);
             }
-            return cachedAltPath[altPath];
+            return cachedAltPath[WornApparelThingDef];
         }
     }
     #endregion
@@ -38,6 +38,7 @@ namespace ThePathfinders
     public class ThingDefExtension_CustomWornApparelGraphicForRace : DefModExtension
     {
         public string AltWornGraphicPath = "";
+        
         private Dictionary<ThingDef, string> raceAltGraphicPath = new Dictionary<ThingDef, string>();
         public string GetWornGraphicPathForRace(ThingDef race)
         {

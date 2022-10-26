@@ -24,7 +24,7 @@ namespace ThePathfinders.Patches
         {
             static bool IsPathfinderRace(Pawn pawn)
             {
-                return pawn.def.defName == "Alien_Pathfinder";
+                return pawn.def == PathfinderRaceDefOf.Alien_Pathfinder;
             }
 
             private static readonly SimpleCurve PathfinderCurve = new SimpleCurve
@@ -65,7 +65,7 @@ namespace ThePathfinders.Patches
             }
             public static bool Prefix(Pawn pawn, ref float __result)
             {
-                if (pawn.def.defName == "Alien_Pathfinder")
+                if (pawn.def == PathfinderRaceDefOf.Alien_Pathfinder)
                 {
                     __result = LovinMtbSinglePawnFactor(pawn);
                     // Log.Message("Setting LovinMtbSinglePawnFactor to: " + __result);
@@ -80,7 +80,7 @@ namespace ThePathfinders.Patches
         {
             static bool IsPathfinderRace(Pawn pawn)
             {
-                return pawn.def.defName == "Alien_Pathfinder";
+                return pawn.def == PathfinderRaceDefOf.Alien_Pathfinder;
             }
             public static void Postfix(ref float __result, Pawn ___pawn, Pawn otherPawn)
             {
@@ -141,30 +141,19 @@ namespace ThePathfinders.Patches
         [HarmonyPatch(typeof(Apparel), "WornGraphicPath", MethodType.Getter)]
         class PathfinderWornGraphicPathPostfix
         {
-            static bool WearerIsPawnPathfinderRace(Thing thing, Pawn pawn)
+            public static void Postfix(Apparel __instance, ref string __result)
             {
-                if(thing.def.IsApparel
+                string WornGraphicPath = __result;
+                if (__instance.Wearer.def == PathfinderRaceDefOf.Alien_Pathfinder)
                 {
-                    return true;
-                }
-                return false;
-            }
+                    if (__instance.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>())
+                    {
+                        __result = __instance.def.GetModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>().AltWornGraphicPath;
+                        Log.Message(__result);
+                    }
 
-            static bool ApparelHasModExtension(Apparel apparel)
-            {
-                return apparel.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>();
-            }
-
-            public static void Postfix(Thing thing, ref string __result)
-            {
-                string AltWornGraphicPath =
-                if (thing.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>())
-                {
-                    Log.Message(__result);
-                    __result = ApparelGraphicRaceUtility.GetAltPathString();
-                       
-                         //ApparelGraphicRaceUtility.GetAltPathString(apparel);
                 }
+
             }
         }
         #endregion
