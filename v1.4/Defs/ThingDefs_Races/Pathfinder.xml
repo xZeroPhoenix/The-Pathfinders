@@ -442,18 +442,11 @@
     </apparelList>
 
     <blackApparelList>
-      <li>Apparel_PowerArmorHelmet</li>
-      <li>Apparel_ArmorHelmetRecon</li>
-      <li>Apparel_SimpleHelmet</li>
-      <li>Apparel_WarMask</li>
-      <li>Apparel_WarVeil</li>
-      <li>Apparel_SimpleHelmet</li>
-      <li>Apparel_PsychicFoilHelmet</li>
-      <li>Apparel_TribalHeaddress</li>
+
+
       
       <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetReconPrestige</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li> 
       <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_VisageMask</li>
       <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
       <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
