@@ -53,10 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DecrepitCode\Decrepit.cs" />
     <Compile Include="Patches\ThePathfinders_HarmonyPatches.cs" />
     <Compile Include="Common\DefOfs.cs" />
     <Compile Include="Common\HediffDefIsAnyOf.cs" />
-    <Compile Include="Extensions\PathfinderApparelDefModExtension.cs" />
+    <None Include="DecrepitCode\PathfinderApparelDefModExtension.cs" />
     <Compile Include="Extensions\PathfinderTierDefModExtension.cs" />
     <Compile Include="Hediffs\HediffComp_PathfinderSetSeveritySinkness.cs" />
     <Compile Include="Hediffs\HediffComp_PathfinderRegeneration.cs" />

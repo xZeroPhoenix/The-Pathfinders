@@ -360,12 +360,95 @@
  </generalSettings>
 <!--Tmep?-->
  <graphicPaths>
-	 
-   <head>
-   <path>Things/Pawn/Humanlike/Heads/PathfinderHead/</path>
-   </head>
-   <skinShader>Cutout</skinShader>
-   <body>Things/Pathfinder/Body/</body>
+     <head>
+        <path>Things/Pawn/Humanlike/Heads/PathfinderHead/</path>
+     </head>
+     <skinShader>Cutout</skinShader>
+     <body>Things/Pathfinder/Body/</body>
+	 <apparel>
+		 <individualPaths>
+			 <li>
+				 <key>Apparel_HatHood</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltHatHood/PathfinderAltHatHood</value>
+			 </li>
+			 <li>
+				 <key>Apparel_AdvancedHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltAdvancedHelmet/PathfinderAltAdvancedHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetRecon</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltReconHelmet/PathfinderAltReconHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_WarMask</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltWarMask/PathfinderAltWarMask</value>
+			 </li>
+			 <li>
+				 <key>Apparel_TribalHeaddress</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltTribalHeaddress/PathfinderAltTribalHeaddress</value>
+			 </li>
+			 <li>
+				 <key>Apparel_SimpleHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltSimpleHelmet/PathfinderAltSimpleHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_PsychicFoilHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPsychicFoilHelmet/PathfinderAltPsychicFoilHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_PowerArmorHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPowerArmorHelmet/PathfinderAltPowerArmorHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_WarVeil</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltVeil/PathfinderAltVeil</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetReconPrestige</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPrestigeReconHelmet/PathfinderAltPrestigeReconHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetCataphract</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorHelmetCataphract/PathfinderAltArmorHelmetCataphract</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetCataphractPrestige</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorHelmetCataphractPrestige/PathfinderAltArmorHelmetCataphractPrestige</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorMarineHelmetPrestige</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorMarineHelmetPrestige/PathfinderAltArmorMarineHelmetPrestige</value>
+			 </li>
+			 <li>
+				 <key>Apparel_EltexSkullcap</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltEltexHelmet/PathfinderAltEltexHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_PsyfocusHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPsyfocusHelmet/PathfinderAltPsyfocusHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_VisageMask</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltVisageMask/PathfinderAltPsyfocusHelmetA</value>
+			 </li>
+		 	 <li>
+				 <key>Apparel_Headwrap</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltHeadwrap/PathfinderAltHeadwrap</value>
+			 </li>
+			 <li>
+				 <key>Apparel_Slicecap</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltSlicecap/PathfinderAltSlicecap</value>
+			 </li>
+			 <li>
+				 <key>Apparel_TortureCrown</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltTortureCrown/PathfinderAltTortureCrown</value>
+			 </li>
+			 <li>
+				 <key>Apparel_Burka</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderBurka/PathfinderBurka</value>
+			 </li>
+		 </individualPaths>
+	 </apparel>
  </graphicPaths>
   
  <!-- Thought Settings 
@@ -443,19 +526,6 @@
 
     <blackApparelList>
 
-
-      
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li> 
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_VisageMask</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
-      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
-      
-      <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Headwrap</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Burka</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_TortureCrown</li>
     </blackApparelList>
 
   </raceRestriction>
@@ -472,7 +542,7 @@
   <statBases>
     <MarketValue>2300</MarketValue>
     <MoveSpeed>6</MoveSpeed>
-    <ResearchSpeed>1.30</ResearchSpeed>
+    <ResearchSpeed>1.05</ResearchSpeed>
     <SocialImpact>1.05</SocialImpact>
     <ComfyTemperatureMin>5</ComfyTemperatureMin>
     <ComfyTemperatureMax>35</ComfyTemperatureMax>

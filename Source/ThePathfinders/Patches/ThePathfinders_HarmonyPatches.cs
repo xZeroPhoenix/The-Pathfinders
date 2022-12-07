@@ -134,28 +134,7 @@ namespace ThePathfinders.Patches
                 }
             }
         }
-        #endregion 
-
-        #region
-
-        [HarmonyPatch(typeof(Apparel), "WornGraphicPath", MethodType.Getter)]
-        class PathfinderWornGraphicPathPostfix
-        {
-            public static void Postfix(Apparel __instance, ref string __result)
-            {
-                string WornGraphicPath = __result;
-                if (__instance.Wearer.def == PathfinderRaceDefOf.Alien_Pathfinder)
-                {
-                    if (__instance.def.HasModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>())
-                    {
-                        __result = __instance.def.GetModExtension<ThingDefExtension_CustomWornApparelGraphicForRace>().AltWornGraphicPath;
-                        Log.Message(__result);
-                    }
-
-                }
-
-            }
-        }
         #endregion
+
     }
 }

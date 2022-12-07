@@ -32,9 +32,6 @@ namespace ThePathfinders
     }
     #endregion
     #region
-    // NightmareCorporation — Today at 7:56 PM I'm saying all you do in the extension is have a path, no logic no nothing,
-    // meaning you throw this onto an apparels ThingDef and then it uses your extensions path instead of the normal one
-    // That's a roundabout way of just changing the wornGraphicPath of the Apparel itself
     public class ThingDefExtension_CustomWornApparelGraphicForRace : DefModExtension
     {
         public string AltWornGraphicPath = "";
