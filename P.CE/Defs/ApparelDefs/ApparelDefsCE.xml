@@ -3,7 +3,7 @@
 
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>The Pathfinders</li>
+      <li>Combat Extended</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
@@ -92,13 +92,13 @@
           </value>
         </li>
         
-        <li Class="PatchOperationAdd">
+        <!-- <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="Apparel_PathfinderStandardHelmet"]/apparel/layers</xpath>
           <value>
             <li>MiddleHead</li>
           </value>
-        </li>
-        <!-- Pathfinder Power Armour -->
+        </li> -->
+		  <!-- Pathfinder Power Armour -->
 
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="Apparel_PathfinderArmour"]/statBases</xpath>
@@ -234,8 +234,8 @@
           <value>
             <li>OnHead</li>
             <li>StrappedHead</li>
-            <li>MiddleHead</li>
-          </value>
+          <!-- <li>MiddleHead</li> -->
+		  </value>
         </li>
         
     

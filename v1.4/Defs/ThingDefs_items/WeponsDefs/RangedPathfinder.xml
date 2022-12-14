@@ -18,7 +18,7 @@
 	<ThingDef ParentName="PathfinderTechRanged">
 	<defName>Gun_MPC-90_Particle_Rifle</defName>
 	<label>MPC-90 Particle Rifle</label>
-	<description>An Pathfinder MPC-90 Particle Rifle. its one of the few directed energy weapons in the Pathfinder's Arsenal, it's overall performance is unexceptional however it does not require ammunition to functions and so makes for good emergency survival weapon</description>
+	<description>An Pathfinder MPC-90 Particle Rifle. its one of the few directed energy weapons in the Pathfinder's Arsenal, it's overall performance is unexceptional however it does not require ammunition to functions and so makes for good emergency survival weapon.</description>
 	<graphicData> 
     <texPath>Things/Items/Weapons/MPC-90_Particle_Rifle</texPath>
 	<graphicClass>Graphic_Single</graphicClass>
@@ -312,7 +312,7 @@
   <ThingDef ParentName="PathfinderTechRanged">
     <defName>Gun_MRS-20_Battle_Rifle</defName>
     <label>MRS-20 Battle Rifle</label>
-    <description>A standard issue Pathfinder MRS-20 Battle Rifle. Design for general purpose combat again slightly heavier targets then the standard assault rifle. Expensive but accurate and powerful. Struggles at close range.</description>
+    <description>A standard issue Pathfinder MRS-20 Battle Rifle. Design for general purpose combat against slightly heavier targets then the standard assault rifle. Expensive but accurate and powerful. Struggles at close range.</description>
     <graphicData>
       <texPath>Things/Items/Weapons/MRS-20_Battle_Rifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>

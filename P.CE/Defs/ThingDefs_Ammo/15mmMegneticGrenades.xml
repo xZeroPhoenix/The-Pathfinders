@@ -22,7 +22,7 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
     <defName>Ammo_15mmCoilgun_GrenadeHE</defName>
     <label>15mm Coilgun Megnetic Grenade (HE)</label>
-    <description>Fin-stabilized Megnetic Grenade, designed for coilgun automatic grenade launchers.</description>
+    <description>Fin-stabilized Megnetic Grenade, designed for coilgun automatic grenade launchers. Packs a similar punch to their larger counterparts.</description>
     <statBases>
       <Mass>0.150</Mass>
       <Bulk>0.01</Bulk>
@@ -47,7 +47,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
 		<defName>Ammo_15mmCoilgun_GrenadeEMI</defName>
 		<label>15mm Coilgun Megnetic Grenade (EMI)</label>
-		<description>Fin-stabilized Megnetic Grenade, designed for coilgun automatic grenade launchers. These produce an EMI distortions on impact.</description>
+		<description>Fin-stabilized Megnetic Grenade, designed for the Pathfinders coilgun automatic grenade launchers. These produce an EMI distortions on impact. Packs a similar punch to their larger counterparts.</description>
 		<statBases>
 			<Mass>0.150</Mass>
 			<Bulk>0.01</Bulk>
@@ -80,14 +80,14 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>13</damageAmountBase>
-      <explosionRadius>0.5</explosionRadius>
+      <damageAmountBase>17</damageAmountBase>
+      <explosionRadius>1.0</explosionRadius>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     </projectile>
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Small>9</Fragment_Small>
+          <Fragment_Small>11</Fragment_Small>
         </fragments>
       </li>
     </comps>
@@ -111,7 +111,7 @@
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_15mmCoilgun_GrenadeHE</defName>
     <label>make 15mm Coilgun high explosive grenades x100</label>
-    <description>Craft 100 15mm Coilgun high explosive grenades.</description>
+    <description>Craft 100 15mm Coilgun HE grenades.</description>
     <jobString>Making 15mm Coilgun explosive grenades.</jobString>
     <workAmount>9500</workAmount>
     <ingredients>
@@ -121,7 +121,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>34</count>
       </li>
       <li>
         <filter>
@@ -129,7 +129,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>7</count>
+        <count>6</count>
       </li>
 		<li>
 			<filter>
@@ -165,15 +165,15 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>34</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Uranium</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>8</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

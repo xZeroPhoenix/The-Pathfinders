@@ -447,6 +447,22 @@
 				 <key>Apparel_Burka</key>
 				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderBurka/PathfinderBurka</value>
 			 </li>
+			 <li>
+				 <key>Apparel_GasMask</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltGasMask/PathfinderAltGasMask</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetMechCommander</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltMechcommanderHelmet/PathfinderAltMechcommanderHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_ArmorHelmetMechlordHelmet</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltMechlordHelmet/PathfinderAltMechlordHelmet</value>
+			 </li>
+			 <li>
+				 <key>Apparel_Blindfold</key>
+				 <value>Things/Items/Apparel/AltPathsForRace/PathfinderAltBlindfold/PathfinderAltBlindfold</value>
+			 </li>
 		 </individualPaths>
 	 </apparel>
  </graphicPaths>

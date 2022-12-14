@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <loadFolders>
-
   <v1.4>
     <li>/</li>
     <li>v1.4</li>
@@ -7,5 +7,4 @@
     <li IfModActive="smashphil.neceros.srtsexpanded.combatextendedfork">P.SRTS</li>
     <li IfModActive="smashphil.neceros.srtsexpanded">P.SRTS</li>
   </v1.4>
-		
 </loadFolders>

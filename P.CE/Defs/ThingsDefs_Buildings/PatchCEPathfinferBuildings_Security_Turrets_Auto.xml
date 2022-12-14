@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="CombatExtended.PatchOperationFindMod">
-				<modName>The Pathfinders</modName>
+				<modName>Combat Extended</modName>
 			</li>
 			
 			<li Class="PatchOperationReplace">
