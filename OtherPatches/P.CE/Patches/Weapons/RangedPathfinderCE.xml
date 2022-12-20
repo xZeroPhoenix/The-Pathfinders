@@ -278,7 +278,7 @@
                 <recoilAmount>1.41</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_15mmCoilgun_Grenade</defaultProjectile>
+                <defaultProjectile>Bullet_15mmCoilgun_GrenadeHE</defaultProjectile>
                 <warmupTime>1.3</warmupTime>
                 <range>38</range>
                 <burstShotCount>2</burstShotCount>

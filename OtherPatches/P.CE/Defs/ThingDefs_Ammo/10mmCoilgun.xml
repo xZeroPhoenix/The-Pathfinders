@@ -83,11 +83,32 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>28</damageAmountBase>
       <armorPenetrationSharp>73</armorPenetrationSharp>
-      <armorPenetrationBlunt>710</armorPenetrationBlunt>
+      <armorPenetrationBlunt>78</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
   </ThingDef>
-
+	
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Bullet_10mmCoilgun_Ion</defName>
+    <label>10mm Coilgun bullet (Ion)</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+		<secondaryDamage>
+			<li>
+				<def>EMP</def>
+				<amount>8</amount>
+			</li>
+		</secondaryDamage>
+      <armorPenetrationSharp>68</armorPenetrationSharp>
+      <armorPenetrationBlunt>71</armorPenetrationBlunt>
+      <speed>220</speed>
+    </projectile>
+  </ThingDef>
   <!-- ==================== Recipes ========================== -->
 
   <RecipeDef ParentName="AmmoRecipeBase">
@@ -108,7 +129,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Uranium</li>
+            <li>Uranium</li>																			
           </thingDefs>
         </filter>
         <count>4</count>
@@ -132,7 +153,7 @@
 		<jobString>Making 10mm Coilgun (Ion) cartridges.</jobString>
 		<ingredients>
 			<li>
-				<filter>
+				<filter>																																											
 					<thingDefs>
 						<li>Plasteel</li>
 					</thingDefs>

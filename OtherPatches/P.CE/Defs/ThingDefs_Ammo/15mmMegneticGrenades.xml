@@ -34,11 +34,11 @@
       <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
     </tradeTags>
     <thingCategories>
-      <li>Ammo15mmCoilgun</li>
+      <li>Ammo15mmCoilgunGrenade</li>
     </thingCategories>
     <stackLimit>200</stackLimit>
     <graphicData>
-      <texPath>Things/Ammo/PlasmaCell\Rifle</texPath>
+      <texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
     <ammoClass>GrenadeHE</ammoClass>
@@ -59,11 +59,11 @@
 			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
 		</tradeTags>
 		<thingCategories>
-			<li>Ammo15mmCoilgun</li>
+			<li>Ammo15mmCoilgunGrenade</li>
 		</thingCategories>
 		<stackLimit>200</stackLimit>
 		<graphicData>
-			<texPath>Things/Ammo/PlasmaCell\Rifle</texPath>
+			<texPath>Things/Ammo/PlasmaCell/Rifle</texPath>
 			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
 		</graphicData>
 		<ammoClass>CoilgunSabot</ammoClass>

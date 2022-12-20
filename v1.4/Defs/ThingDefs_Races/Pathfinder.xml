@@ -6,7 +6,9 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Pathfinder</defName>
 		<label>Pathfinder</label>
-		<description>A typical baseline Pathfinder largely inline within typical genetic variation common amongst the species. Despite being avian appearance, the Pathfinders are near identical to humans biologically and anatomically on a surface level, but have a much longer lifespan and are able to regenerate from almost any injury. Evolving on Cyris Prime, 2nd planet of a binary star system, the warm, wet and geologically active conditions gave some unique conditions that lead the species to lose its wings long ago however gaining a remarkable intellect in return. Often curious to a fault, many Pathfinders join independent groups of explorers to seek out new cultures and discoveries.</description> <!-- Not Done -->
+		<description>
+		A typical baseline Pathfinder largely inline within typical genetic variation common amongst the species. Despite being avian appearance, the Pathfinders are near identical to humans biologically and anatomically on a surface level, but have a much longer lifespan and are able to regenerate from almost any injury. \n\ Their fast movement speed and sharp talons make them very capable melee fighters, this combined with their stubbornness and long lifespans makes them very troublesome captives. \n\ Evolving on Cyris Prime, 2nd planet of a binary star system, the warm, wet and geologically active conditions gave some unique conditions that led the species to lose its wings long ago, however gaining a remarkable intellect in return. Often curious to a fault, many Pathfinders join independent groups of explorers to seek out new cultures and discoveries. \n\ They are typically very friendly however uncompromising on there ideals.
+	    </description> <!-- Not Done -->
 
 <!-- Temp -->
     <alienRace>  
@@ -35,21 +37,41 @@
       </styleSettings>
       
     <generalSettings>
+		<reproduction>
+		    <femaleFertilityAgeFactor> <!--WIP-->
+			    <points>
+				    <li>(16, 0)</li>
+				    <li>(20, 1)</li>
+				    <li>(35, 0.5)</li>
+				    <li>(180, 0.1)</li>
+				    <li>(250, 0.02)</li>
+				    <li>(280, 0)</li>
+			    </points>
+		    </femaleFertilityAgeFactor>
+		    <maleFertilityAgeFactor> <!--WIP-->
+			    <points>
+				    <li>(16, 0)</li>
+				    <li>(18, 1)</li>
+				    <li>(50, 1)</li>
+				    <li>(280, 1)</li>
+				    <li>(360, 0)</li>
+			    </points>
+		    </maleFertilityAgeFactor>
+		</reproduction>
     <minAgeForAdulthood>20</minAgeForAdulthood>
 	<maleGenderProbability>0.7</maleGenderProbability>
-    <maxDamageForSocialfight>6</maxDamageForSocialfight>
+    <maxDamageForSocialfight>6</maxDamageForSocialfight> <!--WIP--> <!-- Need to add talons-->
     <humanRecipeImport>true</humanRecipeImport> <!-- Temp / TBD  -->
     <allowHumanBios>false</allowHumanBios>
-
-		
-  <chemicalSettings> <!-- Temp / TBD  -->
+	
+	<chemicalSettings> <!-- Temp / TBD  -->
     <li>
     <chemical>Luciferium</chemical> 
     <ingestible>false</ingestible>
     </li>
-  </chemicalSettings>
+    </chemicalSettings>
 
-  <forcedRaceTraitEntries>
+    <forcedRaceTraitEntries>
     <li>
     <defName>Bisexual</defName>
     <chance>90</chance>
@@ -61,7 +83,7 @@
     <degree>1</degree>
     <chance>35</chance>
     </li>
-  </forcedRaceTraitEntries>
+    </forcedRaceTraitEntries>
      
     <disallowedTraits>
       <li>
@@ -100,6 +122,7 @@
     </factionRelations>
 
    <alienPartGenerator>
+	 <getsGreyAt>370</getsGreyAt>
 	 <headTypes Inherit="False">
 	    <li>Male_AverageNormal</li> <!--Temp?-->
         <li>Female_AverageNormal</li> <!--Temp?-->
@@ -111,7 +134,6 @@
 		 <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li> <!--Temp-->
 		 <li MayRequire="Ludeon.RimWorld.Biotech">Child</li> <!--Temp-->
 	 </bodyTypes>
-     <getsGreyAt>500</getsGreyAt>
 	   
 	 <headOffsetDirectional>
       <north>(0.0, 0.07)</north>
@@ -544,6 +566,40 @@
 
     </blackApparelList>
 
+	  <geneList> <!--WIP-->
+
+	  </geneList>
+
+	  <blackGeneList>
+		  <li>Brow_Heavy</li>
+		  <li>FacialRidges</li>
+	  </blackGeneList>
+	  <blackGeneTags>
+		  <li>SkinColor</li>
+		  <li>HairColor</li>
+		  <li>EyeColor</li>
+		  <li>BodyType</li>
+		  <li>Ears</li>
+		  <li>Nose</li>
+		  <li>Jaw</li>
+		  <li>Head</li>
+		  <li>Headbone</li>
+		  <li>HairStyle</li>
+		  <li>BeardStyle</li>
+		  <li>SkinColorOverride</li>
+		  <li>Fur</li>
+		  <li>Tail</li>
+	  </blackGeneTags>
+	  <blackEndoCategories>
+		  <li>Melanin</li>
+		  <li>HairColor</li>
+		  <li>Ears</li>
+		  <li>Nose</li>
+		  <li>Jaw</li>
+		  <li>Head</li>
+		  <li>BodyType</li>
+	  </blackEndoCategories>
+	  
   </raceRestriction>
       
   <!-- Compatibility -->
@@ -559,12 +615,14 @@
     <MarketValue>2300</MarketValue>
     <MoveSpeed>6</MoveSpeed>
     <ResearchSpeed>1.05</ResearchSpeed>
-    <SocialImpact>1.05</SocialImpact>
+    <SocialImpact>1.0</SocialImpact>
     <ComfyTemperatureMin>5</ComfyTemperatureMin>
     <ComfyTemperatureMax>35</ComfyTemperatureMax>
     <LeatherAmount>60</LeatherAmount>
+    <SlaveSuppressionOffset>2.5</SlaveSuppressionOffset>
   </statBases>
-    <tools> <!--Temp-->
+    <tools> 
+	<!-- Hands -->
       <li>
         <label>left fist</label>
         <capacities>
@@ -599,17 +657,53 @@
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
+		<!-- Talons -->
+	   <li>
+        <label>left talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+		<!-- Head -->
       <li>
         <label>Beak</label>
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>12.2</power>
+        <power>9.2</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>PathfinderBeak</linkedBodyPartsGroup> <!-- Look into -->
         <chanceFactor>0.07</chanceFactor>
-        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
-        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit> <!--WIP-->
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss> <!--WIP-->
       </li>
       <li>
         <label>head</label>

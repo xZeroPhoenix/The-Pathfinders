@@ -76,6 +76,18 @@
       <li>
         <li>HAR_AlienRaces_Standard</li>
       </li>
+	  <li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">ChildLabor_Disapproved</li>
+	  </li>
+	  <li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">MechanoidLabor_Enhanced</li>
+	  </li>
+	  <li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Bloodfeeders_Reviled</li>
+	  </li>
+	  <li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Bloodfeeders_Reviled</li>
+	  </li>
     </requireOne>
 
     <!-- Temp -->

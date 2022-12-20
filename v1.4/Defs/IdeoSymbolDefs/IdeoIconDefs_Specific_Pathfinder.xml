@@ -3,8 +3,12 @@
 <IdeoIconDef>
   <defName>PathfinderA</defName>
   <iconPath>UI/PathfinderIdeoSymbol</iconPath>
+  <cultures>
+	<li>Pathifinder</li>
+  </cultures>	
   <memes>
     <li>ThePathfinderCodex</li>
+	<li>Structure_Pathfinder</li>
   </memes>
 </IdeoIconDef>
 </Defs>

@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\P.CE",
-    "\\P.CE\\Defs",
-    "\\P.CE\\Defs\\ThingDefs_Ammo",
-    "\\Textures",
-    "\\Textures\\Things",
-    "\\Textures\\Things\\Items",
-    "\\Textures\\Things\\Items\\Apparel",
-    "\\Textures\\Things\\Items\\Apparel\\AltPathsForRace"
+    "\\Source",
+    "\\Source\\ThePathfinders",
+    "\\Source\\ThePathfinders\\DecrepitCode",
+    "\\v1.4",
+    "\\v1.4\\Defs",
+    "\\v1.4\\Defs\\IdeoSymbolDefs",
+    "\\v1.4\\Defs\\MemesDefs",
+    "\\v1.4\\Defs\\ThingDefs_Races",
+    "\\v1.4\\Patches"
   ],
+  "SelectedNode": "\\Source\\ThePathfinders\\DecrepitCode\\Decrepit.cs",
   "PreviewInSolutionExplorer": false
 }

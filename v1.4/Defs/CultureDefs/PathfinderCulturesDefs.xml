@@ -4,7 +4,7 @@
 	<CultureDef>
 		<defName>Pathifinder</defName>
 		<label>pathifinder</label>
-		<description>A set of culture traditions common among pathfinder explorers</description>
+		<description>A set of culture traditions common among pathfinder explorers.</description>
 		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoPathfinder</ideoNameMaker>
 		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Pathfinder</leaderTitleMaker>
 		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>

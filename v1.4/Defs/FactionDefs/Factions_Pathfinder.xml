@@ -17,7 +17,12 @@
     <permanentEnemy>false</permanentEnemy>
     <factionIconPath>Things/World/PathfinderFactionIcon</factionIconPath>
     <techLevel>Ultra</techLevel>
-    <allowedMemes>
+	<!--   <xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			  <Pathfinder>999</Pathfinder>
+		  </xenotypeChances>
+	  </xenotypeSet> -->
+	  <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">ThePathfinderCodex</li>
     </allowedMemes>
       
@@ -54,8 +59,8 @@
       <li>Base_Pathfinder_Standard</li>
     </baseTraderKinds>
 
-    <colorSpectrum>
-      <li>(245, 245, 245)</li>
+    <colorSpectrum Inherit="false">
+      <li>(0.28, 0.38, 0.94)</li>
     </colorSpectrum>
 
     <factionNameMaker>NamerPathfinderFaction</factionNameMaker>

@@ -28,14 +28,14 @@ namespace ThePathfinders.Patches
             }
 
             private static readonly SimpleCurve PathfinderCurve = new SimpleCurve
-        {
-        new CurvePoint(16f, 1.5f),
-        new CurvePoint(22f, 1.5f),
-        new CurvePoint(30f, 2f),
-        new CurvePoint(50f, 2f),
-        new CurvePoint(280f, 2.5f),
-        new CurvePoint(385f, 4f)
-        };
+            {
+            new CurvePoint(16f, 1.5f),
+            new CurvePoint(22f, 1.5f),
+            new CurvePoint(30f, 2f),
+            new CurvePoint(50f, 2f),
+            new CurvePoint(280f, 2.5f),
+            new CurvePoint(385f, 4f)
+            };
 
             public static void Postfix(ref int __result, Pawn pawn)
             {
@@ -135,6 +135,20 @@ namespace ThePathfinders.Patches
             }
         }
         #endregion
-
+        [HarmonyPatch(typeof(PawnHairColors), "HasGreyHair")]
+        class PathfinderTempGrayFix
+        {
+            static bool PawnIsPathfinderRace(Pawn pawn)
+            {
+                return pawn.def == PathfinderRaceDefOf.Alien_Pathfinder;
+            }
+            public static void Postfix(ref bool __result, Pawn pawn)
+            {
+                if (PawnIsPathfinderRace(pawn))
+                {
+                    __result = false;
+                }
+            }
+        }
     }
 }
