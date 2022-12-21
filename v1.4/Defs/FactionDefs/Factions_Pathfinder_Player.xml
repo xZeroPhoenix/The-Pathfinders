@@ -5,7 +5,7 @@
 	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath> <!-- TEMP -->
 	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>  <!-- TEMP -->
     <colorSpectrum>
-     <li>(245, 245, 245)</li>
+     <li>(0, 0.797, 0.898)</li>
     </colorSpectrum>
   </FactionDef>
   
@@ -13,6 +13,9 @@
     <defName>PathfinderPlayerColony</defName>
     <label>Pathfinder Outpost</label>
     <description>Your own community.</description>  <!-- TEMP -->
+	  <colorSpectrum>
+		  <li>(0, 0.797, 0.898)</li>
+	  </colorSpectrum>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Pathfinder</basicMemberKind>
 	<pawnSingular>colonist</pawnSingular>

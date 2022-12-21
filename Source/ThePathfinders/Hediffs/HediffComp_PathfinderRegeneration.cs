@@ -127,13 +127,13 @@ namespace ThePathfinders
         private void TryRestorePart()
         {
             // logging out the pawns name can help "categorize" the logging messages if multiple hediffs are logging
-            Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
+            // Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
             try
             {
                 BodyPartRecord partToRestore = FindBiggestMissingBodyPart();
                 if(partToRestore == null)
                 {
-                    Log.Message("No body part found to restore");
+                    // Log.Message("No body part found to restore");
                     return;
                 }
                 int tier = BodyPartTierUtility.GetTier(partToRestore.def);
@@ -152,6 +152,7 @@ namespace ThePathfinders
                         break;
                     default:
                         RestoreBodyPart_Fallback(partToRestore);
+                        Log.Message("fallback used to restore");
                         break;
                 }
             }
@@ -223,18 +224,18 @@ namespace ThePathfinders
         /// </summary>
         private void TryHealRandomPermanentWound()
         {
-            Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
+            //Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
             try
             {
                 Hediff injury = FindRandomPermanentWound();
 
                 if(injury == null)
                 {
-                    Log.Message("No permanent injury found to heal");
+                    // Log.Message("No permanent injury found to heal");
                     return;
                 }
                 injury.Severity = 0.0f;
-                Log.Message($"Healed injury {injury}");
+                //Log.Message($"Healed injury {injury}");
             }
             catch(Exception e)
             {
@@ -267,7 +268,7 @@ namespace ThePathfinders
         {
             // NABBER: behold the beauty that is @"" - which allows you to have line breaks in a string - combine that with $"" and you can directly use variables in string without those nasty +
             return $@"remainingTicksToRestoreBodyPart: {remainingTicksToRestoreBodyPart}
-remainingTicksToHealRandomPermanentWound: {remainingTicksToHealRandomPermanentWound}";
+            remainingTicksToHealRandomPermanentWound: {remainingTicksToHealRandomPermanentWound}";
         }
 
     }

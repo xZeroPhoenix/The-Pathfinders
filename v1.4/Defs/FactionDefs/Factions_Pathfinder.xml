@@ -8,7 +8,7 @@
     <pawnSingular>Pathfinder</pawnSingular>
     <pawnsPlural>Pathfinders</pawnsPlural>
     <autoFlee>true</autoFlee>
-    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>

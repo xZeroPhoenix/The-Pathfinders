@@ -54,25 +54,79 @@
           <value>
             <tools>
               <li Class="CombatExtended.ToolCE">
-                <label>left fist</label>
+                <label>left claws</label>
                 <capacities>
-                  <li>Blunt</li>
+                  <li>Scratch</li>
                 </capacities>
-                <power>1</power>
-                <cooldownTime>1.26</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.16</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-                <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.1</armorPenetrationSharp>
+                <armorPenetrationBlunt>0.6</armorPenetrationBlunt>
               </li>
               <li Class="CombatExtended.ToolCE">
-                <label>right fist</label>
+                <label>right claws</label>
                 <capacities>
-                  <li>Blunt</li>
+                  <li>Scratch</li>
                 </capacities>
-                <power>1</power>
-                <cooldownTime>1.26</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.16</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-                <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.1</armorPenetrationSharp>
+                <armorPenetrationBlunt>0.6</armorPenetrationBlunt>
               </li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left talons</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.76</cooldownTime>
+					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>8</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>0.2</armorPenetrationSharp>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right talons</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.76</cooldownTime>
+					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Stun</def>
+								<amount>8</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>0.2</armorPenetrationSharp>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				</li>
+			  <li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>PathfinderBeak</linkedBodyPartsGroup>
+					<chanceFactor>0.07</chanceFactor>
+					<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+					<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+					<armorPenetrationSharp>0.25</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+			  </li>
               <li Class="CombatExtended.ToolCE">
                 <label>head</label>
                 <capacities>
