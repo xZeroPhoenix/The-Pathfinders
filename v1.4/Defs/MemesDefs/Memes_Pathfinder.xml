@@ -123,6 +123,7 @@
       <li>Tile_Transhumanist</li>
       <li>SleepAccelerator</li>
       <li>NeuralSupercharger</li>
+	  <li>Tile_PathfinderCompositeTranshumanist</li>
     </addDesignators>
     
   </MemeDef>

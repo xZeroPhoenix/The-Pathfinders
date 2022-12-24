@@ -94,5 +94,23 @@
 	  <researchViewX>2.00</researchViewX>
 	  <researchViewY>3.70</researchViewY>
   </ResearchProjectDef>
-	
+
+	<ResearchProjectDef>
+		<defName>PathfinderCompositeManufacturing</defName>
+		<label>Pathfinder Composite Material Manufacturing</label>
+		<description>Gain the ability to produce highly advance Pathfinder Composite Materials, lightweight strong and easy to build with.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>PathfinderResearch</tab>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.90</researchViewY>
+	</ResearchProjectDef>
 </Defs>

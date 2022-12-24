@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>PathfinderComposite</defName>
+		<label>Pathfinder Carbon Composite</label>
+		<description>A carbon-fiber resin concrete composite covered in steel plating developed by The Pathfinders for rapid colony construction at low cost, relatively cheap but very strong, requires an expensive manufacturing facility to make.</description> <!--Temp-->
+		<graphicData>
+			<texPath>Things/Resources/PathfinderComposite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<statBases>
+			<MarketValue>2.1</MarketValue>
+			<Mass>0.30</Mass>
+			<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp> <!--WIP-->
+			<StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt> <!--WIP-->
+			<StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat> <!--WIP-->
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!--WIP-->
+			<StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat> <!--WIP-->
+			<SharpDamageMultiplier>1</SharpDamageMultiplier> <!--WIP-->
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier> <!--WIP-->
+			<ConstructionSpeedFactor>1</ConstructionSpeedFactor>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Buyable</tradeability>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.0</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(95,95,95)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors> <!--WIP-->
+				<Beauty>1</Beauty>
+				<MarketValue>1</MarketValue>
+				<MaxHitPoints>2.25</MaxHitPoints>
+				<Flammability>0.0</Flammability>
+				<WorkToBuild>0.5</WorkToBuild>
+				<WorkToMake>1.1</WorkToMake>
+				<DoorOpenSpeed>1</DoorOpenSpeed>
+				<BedRestEffectiveness>1</BedRestEffectiveness>
+			</statFactors>
+			<canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+</Defs>
