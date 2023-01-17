@@ -100,18 +100,18 @@
                 <Mass>3.29</Mass>
                 <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
                 <SightsEfficiency>1.40</SightsEfficiency>
-                <SwayFactor>1.15</SwayFactor>
-                <ShotSpread>0.1</ShotSpread>
-                <WorkToMake>51500</WorkToMake>
+                <SwayFactor>1.10</SwayFactor>
+                <ShotSpread>0.05</ShotSpread>
+                <WorkToMake>52000</WorkToMake>
               </statBases>
               <costList>
-                <Chemfuel>10</Chemfuel>
-                <Steel>40</Steel>
+                <Steel>45</Steel>
                 <Plasteel>25</Plasteel>
                 <ComponentIndustrial>10</ComponentIndustrial>
+				<Chemfuel>10</Chemfuel>
               </costList>
               <Properties>
-                <recoilAmount>1.44</recoilAmount>
+                <recoilAmount>1.5</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_5mmCoilgun_Sabot</defaultProjectile>
@@ -222,7 +222,7 @@
                 <SightsEfficiency>1.40</SightsEfficiency>
                 <SwayFactor>1.23</SwayFactor>
                 <ShotSpread>0.06</ShotSpread>
-                <WorkToMake>51500</WorkToMake>
+                <WorkToMake>54500</WorkToMake>
               </statBases>
               <costList>
                 <Chemfuel>10</Chemfuel>
@@ -231,14 +231,14 @@
                 <ComponentIndustrial>10</ComponentIndustrial>
               </costList>
               <Properties>
-                <recoilAmount>1.44</recoilAmount>
+                <recoilAmount>1.6</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_7mmCoilgun_Sabot</defaultProjectile>
                 <warmupTime>1.1</warmupTime>
                 <range>58</range>
                 <burstShotCount>6</burstShotCount>
-                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <soundCast>Shot_LightRiflePathfinder</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
@@ -306,8 +306,8 @@
                 <Mass>7.30</Mass>
                 <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
                 <SightsEfficiency>1.40</SightsEfficiency>
-                <SwayFactor>2.40</SwayFactor>
-                <ShotSpread>0.04</ShotSpread>
+                <SwayFactor>1.0</SwayFactor>
+                <ShotSpread>0.01</ShotSpread>
                 <WorkToMake>57000</WorkToMake>
               </statBases>
               <costList>
@@ -396,8 +396,8 @@
                 <RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
                 <SightsEfficiency>1.20</SightsEfficiency>
                 <SwayFactor>1.77</SwayFactor>
-                <ShotSpread>0.04</ShotSpread>
-                <WorkToMake>57000</WorkToMake>
+                <ShotSpread>0.07</ShotSpread>
+                <WorkToMake>67000</WorkToMake>
               </statBases>
               <costList>
                 <Chemfuel>5</Chemfuel>
@@ -406,6 +406,7 @@
                 <ComponentIndustrial>6</ComponentIndustrial>
               </costList>
               <Properties>
+				<recoilAmount>2.3</recoilAmount>  
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_7mmCoilgun_Sabot</defaultProjectile>
@@ -439,8 +440,8 @@
                 <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
                 <SightsEfficiency>2.80</SightsEfficiency>
                 <SwayFactor>1.95</SwayFactor>
-                <ShotSpread>0.06</ShotSpread>
-                <WorkToMake>51000</WorkToMake>
+                <ShotSpread>0.01</ShotSpread>
+                <WorkToMake>58000</WorkToMake>
               </statBases>
               <costList>
                 <Chemfuel>10</Chemfuel>
@@ -449,7 +450,7 @@
                 <ComponentIndustrial>10</ComponentIndustrial>
               </costList>
               <Properties>
-                <recoilAmount>1.36</recoilAmount>
+                <recoilAmount>2.3</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_10mmCoilgun_Sabot</defaultProjectile>
@@ -484,7 +485,7 @@
                 <SightsEfficiency>1.15</SightsEfficiency>
                 <SwayFactor>1.90</SwayFactor>
                 <ShotSpread>0.12</ShotSpread>
-                <WorkToMake>60000</WorkToMake>
+                <WorkToMake>48000</WorkToMake>
               </statBases>
               <costList>
                 <Chemfuel>10</Chemfuel>

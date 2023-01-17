@@ -26,7 +26,7 @@
     <description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for coilgun assault rifles.</description>
     <statBases>
       <Mass>0.008</Mass>
-      <Bulk>0.01</Bulk>
+      <Bulk>0.02</Bulk>
       <MarketValue>0.05</MarketValue>
     </statBases>
     <tradeTags>
@@ -52,7 +52,7 @@
 		<description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for coilgun assault rifles. These produce an EMI distortions on impact.</description>
 		<statBases>
 			<Mass>0.008</Mass>
-			<Bulk>0.01</Bulk>
+			<Bulk>0.02</Bulk>
 			<MarketValue>0.7</MarketValue>
 		</statBases>
 		<tradeTags>
@@ -64,7 +64,7 @@
 		<thingCategories>
 			<li>Ammo5mmCoilgun</li>
 		</thingCategories>
-		<stackLimit>500</stackLimit>
+		<stackLimit>5000</stackLimit>
 		<graphicData>
 			<texPath>Things/Ammo/Railgun/Rifle</texPath>
 			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -84,8 +84,8 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <damageAmountBase>15</damageAmountBase>
-      <armorPenetrationSharp>38</armorPenetrationSharp>
-      <armorPenetrationBlunt>26</armorPenetrationBlunt>
+      <armorPenetrationSharp>65</armorPenetrationSharp>
+      <armorPenetrationBlunt>230</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
   </ThingDef>
@@ -103,11 +103,11 @@
 			<secondaryDamage>
 				<li>
 					<def>EMP</def>
-					<amount>4</amount>
+					<amount>6</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>25</armorPenetrationSharp>
-			<armorPenetrationBlunt>24</armorPenetrationBlunt>
+			<armorPenetrationSharp>45</armorPenetrationSharp>
+			<armorPenetrationBlunt>150</armorPenetrationBlunt>
 			<empShieldBreakChance>0.2</empShieldBreakChance>
 			<speed>220</speed>
 		</projectile>
@@ -127,7 +127,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -135,7 +135,7 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>2</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -161,7 +161,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -169,7 +169,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>

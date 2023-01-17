@@ -127,7 +127,7 @@
 
   <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="Pathfinder_MeleeWeapon_Makeable_HighTech">
     <defName>Melee_Pathifnder_Vanguard_Sword</defName>
-    <label>Pathifnder Vanguard</label>
+    <label>Pathifnder Vanguard Sword</label>
     <description>The Pathifnder version of a monosword. It cuts through even thick armor with ease, and its light weight permits fast attacks just like the versions from the Empire, however it lacks the ability to hold a an AI persona.</description>
     <soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
     <meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
@@ -188,5 +188,69 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-  
+  <!--WIP-->
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="Pathfinder_MeleeWeapon_Makeable_HighTech">
+    <defName>Melee_Pathifnder_Vanguard_Spear</defName>
+    <label>Pathifnder Vanguard Spear</label>
+    <description>The Pathifnder version of a monosword. It cuts through even thick armor with ease, and its light weight permits fast attacks just like the versions from the Empire, however it lacks the ability to hold a an AI persona.</description>
+    <soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
+    <meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Items/Weapons/Pathifnder_Vanguard_Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <weaponTags>
+      <li>PathfinderMeleeAdvanced</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>2550</MarketValue>
+      <WorkToMake>28500</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>100</Plasteel>
+	  <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.20</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.9</cooldownTime>
+        <armorPenetration>0.90</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.9</cooldownTime>
+        <armorPenetration>0.90</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PathfinderMeleeAdvancedWeaponManufacturing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+	
 </Defs>

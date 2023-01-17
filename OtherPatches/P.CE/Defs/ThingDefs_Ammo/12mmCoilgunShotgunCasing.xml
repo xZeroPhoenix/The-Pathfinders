@@ -24,9 +24,9 @@
     <label>12mm Coilgun Flechette (Sabot)</label>
     <description>A bundle of Fin-stabilized tungsten carbide penetrators with discarding sabot, designed for shotgun like coilguns.</description>
     <statBases>
-      <Mass>0.018</Mass>
-      <Bulk>0.01</Bulk>
-      <MarketValue>1.65</MarketValue>
+      <Mass>0.047</Mass>
+      <Bulk>0.07</Bulk>
+      <MarketValue>0.2</MarketValue>
     </statBases>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
@@ -50,9 +50,9 @@
 		<label>12mm Coilgun Flechette (Ion)</label>
 		<description>A bundle of Fin-stabilized tungsten carbide penetrators with discarding sabot, designed for shotgun like coilguns. These produce an EMI distortions on impact.</description>
 		<statBases>
-			<Mass>0.018</Mass>
-			<Bulk>0.01</Bulk>
-			<MarketValue>1.65</MarketValue>
+			<Mass>0.047</Mass>
+			<Bulk>0.07</Bulk>
+			<MarketValue>4.3</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
@@ -109,7 +109,7 @@
 			<armorPenetrationSharp>12</armorPenetrationSharp>
 			<armorPenetrationBlunt>11</armorPenetrationBlunt>
 			<pelletCount>6</pelletCount>
-			<spreadMult>9.8</spreadMult>
+			<spreadMult>13.8</spreadMult>
 			<empShieldBreakChance>0.025</empShieldBreakChance>
 			<speed>220</speed>
 		</projectile>
@@ -121,7 +121,7 @@
     <label>make 12mm Coilgun Flechette cartridge (Sabot) x500</label>
     <description>Craft 500 12mm Railgun Flechette (Sabot) cartridges.</description>
     <jobString>Making 12mm Coilgun Flechette (Sabot) cartridges.</jobString>
-    <workAmount>2000</workAmount>
+    <workAmount>3800</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -153,9 +153,9 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_12mmCoilgun_Ion</defName>
-		<label>make 12mm Coilgun Flechette cartridge (Sabot) x500</label>
-		<description>Craft 500 12mm Railgun Flechette (Sabot) cartridges.</description>
-		<jobString>Making 12mm Coilgun Flechette (Sabot) cartridges.</jobString>
+		<label>make 12mm Coilgun Flechette cartridge (Ion) x500</label>
+		<description>Craft 500 12mm Railgun Flechette (Ion) cartridges.</description>
+		<jobString>Making 12mm Coilgun Flechette (Ion) cartridges.</jobString>
 		<workAmount>8700</workAmount>
 		<ingredients>
 			<li>

@@ -16,7 +16,7 @@
     <li>MultiAnalyzer</li>
   </requiredResearchFacilities>
 	<researchViewX>1.00</researchViewX>
-	<researchViewY>3.70</researchViewY>
+	<researchViewY>3.45</researchViewY>
 </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -73,7 +73,7 @@
     <li>MultiAnalyzer</li>
   </requiredResearchFacilities>
 	  <researchViewX>1.00</researchViewX>
-	  <researchViewY>1.65</researchViewY>
+	  <researchViewY>1.70</researchViewY>
 </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -92,7 +92,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
 	  <researchViewX>2.00</researchViewX>
-	  <researchViewY>3.70</researchViewY>
+	  <researchViewY>3.45</researchViewY>
   </ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -111,6 +111,6 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>2.00</researchViewX>
-		<researchViewY>3.90</researchViewY>
+		<researchViewY>1.55</researchViewY>
 	</ResearchProjectDef>
 </Defs>

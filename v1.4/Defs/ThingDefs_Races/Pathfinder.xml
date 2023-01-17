@@ -624,6 +624,42 @@
   </statBases>
     <tools> 
 	<!-- Hands -->
+		<!-- Fists -->
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>1.5</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>1.5</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<!-- Claws -->
       <li>
         <label>left claws</label>
         <capacities>
@@ -636,7 +672,7 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>14</amount>
+              <amount>7</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -653,7 +689,7 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>14</amount>
+              <amount>7</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -752,19 +788,19 @@
         </li>
         <li>
           <def>HumanlikeChild</def>
-          <minAge>5</minAge>
+          <minAge>3</minAge>
         </li>
         <li MayRequire="Ludeon.RimWorld.Biotech">
           <def>HumanlikePreTeenager</def>
-          <minAge>11</minAge>
+          <minAge>9</minAge>
         </li>
         <li>
           <def>HumanlikeTeenager</def>
-          <minAge>14</minAge>
+          <minAge>13</minAge>
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>20</minAge>
+          <minAge>18</minAge>
         </li>
       </lifeStageAges>
 	  <!--Temp-->

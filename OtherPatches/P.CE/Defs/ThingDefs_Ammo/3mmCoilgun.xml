@@ -24,9 +24,9 @@
     <label>3mm Coilgun cartridge (Sabot)</label>
     <description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for coilgun pistols and SMGs.</description>
     <statBases>
-      <Mass>0.006</Mass>
+      <Mass>0.005</Mass>
       <Bulk>0.01</Bulk>
-      <MarketValue>0.09</MarketValue>
+      <MarketValue>0.03</MarketValue>
     </statBases>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
@@ -37,7 +37,7 @@
     <thingCategories>
       <li>Ammo3mmCoilgun</li>
     </thingCategories>
-    <stackLimit>500</stackLimit>
+    <stackLimit>5000</stackLimit>
     <graphicData>
       <texPath>Things/Ammo/Railgun/Pistol</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -50,9 +50,9 @@
 		 <label>3mm Coilgun cartridge (Ion)</label>
 		 <description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for coilgun pistols and SMGs. These produce an EMI distortions on impact.</description>
 		 <statBases>
-			 <Mass>0.008</Mass>
+			 <Mass>0.005</Mass>
 			 <Bulk>0.01</Bulk>
-			 <MarketValue>0.7</MarketValue>
+			 <MarketValue>0.4</MarketValue>
 		 </statBases>
 		 <tradeTags>
 			 <li>CE_AutoEnableTrade</li>
@@ -83,8 +83,8 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <damageAmountBase>9</damageAmountBase>
-      <armorPenetrationSharp>26</armorPenetrationSharp>
-      <armorPenetrationBlunt>14</armorPenetrationBlunt>
+      <armorPenetrationSharp>39</armorPenetrationSharp>
+      <armorPenetrationBlunt>138</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
   </ThingDef>
@@ -98,16 +98,16 @@
 		 </graphicData>
 		 <projectile Class="CombatExtended.ProjectilePropertiesCE">
 			 <damageDef>Bullet</damageDef>
-			 <damageAmountBase>8</damageAmountBase>
+			 <damageAmountBase>7</damageAmountBase>
 			 <secondaryDamage>
 				 <li>
 					 <def>EMP</def>
-					 <amount>6</amount>
+					 <amount>3</amount>
 				 </li>
 			 </secondaryDamage>
-			 <armorPenetrationSharp>20</armorPenetrationSharp>
-			 <armorPenetrationBlunt>16</armorPenetrationBlunt>
-			 <empShieldBreakChance>0.8</empShieldBreakChance>
+			 <armorPenetrationSharp>27</armorPenetrationSharp>
+			 <armorPenetrationBlunt>90</armorPenetrationBlunt>
+			 <empShieldBreakChance>0.1</empShieldBreakChance>
 			 <speed>220</speed>
 		 </projectile>
 	 </ThingDef>
@@ -135,7 +135,7 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -168,7 +168,7 @@
 						 <li>Steel</li>
 					 </thingDefs>
 				 </filter>
-				 <count>6</count>
+				 <count>2</count>
 			 </li>
 			 <li>
 				 <filter>
@@ -184,7 +184,7 @@
 						 <li>ComponentIndustrial</li>
 					 </thingDefs>
 				 </filter>
-				 <count>6</count>
+				 <count>5</count>
 			 </li>
 		 </ingredients>
 		 <fixedIngredientFilter>
@@ -198,7 +198,7 @@
 		 <products>
 			 <Ammo_3mmCoilgun_Ion>500</Ammo_3mmCoilgun_Ion>
 		 </products>
-		 <workAmount>3800</workAmount>
+		 <workAmount>2280</workAmount>
 	 </RecipeDef>
 	 
 </Defs>

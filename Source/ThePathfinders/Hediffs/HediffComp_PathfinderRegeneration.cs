@@ -119,7 +119,7 @@ namespace ThePathfinders
         {
             // NABBER: From personal experience checking the bleed rate is more robust than checking for the blood loss hediff
             bool isBleeding = parent.pawn.health.hediffSet.BleedRateTotal > 0;
-            //Log.Message("Pawn is bleeding ? " + isBleeding);
+            // Log.Message("Pawn is bleeding ? " + isBleeding);
             return isBleeding;
         }
 
@@ -127,7 +127,7 @@ namespace ThePathfinders
         private void TryRestorePart()
         {
             // logging out the pawns name can help "categorize" the logging messages if multiple hediffs are logging
-            // Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
+            Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
             try
             {
                 BodyPartRecord partToRestore = FindBiggestMissingBodyPart();
@@ -172,7 +172,7 @@ namespace ThePathfinders
         /// </summary>
         private BodyPartRecord FindBiggestMissingBodyPart(float minCoverage = 0.0f)
         {
-            //Log.Message("Initializing Pathfinder_FindBiggestMissingBodyPart");
+            Log.Message("Initializing Pathfinder_FindBiggestMissingBodyPart");
             BodyPartRecord bodyPartRecord = null;
             foreach(var partsCommonAncestor in Pawn.health.hediffSet.GetMissingPartsCommonAncestors().Where(partsCommonAncestor =>
                    partsCommonAncestor.Part.coverageAbsWithChildren >= (double)minCoverage &&
@@ -224,7 +224,7 @@ namespace ThePathfinders
         /// </summary>
         private void TryHealRandomPermanentWound()
         {
-            //Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
+            Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
             try
             {
                 Hediff injury = FindRandomPermanentWound();

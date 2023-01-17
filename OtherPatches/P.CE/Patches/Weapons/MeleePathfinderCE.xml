@@ -17,6 +17,7 @@
                 <li>Poke</li>
               </capacities>
               <power>1</power>
+			  <chanceFactor>0.33</chanceFactor>
               <cooldownTime>1.1</cooldownTime>
               <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
               <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
@@ -151,6 +152,72 @@
 
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Sword"]/weaponTags</xpath>
+			<value>
+				<li>CE_OneHandedWeapon</li>
+			</value>
+		</li>
+		<!--WIP-->
+	<li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Spear"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>handle</label>
+              <capacities>
+                <li>Poke</li>
+              </capacities>
+              <power>2</power>
+              <cooldownTime>1.5</cooldownTime>
+              <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>edge</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>35</power>
+              <cooldownTime>0.83</cooldownTime>
+              <chanceFactor>1.33</chanceFactor>
+              <armorPenetrationBlunt>2.84</armorPenetrationBlunt>
+              <armorPenetrationSharp>20</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>16</power>
+              <cooldownTime>0.94</cooldownTime>
+              <armorPenetrationBlunt>1.26</armorPenetrationBlunt>
+              <armorPenetrationSharp>26</armorPenetrationSharp>
+            </li>
+          </tools>
+        </value>
+      </li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Spear"]/statBases</xpath>
+			<value>
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Spear"]</xpath>
+			<value>
+				<equippedStatOffsets>
+					<MeleeCritChance>1.00</MeleeCritChance>
+					<MeleeParryChance>0.40</MeleeParryChance>
+					<MeleeDodgeChance>0.27</MeleeDodgeChance>
+				</equippedStatOffsets>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Melee_Pathifnder_Vanguard_Spear"]/weaponTags</xpath>
 			<value>
 				<li>CE_OneHandedWeapon</li>
 			</value>

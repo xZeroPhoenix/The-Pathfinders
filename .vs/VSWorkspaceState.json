@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\OtherPatches",
+    "\\OtherPatches\\P.CE",
     "\\OtherPatches\\P.CE\\Patches",
-    "\\OtherPatches\\P.CE\\Patches\\Race",
+    "\\OtherPatches\\P.CE\\Patches\\Weapons",
     "\\v1.4",
     "\\v1.4\\Defs",
-    "\\v1.4\\Defs\\BodyDefs",
-    "\\v1.4\\Defs\\BodyPartDefs",
-    "\\v1.4\\Defs\\FactionDefs",
-    "\\v1.4\\Defs\\ThingDefs_Races",
+    "\\v1.4\\Defs\\ThingDefs_items",
+    "\\v1.4\\Defs\\ThingDefs_items\\WeponsDefs",
     "\\v1.4\\Patches"
   ],
   "PreviewInSolutionExplorer": false

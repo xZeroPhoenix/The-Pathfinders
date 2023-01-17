@@ -23,6 +23,7 @@ namespace ThePathfinders
             DefOfHelper.EnsureInitializedInCtor(typeof(PathfinderRaceDefOf));
         }
     }
+    [DefOf]
     public static class PathfinderHediffDefOf
     {
         public static HediffDef PathfinderBaseRegeneration;

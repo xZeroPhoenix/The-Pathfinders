@@ -53,12 +53,32 @@
           <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Pathfinder"]/tools</xpath>
           <value>
             <tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
               <li Class="CombatExtended.ToolCE">
                 <label>left claws</label>
                 <capacities>
                   <li>Scratch</li>
                 </capacities>
-                <power>6</power>
+                <power>4</power>
                 <cooldownTime>1.16</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<armorPenetrationSharp>0.1</armorPenetrationSharp>
@@ -69,7 +89,7 @@
                 <capacities>
                   <li>Scratch</li>
                 </capacities>
-                <power>6</power>
+                <power>4</power>
                 <cooldownTime>1.16</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<armorPenetrationSharp>0.1</armorPenetrationSharp>
@@ -80,7 +100,7 @@
 					<capacities>
 						<li>Cut</li>
 					</capacities>
-					<power>8</power>
+					<power>6</power>
 					<cooldownTime>1.76</cooldownTime>
 					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 					<surpriseAttack>
@@ -99,7 +119,7 @@
 					<capacities>
 						<li>Cut</li>
 					</capacities>
-					<power>8</power>
+					<power>6</power>
 					<cooldownTime>1.76</cooldownTime>
 					<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 					<surpriseAttack>

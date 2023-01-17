@@ -26,9 +26,9 @@
     <label>7mm Coilgun cartridge (Sabot)</label>
     <description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for high calibre coilguns.</description>
     <statBases>
-      <Mass>0.008</Mass>
-      <Bulk>0.01</Bulk>
-      <MarketValue>0.06</MarketValue>
+      <Mass>0.012</Mass>
+      <Bulk>0.03</Bulk>
+      <MarketValue>0.07</MarketValue>
     </statBases>
     <tradeTags>
       <li>CE_AutoEnableTrade</li>
@@ -39,7 +39,7 @@
     <thingCategories>
       <li>Ammo7mmCoilgun</li>
     </thingCategories>
-	  <stackLimit>500</stackLimit>
+	  <stackLimit>5000</stackLimit>
     <graphicData>
       <texPath>Things/Ammo/Railgun/Rifle</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -52,9 +52,9 @@
 		<label>7mm Coilgun cartridge (Ion)</label>
 		<description>Fin-stabilized tungsten carbide penetrator with discarding sabot, designed for high calibre coilguns. These produce an EMI distortions on impact.</description>
 		<statBases>
-			<Mass>0.008</Mass>
-			<Bulk>0.01</Bulk>
-			<MarketValue>0.7</MarketValue>
+			<Mass>0.012</Mass>
+			<Bulk>0.03</Bulk>
+			<MarketValue>1.0</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
@@ -85,8 +85,8 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationSharp>64</armorPenetrationSharp>
-      <armorPenetrationBlunt>59</armorPenetrationBlunt>
+      <armorPenetrationSharp>91</armorPenetrationSharp>
+      <armorPenetrationBlunt>322</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
   </ThingDef>
@@ -100,15 +100,15 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>16</damageAmountBase>
+			<damageAmountBase>17</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>EMP</def>
 					<amount>8</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>55</armorPenetrationSharp>
-			<armorPenetrationBlunt>58</armorPenetrationBlunt>
+			<armorPenetrationSharp>63</armorPenetrationSharp>
+			<armorPenetrationBlunt>210</armorPenetrationBlunt>
 			<empShieldBreakChance>0.2</empShieldBreakChance>
 			<speed>220</speed>
 		</projectile>
@@ -120,7 +120,7 @@
     <label>make 7mm Coilgun cartridge (Sabot) x500</label>
     <description>Craft 500 7mm Railgun (Sabot) cartridges.</description>
     <jobString>Making 7mm Coilgun (Sabot) cartridges.</jobString>
-    <workAmount>1000</workAmount>
+    <workAmount>2520</workAmount>
     <ingredients>
       <li>
         <filter>
@@ -128,7 +128,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>6</count>
       </li>
       <li>
         <filter>
@@ -136,7 +136,7 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -163,7 +163,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>12</count>
+				<count>3</count>
 			</li>
 			<li>
 				<filter>
@@ -171,7 +171,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>
@@ -179,7 +179,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>14</count>
+				<count>11</count>
 			</li>
 			<li>
 				<filter>
@@ -187,7 +187,7 @@
 						<li>Uranium</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -201,7 +201,7 @@
 		<products>
 			<Ammo_7mmCoilgun_Ion>500</Ammo_7mmCoilgun_Ion>	
 	</products>
-		<workAmount>9000</workAmount>
+		<workAmount>5320</workAmount>
 	</RecipeDef>
 	
 </Defs>

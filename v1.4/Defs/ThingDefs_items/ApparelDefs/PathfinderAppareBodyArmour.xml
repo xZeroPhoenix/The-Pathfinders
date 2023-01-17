@@ -159,21 +159,21 @@
 	  
     <statBases>
       <WorkToMake>76000</WorkToMake>
-      <MaxHitPoints>350</MaxHitPoints>
-      <Mass>11</Mass>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>15</Mass>
       <Flammability>0.1</Flammability>
-      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.55</ArmorRating_Heat>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.7</ArmorRating_Heat>
       <Insulation_Cold>38</Insulation_Cold>
       <Insulation_Heat>18</Insulation_Heat>
-      <EquipDelay>10</EquipDelay>
+      <EquipDelay>12</EquipDelay>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     
     
     <equippedStatOffsets>
-		<ToxicResistance>0.4</ToxicResistance>
+		<ToxicResistance>0.5</ToxicResistance>
 		<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
     </equippedStatOffsets>
     
@@ -191,8 +191,8 @@
       <ComponentSpacer>6</ComponentSpacer>
       <Plasteel>120</Plasteel>
       <Hyperweave>10</Hyperweave>
-      <Steel>50</Steel>
-      <Uranium>10</Uranium>
+      <Steel>40</Steel>
+      <Uranium>40</Uranium>
     </costList>
     
     <tradeTags>
@@ -324,31 +324,30 @@
     </graphicData>
     <generateCommonality>1</generateCommonality>
     <statBases>
-      <WorkToMake>19750</WorkToMake>
+      <WorkToMake>27850</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
-      <Mass>1</Mass>
+      <Mass>2</Mass>
       <Flammability>0.1</Flammability>
-      <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.90</ArmorRating_Heat>
-      <Insulation_Cold>18</Insulation_Cold>
-      <Insulation_Heat>18</Insulation_Heat>
-      <EquipDelay>1</EquipDelay>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.7</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
 
 
     <equippedStatOffsets>
-      <MoveSpeed>0.0</MoveSpeed>
 	  <ToxicResistance>0.4</ToxicResistance>
-	  <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+	  <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 	  <AimingDelayFactor>-0.25</AimingDelayFactor>
 	  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
     <costList>
-      <ComponentSpacer>2</ComponentSpacer>
-      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>30</Plasteel>
       <Steel>40</Steel>
     </costList>
 
