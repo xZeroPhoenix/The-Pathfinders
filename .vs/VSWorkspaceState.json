@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OtherPatches",
-    "\\OtherPatches\\P.CE",
-    "\\OtherPatches\\P.CE\\Patches",
-    "\\OtherPatches\\P.CE\\Patches\\Weapons",
+    "\\Source",
+    "\\Source\\ThePathfinders",
     "\\v1.4",
     "\\v1.4\\Defs",
+    "\\v1.4\\Defs\\HediffDefs",
     "\\v1.4\\Defs\\ThingDefs_items",
     "\\v1.4\\Defs\\ThingDefs_items\\WeponsDefs",
+    "\\v1.4\\Defs\\ThingDefs_Races",
     "\\v1.4\\Patches"
   ],
+  "SelectedNode": "\\v1.4\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
   "PreviewInSolutionExplorer": false
 }

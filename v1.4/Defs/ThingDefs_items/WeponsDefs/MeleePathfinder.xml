@@ -66,7 +66,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Melee_Pathfinder_Survival_Spear</defName>
     <label>Pathfinder Survival Spear</label>
-    <description>A standard issue Pathfinder Survival Spear, nothing special but very durable.</description>
+    <description>A standard issue Survival Spear used by Pathfinders, nothing special but very durable.</description>
     <graphicData>
       <texPath>Things/Items/Weapons/Pathfinder_Survival_Spear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -192,7 +192,7 @@
   <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="Pathfinder_MeleeWeapon_Makeable_HighTech">
     <defName>Melee_Pathifnder_Vanguard_Spear</defName>
     <label>Pathifnder Vanguard Spear</label>
-    <description>The Pathifnder version of a monosword. It cuts through even thick armor with ease, and its light weight permits fast attacks just like the versions from the Empire, however it lacks the ability to hold a an AI persona.</description>
+    <description>A unique Pathfinder Melee Weapon simaller to a monosword in function but taking the form of a spear to allow for even grater armor penetration.</description>
     <soundInteract MayRequire="Ludeon.RimWorld.Royalty">Interact_MonoSword</soundInteract>
     <meleeHitSound MayRequire="Ludeon.RimWorld.Royalty">MeleeHit_MonoSword</meleeHitSound>
     <graphicData>
@@ -219,7 +219,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>8</power>
         <cooldownTime>1.4</cooldownTime>
         <armorPenetration>0.20</armorPenetration>
       </li>
@@ -228,18 +228,18 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>26</power>
-        <cooldownTime>1.9</cooldownTime>
-        <armorPenetration>0.90</armorPenetration>
+        <power>34</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>0.95</armorPenetration>
       </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>26</power>
-        <cooldownTime>1.9</cooldownTime>
-        <armorPenetration>0.90</armorPenetration>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.85</armorPenetration>
       </li>
     </tools>
     <recipeMaker>

@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Pathfinders -->
+	<!-- Note for Other modders -->
+	<!-- if you're patching my mod for another mod that requires/could do with info on the race I didn't include, feel free to DM me on Discord, especially if it's biological because you will probably get it wrong and my mod must be perfect :P-->
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Pathfinder</defName>
+		<label>Pathfinder</label>
+		<description>A typical example of a Pathfinder, within the expected range of genetic variation common for the species. Outside of their avian appearance, Pathfinders share many outwardly human features but also have a vastly extended lifespan and strong regenerative abilities, known to be able to heal almost any injury, with the ability to regenerate entirely missing organs and limbs, if non fatally injured.\n\nTheir heightened movement speed and dexterity combined with their sharp talons make them capable melee combatants, this along with a higher than standard mental fortitude belie the infamous stubbornness of Pathfinders, making them very troublesome captives.\n\nNatives of Cyris Prime (2nd planet of a s-type binary system), the warm, humid, and geologically active conditions encouraged the loss of their ancestral wings, and instead developing a strong intellect in return. Curious to a fault, many Pathfinders are commonly found among independent explorer groups, seeking out new discoveries and cultures to experience.\n\nTypically friendly, their natural stubbornness however makes many of their number very uncompromising on their ideals.</description>
+		<!-- Not Done -->
+
+		<!-- Temp -->
+		<alienRace>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>PathfinderFeathers</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+			<generalSettings>
+				<reproduction>
+					<femaleFertilityAgeFactor>
+						<!--WIP-->
+						<points>
+							<li>(16, 0)</li>
+							<li>(20, 1)</li>
+							<li>(35, 0.5)</li>
+							<li>(180, 0.1)</li>
+							<li>(250, 0.02)</li>
+							<li>(280, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+					<maleFertilityAgeFactor>
+						<!--WIP-->
+						<points>
+							<li>(16, 0)</li>
+							<li>(18, 1)</li>
+							<li>(50, 1)</li>
+							<li>(280, 1)</li>
+							<li>(360, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+				</reproduction>
+				<minAgeForAdulthood>20</minAgeForAdulthood>
+				<maleGenderProbability>0.7</maleGenderProbability>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<!--WIP-->
+				<!-- Need to add talons-->
+				<humanRecipeImport>true</humanRecipeImport>
+				<!-- Temp / TBD  -->
+				<allowHumanBios>false</allowHumanBios>
+
+				<growthAges>
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
+
+				<chemicalSettings>
+					<!-- Temp / TBD  -->
+					<li>
+						<chemical>Luciferium</chemical>
+						<ingestible>false</ingestible>
+					</li>
+				</chemicalSettings>
+
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Bisexual</defName>
+						<chance>90</chance>
+						<commonalityMale>100</commonalityMale>
+						<commonalityFemale>20</commonalityFemale>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>1</degree>
+						<chance>35</chance>
+					</li>
+				</forcedRaceTraitEntries>
+
+				<disallowedTraits>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+					<li>
+						<defName>DislikesMen</defName>
+					</li>
+					<li>
+						<defName>DislikesWomen</defName>
+					</li>
+					<li>
+						<defName>Asexual</defName>
+					</li>
+				</disallowedTraits>
+
+				<factionRelations>
+					<li>
+						<factions>
+							<li>PathfinderSettlement</li>
+						</factions>
+						<goodwill>
+							<min>95</min>
+							<max>100</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Empire</li>
+						</factions>
+						<goodwill>
+							<min>-90</min>
+							<max>20</max>
+						</goodwill>
+					</li>
+				</factionRelations>
+
+				<alienPartGenerator>
+					<getsGreyAt>340</getsGreyAt>
+					<!--Temp?-->
+					<oldHairAgeRange>340.0~380.0</oldHairAgeRange>
+					<!--Temp?-->
+
+					<!-- Note: C# override still in use, see "ThePathfindersPatchingClass.cs" -->
+
+					<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Thin</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<!--Temp-->
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<!--Temp-->
+					</bodyTypes>
+
+					<headOffsetDirectional>
+						<north>(0.0, 0.07)</north>
+						<south>(0.0, 0.07)</south>
+						<east>(0.00, 0.12)</east>
+						<west>(0.00, 0.12)</west>
+					</headOffsetDirectional>
+
+					<bodyAddons>
+						<!--Temp-->
+						<li>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<path>Things/Pawn/Humanlike/Tails/PathTail</path>
+							<bodyPart>PathTail</bodyPart>
+							<bodyPartLabel>tail</bodyPartLabel>
+							<drawnInBed>false</drawnInBed>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>false</inFrontOfBody>
+							<defaultOffset>Tail</defaultOffset>
+							<drawSize>1</drawSize>
+							<hediffGraphics>
+								<PathTailArmour>Things/Pawn/Humanlike/Tails/PathTailPowerArmour</PathTailArmour>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(0,-0.015)</Male>
+										<Female>(0,-0.015)</Female>
+										<Thin>(0,-0.015)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</south>
+
+								<north>
+									<bodyTypes>
+										<Male>(0.001,-0.045)</Male>
+										<Female>(-0.003,-0.003)</Female>
+										<Thin>(0.0,-0.0065)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Male>(0.015,-0.12)</Male>
+										<Female>(0.12,-0.14)</Female>
+										<Thin>(0.012,-0.1)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+
+					<anchorReplacements>
+						<!--Temp-->
+						<li>
+							<originalTag>RightEye</originalTag>
+							<!--<originalGroup>Torso</originalGroup>-->
+							<replacement>
+								<rotation>South</rotation>
+								<tag>RightEye</tag>
+								<canMirror>true</canMirror>
+								<offset>(0.0,0,0.0)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,0,1)</debugColor>
+							</replacement>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.125,0.42)</Male>
+										<Female>(-0.125,0.42)</Female>
+										<Thin>(-0.125,0.42)</Thin>
+									</bodyTypes>
+								</south>
+							</offsets>
+						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<!--<originalGroup>Torso</originalGroup>-->
+							<replacement>
+								<rotation>South</rotation>
+								<tag>LeftEye</tag>
+								<canMirror>true</canMirror>
+								<offset>(0.0,0,0.0)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,0,1)</debugColor>
+							</replacement>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(0.125,0.42)</Male>
+										<Female>(0.125,0.42)</Female>
+										<Thin>(0.125,0.42)</Thin>
+
+									</bodyTypes>
+								</south>
+							</offsets>
+						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<!--<originalGroup>Torso</originalGroup>-->
+							<replacement>
+								<rotation>East</rotation>
+								<tag>RightEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(0.0,0,0.0)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,0,1)</debugColor>
+							</replacement>
+							<offsets>
+								<east>
+									<bodyTypes>
+										<Male>(0.10,0.45)</Male>
+										<Female>(0.15,0.44)</Female>
+										<Thin>(0.15,0.44)</Thin>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<!--<originalGroup>Torso</originalGroup>-->
+							<replacement>
+								<rotation>West</rotation>
+								<!-- Because the left eye should not be visible facing east! It took me way too long to figure that out -->
+								<tag>LeftEye</tag>
+								<canMirror>false</canMirror>
+								<offset>(0.0,0,0.0)</offset>
+								<range>0</range>
+								<layer>Head</layer>
+								<debugColor>(0,0,0,1)</debugColor>
+							</replacement>
+							<offsets>
+								<west>
+									<bodyTypes>
+										<Male>(-0.10,0.45)</Male>
+										<Female>(-0.15,0.44)</Female>
+										<Thin>(-0.15,0.44)</Thin>
+									</bodyTypes>
+								</west>
+							</offsets>
+						</li>
+					</anchorReplacements>
+
+					<colorChannels Inherit="False">
+						<!--Temp-->
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- Whites -->
+									<li>
+										<weight>15</weight>
+										<only>(255, 255, 255)</only>
+									</li>
+									<li>
+										<weight>15</weight>
+										<only>(210, 210, 210)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(190, 190, 190)</only>
+									</li>
+									<!-- Blacks -->
+									<li>
+										<weight>15</weight>
+										<only>(110, 110, 110)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(185, 185, 185)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(65, 65, 65)</only>
+									</li>
+									<!-- Bules -->
+									<li>
+										<weight>10</weight>
+										<only>(20, 60, 180)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(25, 115, 185)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(15, 85, 145)</only>
+									</li>
+									<!-- Purple -->
+									<li>
+										<weight>15</weight>
+										<only>(155, 85, 255)</only>
+									</li>
+									<!-- Red -->
+									<li>
+										<weight>10</weight>
+										<only>(175, 5, 10)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(200, 45, 55)</only>
+									</li>
+									<!-- Yellow -->
+									<li>
+										<weight>10</weight>
+										<only>(195, 146, 30)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(230, 170, 25)</only>
+									</li>
+								</options>
+							</first>
+
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(255, 255, 255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<!--To Do?-->
+						<li>
+							<name>hair</name>
+							<first Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_1</colorChannel>
+							</first>
+							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_1</colorChannel>
+							</second>
+						</li>
+
+					</colorChannels>
+
+				</alienPartGenerator>
+			</generalSettings>
+			<!--Tmep?-->
+			<graphicPaths>
+				<head>
+					<path>Things/Pawn/Humanlike/Heads/PathfinderHead/</path>
+				</head>
+				<skinShader>Cutout</skinShader>
+				<body>Things/Pathfinder/Body/</body>
+				<apparel>
+					<individualPaths>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_HatHood</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltHatHood/PathfinderAltHatHood</value>
+						</li>
+						<li>
+							<key>Apparel_AdvancedHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltAdvancedHelmet/PathfinderAltAdvancedHelmet</value>
+						</li>
+						<li>
+							<key>Apparel_ArmorHelmetRecon</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltReconHelmet/PathfinderAltReconHelmet</value>
+						</li>
+						<li>
+							<key>Apparel_WarMask</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltWarMask/PathfinderAltWarMask</value>
+						</li>
+						<li>
+							<key>Apparel_TribalHeaddress</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltTribalHeaddress/PathfinderAltTribalHeaddress</value>
+						</li>
+						<li>
+							<key>Apparel_SimpleHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltSimpleHelmet/PathfinderAltSimpleHelmet</value>
+						</li>
+						<li>
+							<key>Apparel_PsychicFoilHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPsychicFoilHelmet/PathfinderAltPsychicFoilHelmet</value>
+						</li>
+						<li>
+							<key>Apparel_PowerArmorHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPowerArmorHelmet/PathfinderAltPowerArmorHelmet</value>
+						</li>
+						<li>
+							<key>Apparel_WarVeil</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltVeil/PathfinderAltVeil</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_ArmorHelmetReconPrestige</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPrestigeReconHelmet/PathfinderAltPrestigeReconHelmet</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_ArmorHelmetCataphract</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorHelmetCataphract/PathfinderAltArmorHelmetCataphract</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_ArmorHelmetCataphractPrestige</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorHelmetCataphractPrestige/PathfinderAltArmorHelmetCataphractPrestige</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_ArmorMarineHelmetPrestige</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltArmorMarineHelmetPrestige/PathfinderAltArmorMarineHelmetPrestige</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_EltexSkullcap</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltEltexHelmet/PathfinderAltEltexHelmet</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">
+							<key>Apparel_PsyfocusHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltPsyfocusHelmet/PathfinderAltPsyfocusHelmet</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_VisageMask</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltVisageMask/PathfinderAltPsyfocusHelmetA</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_Headwrap</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltHeadwrap/PathfinderAltHeadwrap</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_Slicecap</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltSlicecap/PathfinderAltSlicecap</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_TortureCrown</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltTortureCrown/PathfinderAltTortureCrown</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_Burka</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderBurka/PathfinderBurka</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">
+							<key>Apparel_GasMask</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltGasMask/PathfinderAltGasMask</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">
+							<key>Apparel_ArmorHelmetMechCommander</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltMechcommanderHelmet/PathfinderAltMechcommanderHelmet</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">
+							<key>Apparel_ArmorHelmetMechlordHelmet</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltMechlordHelmet/PathfinderAltMechlordHelmet</value>
+						</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">
+							<key>Apparel_Blindfold</key>
+							<value>Things/Items/Apparel/AltPathsForRace/PathfinderAltBlindfold/PathfinderAltBlindfold</value>
+						</li>
+					</individualPaths>
+				</apparel>
+			</graphicPaths>
+
+			<!-- Thought Settings 
+
+  <thoughtSettings>
+   
+    <replacerList>
+      <li>
+        <original>Naked</original>
+        <replacer>PathfinderNaked</replacer>
+      </li>
+      <li>
+        <original>HappyNude</original>
+        <replacer>PathfinderHappyNude</replacer>
+      </li>
+    </replacerList>
+    
+
+    <butcherThoughtSpecific>
+      <li>
+        <raceList>
+          <li>Human</li>
+        </raceList>
+        <thought>Pathfinder_ButcheredHumanlikeCorpse</thought>
+        <knowThought>Pathfinder_KnowButcheredHumanlikeCorpse</knowThought>
+      </li>
+
+      <li>
+        <raceList>
+          <li>Alien_Pathfinder</li>
+        </raceList>
+        <thought>Pathfinder_ButcheredPathfinderCorpse</thought>
+        <knowThought>Pathfinder_KnowButcheredPathfinderCorpse</knowThought>
+      </li>
+    </butcherThoughtSpecific>
+    
+
+    <ateThoughtSpecific>
+      <li>
+        <raceList>
+          <li>Human</li>
+        </raceList>
+        <thought>Pathfinder_AteHumanlikeMeatDirect</thought>
+        <ingredientThought>Pathfinder_AteHumanlikeMeatAsIngredient</ingredientThought>
+      </li>
+
+      <li>
+        <raceList>
+          <li>Alien_Pathfinder</li>
+        </raceList>
+        <thought>Pathfinder_AtePathfinderMeatDirect</thought>
+        <ingredientThought>Pathfinder_AtePathfinderAsIngredient</ingredientThought>
+      </li>
+    </ateThoughtSpecific> 
+
+
+  </thoughtSettings>
+		-->
+
+			<!-- Relation Settings -->
+			<relationSettings>
+
+			</relationSettings>
+			<!--Temp -->
+			<!-- Race Restriction -->
+			<raceRestriction>
+
+				<apparelList>
+					<li>Apparel_PathfinderStandardHelmet</li>
+					<li>Apparel_PathfinderArmour</li>
+					<li>Apparel_PathfinderAdvHelmet</li>
+					<li>Apparel_PathfinderBallisticLining</li>
+					<li>Apparel_PathfinderHighShirt</li>
+				</apparelList>
+
+				<blackApparelList>
+
+				</blackApparelList>
+
+				<geneList>
+					<!--WIP-->
+
+				</geneList>
+
+				<blackGeneList>
+					<li>Brow_Heavy</li>
+					<li>FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+
+			</raceRestriction>
+
+			<!-- Compatibility -->
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+
+		</alienRace>
+
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<MoveSpeed>6</MoveSpeed>
+			<ResearchSpeed>1.05</ResearchSpeed>
+			<SocialImpact>1.0</SocialImpact>
+			<ComfyTemperatureMin>5</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<LeatherAmount>60</LeatherAmount>
+			<MeleeDodgeChance>8</MeleeDodgeChance>
+			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.8</CertaintyLossFactor>
+			<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">1.1</SocialIdeoSpreadFrequencyFactor>
+			<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">2</SlaveSuppressionFallRate>
+			<!--WIP-->
+		</statBases>
+		<tools>
+			<!-- Hands -->
+			<!-- Fists -->
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- Claws -->
+			<li>
+				<label>left claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>7</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>7</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- Talons -->
+			<li>
+				<label>left talons</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right talons</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- Head -->
+			<li>
+				<label>Beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>PathfinderBeak</linkedBodyPartsGroup>
+				<!-- Look into -->
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<!--WIP-->
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+				<!--WIP-->
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<!-- they would probably be offended that you're underestimating them :P-->
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>380</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<!--Temp-->
+			<nameCategory>HumanStandard</nameCategory>
+			<!--Temp-->
+			<body>PathfinderBody</body>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>35</gestationPeriodDays>
+			<!--Temp-->
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<!--Temp-->
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<!--Temp-->
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<!--Temp-->
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+
+			<!--Temp-->
+			<ageGenerationCurve>
+				<points>
+					<li>(18,0)</li>
+					<li>(20,340)</li>
+					<li>(38,320)</li>
+					<li>(58,230)</li>
+					<li>(85,235)</li>
+					<li>(185,120)</li>
+					<li>(250,40)</li>
+					<li>(350,2)</li>
+					<li>(370,1)</li>
+					<li>(380,0)</li>
+				</points>
+			</ageGenerationCurve>
+
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+				<li>PathfinderRegenerationGiver</li>
+			</hediffGiverSets>
+
+			<fleshType>PathfinderNormal</fleshType>
+
+		</race>
+		<!--Temp-->
+		<recipes>
+			<li>InstallArchotechEye</li>
+			<li>InstallArchotechArm</li>
+			<li>InstallArchotechLeg</li>
+			<li>InstallPowerClaw</li>
+			<li>InstallBionicEye</li>
+			<li>InstallBionicArm</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallBionicSpine</li>
+			<li>InstallBionicHeart</li>
+			<li>InstallBionicStomach</li>
+			<li>InstallBionicEar</li>
+			<li>InstallSimpleProstheticArm</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallSimpleProstheticHeart</li>
+			<li>InstallCochlearImplant</li>
+			<li>InstallPegLeg</li>
+			<li>InstallDenture</li>
+			<li>InstallJoywire</li>
+			<li>InstallPainstopper</li>
+			<li>InstallNaturalHeart</li>
+			<li>InstallNaturalLung</li>
+			<li>InstallNaturalKidney</li>
+			<li>InstallNaturalLiver</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
