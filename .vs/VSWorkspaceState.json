@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Textures",
+    "\\About",
+    "\\OtherPatches\\P.SRTS",
+    "\\OtherPatches\\P.SRTS\\Defs",
+    "\\OtherPatches\\P.SRTS\\Defs\\ResearchProjectDefs",
     "\\Textures\\Things",
-    "\\Textures\\Things\\Pawn",
-    "\\Textures\\Things\\Pawn\\Humanlike",
-    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes",
-    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left",
-    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left\\Bionic",
-    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Right",
-    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Right\\Archotech"
+    "\\Textures\\Things\\Building",
+    "\\Textures\\Things\\Building\\PathSRTS",
+    "\\v1.4",
+    "\\v1.4\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left\\Bionic\\EyeBionicLeft_east.png",
+  "SelectedNode": "\\v1.4\\Defs",
   "PreviewInSolutionExplorer": false
 }

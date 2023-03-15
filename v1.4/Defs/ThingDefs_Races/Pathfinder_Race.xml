@@ -252,7 +252,7 @@
 									<bodyTypes>
 										<Male>(0.028, -0.52)</Male>
 										<Female>(0.0675, -0.5)</Female>
-										<Thin>(0.0675, -0.5)</Thin>
+										<Thin>(0.029, -0.52)</Thin>
 									</bodyTypes>
 									<headTypes>
 										<Male_AverageNormal>(0,0)</Male_AverageNormal>
