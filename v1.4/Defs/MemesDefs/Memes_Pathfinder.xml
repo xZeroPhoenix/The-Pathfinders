@@ -29,10 +29,10 @@
         <li>Execution_Abhorrent</li>
       </li>
       <li>
-        <li>Nudity_Male_NoRules</li>
+        <li>Nudity_Male_UncoveredGroinDisapproved</li>
       </li>
       <li>
-        <li>Nudity_Female_NoRules</li>
+        <li>Nudity_Female_UncoveredGroinDisapproved</li>
       </li>
       <li>
         <li>IdeoDiversity_Approved</li>
@@ -81,12 +81,6 @@
 	  </li>
 	  <li>
 		<li MayRequire="Ludeon.RimWorld.Biotech">MechanoidLabor_Enhanced</li>
-	  </li>
-	  <li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Bloodfeeders_Reviled</li>
-	  </li>
-	  <li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Bloodfeeders_Reviled</li>
 	  </li>
     </requireOne>
 

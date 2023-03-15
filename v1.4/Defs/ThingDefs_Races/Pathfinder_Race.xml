@@ -44,7 +44,7 @@
 							<li>(20, 1)</li>
 							<li>(35, 0.5)</li>
 							<li>(180, 0.1)</li>
-							<li>(250, 0.02)</li>
+							<li>(250, 0.05)</li>
 							<li>(280, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
@@ -137,9 +137,6 @@
 					<!--Temp?-->
 					<oldHairAgeRange>340.0~380.0</oldHairAgeRange>
 					<!--Temp?-->
-
-					<!-- Note: C# override still in use, see "ThePathfindersPatchingClass.cs" -->
-
 					<headTypes>
 						<li>Male_AverageNormal</li>
 						<li>Female_AverageNormal</li>
@@ -162,7 +159,7 @@
 					</headOffsetDirectional>
 
 					<bodyAddons>
-						<!--Temp-->
+						<!--tail-->
 						<li>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<path>Things/Pawn/Humanlike/Tails/PathTail</path>
@@ -213,101 +210,132 @@
 								</east>
 							</offsets>
 						</li>
-					</bodyAddons>
-
-					<anchorReplacements>
-						<!--Temp-->
+						<!-- eyes -->
 						<li>
-							<originalTag>RightEye</originalTag>
-							<!--<originalGroup>Torso</originalGroup>-->
-							<replacement>
-								<rotation>South</rotation>
-								<tag>RightEye</tag>
-								<canMirror>true</canMirror>
-								<offset>(0.0,0,0.0)</offset>
-								<range>0</range>
-								<layer>Head</layer>
-								<debugColor>(0,0,0,1)</debugColor>
-							</replacement>
+							<path>Things/Pawn/Humanlike/Eyes/Right/Blank/EyeRight</path>
+							<bodyPartLabel>right eye</bodyPartLabel>
+							<bodyPart>Eye</bodyPart>
+							<defaultOffset>Head</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<colorChannel>base</colorChannel>
+							<hediffGraphics>
+								<BionicEye>Things/Pawn/Humanlike/Eyes/Right/Bionic/EyeBionicRight</BionicEye>
+								<ArchotechEye>Things/Pawn/Humanlike/Eyes/Right/Archotech/EyeArchotechRight</ArchotechEye>
+							</hediffGraphics>
 							<offsets>
 								<south>
-									<bodyTypes>
-										<Male>(-0.125,0.42)</Male>
-										<Female>(-0.125,0.42)</Female>
-										<Thin>(-0.125,0.42)</Thin>
+									<layerOffset>-0.325</layerOffset>
+									<bodyTypes>					
+										<Male>(-0.124, -0.513)</Male>
+										<Female>(-0.124, -0.513)</Female>
+										<Thin>(-0.124, -0.513)</Thin>
 									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
 								</south>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>LeftEye</originalTag>
-							<!--<originalGroup>Torso</originalGroup>-->
-							<replacement>
-								<rotation>South</rotation>
-								<tag>LeftEye</tag>
-								<canMirror>true</canMirror>
-								<offset>(0.0,0,0.0)</offset>
-								<range>0</range>
-								<layer>Head</layer>
-								<debugColor>(0,0,0,1)</debugColor>
-							</replacement>
-							<offsets>
-								<south>
+								<north>
+									<layerOffset>-0.325</layerOffset>
 									<bodyTypes>
-										<Male>(0.125,0.42)</Male>
-										<Female>(0.125,0.42)</Female>
-										<Thin>(0.125,0.42)</Thin>
-
+										<Male>(0.0, 0.0)</Male>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
 									</bodyTypes>
-								</south>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>RightEye</originalTag>
-							<!--<originalGroup>Torso</originalGroup>-->
-							<replacement>
-								<rotation>East</rotation>
-								<tag>RightEye</tag>
-								<canMirror>false</canMirror>
-								<offset>(0.0,0,0.0)</offset>
-								<range>0</range>
-								<layer>Head</layer>
-								<debugColor>(0,0,0,1)</debugColor>
-							</replacement>
-							<offsets>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</north>
 								<east>
+									<layerOffset>-0.325</layerOffset>
 									<bodyTypes>
-										<Male>(0.10,0.45)</Male>
-										<Female>(0.15,0.44)</Female>
-										<Thin>(0.15,0.44)</Thin>
+										<Male>(0.028, -0.52)</Male>
+										<Female>(0.0675, -0.5)</Female>
+										<Thin>(0.0675, -0.5)</Thin>
 									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
 								</east>
-							</offsets>
-						</li>
-						<li>
-							<originalTag>LeftEye</originalTag>
-							<!--<originalGroup>Torso</originalGroup>-->
-							<replacement>
-								<rotation>West</rotation>
-								<!-- Because the left eye should not be visible facing east! It took me way too long to figure that out -->
-								<tag>LeftEye</tag>
-								<canMirror>false</canMirror>
-								<offset>(0.0,0,0.0)</offset>
-								<range>0</range>
-								<layer>Head</layer>
-								<debugColor>(0,0,0,1)</debugColor>
-							</replacement>
-							<offsets>
 								<west>
+									<layerOffset>-0.325</layerOffset>
 									<bodyTypes>
-										<Male>(-0.10,0.45)</Male>
-										<Female>(-0.15,0.44)</Female>
-										<Thin>(-0.15,0.44)</Thin>
+										<Male>(0.028, -0.52)</Male>
+										<Female>(0.0675, -0.5)</Female>
+										<Thin>(0.0675, -0.5)</Thin>
 									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
 								</west>
 							</offsets>
 						</li>
-					</anchorReplacements>
+						<li>
+							<path>Things/Pawn/Humanlike/Eyes/Left/Blank/EyeLeft</path>
+							<bodyPartLabel>left eye</bodyPartLabel>
+							<bodyPart>Eye</bodyPart>
+							<defaultOffset>Head</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<colorChannel>base</colorChannel>
+							<hediffGraphics>
+								<BionicEye>Things/Pawn/Humanlike/Eyes/Left/Bionic/EyeBionicLeft</BionicEye>
+								<ArchotechEye>Things/Pawn/Humanlike/Eyes/Left/Archotech/EyeArchotechLeft</ArchotechEye>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.325</layerOffset>
+									<bodyTypes>
+										<Male>(0.164, -0.513)</Male>
+										<Female>(0.164, -0.513)</Female>
+										<Thin>(0.164, -0.513)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</south>
+								<north>
+									<layerOffset>-0.325</layerOffset>
+									<bodyTypes>
+										<Male>(0.0, 0.0)</Male>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</north>
+								<east>
+									<layerOffset>-0.325</layerOffset>
+									<bodyTypes>
+										<Male>(0.028, -0.52)</Male>
+										<Female>(0.0675, -0.50)</Female>
+										<Thin>(0.0675, -0.50)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</east>
+								<west>
+									<layerOffset>-0.325</layerOffset>
+									<bodyTypes>
+										<Male>(0.028, -0.52)</Male>
+										<Female>(0.045, -0.5)</Female>
+										<Thin>(0.045, -0.5)</Thin>
+									</bodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</west>
+							</offsets>
+						</li>
+					</bodyAddons>
 
 					<colorChannels Inherit="False">
 						<!--Temp-->
@@ -513,62 +541,33 @@
 				</apparel>
 			</graphicPaths>
 
-			<!-- Thought Settings 
-
-  <thoughtSettings>
-   
-    <replacerList>
-      <li>
-        <original>Naked</original>
-        <replacer>PathfinderNaked</replacer>
-      </li>
-      <li>
-        <original>HappyNude</original>
-        <replacer>PathfinderHappyNude</replacer>
-      </li>
-    </replacerList>
-    
-
-    <butcherThoughtSpecific>
-      <li>
-        <raceList>
-          <li>Human</li>
-        </raceList>
-        <thought>Pathfinder_ButcheredHumanlikeCorpse</thought>
-        <knowThought>Pathfinder_KnowButcheredHumanlikeCorpse</knowThought>
-      </li>
-
-      <li>
-        <raceList>
-          <li>Alien_Pathfinder</li>
-        </raceList>
-        <thought>Pathfinder_ButcheredPathfinderCorpse</thought>
-        <knowThought>Pathfinder_KnowButcheredPathfinderCorpse</knowThought>
-      </li>
-    </butcherThoughtSpecific>
-    
-
-    <ateThoughtSpecific>
-      <li>
-        <raceList>
-          <li>Human</li>
-        </raceList>
-        <thought>Pathfinder_AteHumanlikeMeatDirect</thought>
-        <ingredientThought>Pathfinder_AteHumanlikeMeatAsIngredient</ingredientThought>
-      </li>
-
-      <li>
-        <raceList>
-          <li>Alien_Pathfinder</li>
-        </raceList>
-        <thought>Pathfinder_AtePathfinderMeatDirect</thought>
-        <ingredientThought>Pathfinder_AtePathfinderAsIngredient</ingredientThought>
-      </li>
-    </ateThoughtSpecific> 
-
-
-  </thoughtSettings>
-		-->
+			<thoughtSettings>
+				<replacerList>
+					<li>
+						<original>Naked</original> 
+						<replacer>PathfinderNaked</replacer>
+					</li>
+					<li>
+						<original>HappyNude</original>
+						<replacer>PathfinderHappyNude</replacer>
+					</li>
+					<!-- <li>
+						<original>GroinUncovered_Disapproved_Male</original>
+						<replacer>PathfinderGroinUncovered_Disapproved_Male</replacer>
+					</li>
+					<li>
+						<original>GroinUncovered_Disapproved_Female</original> 
+						<replacer>PathfinderGroinUncovered_Disapproved_Female</replacer>
+					</li> --> <!-- disabled until I can get it working -->
+				</replacerList>
+				
+				<restrictedThoughts>
+					<!-- <li>PathfinderGroinUncovered_Disapproved_Male</li> -->
+					<!-- <li>PathfinderGroinUncovered_Disapproved_Female</li> -->
+					<li>PathfinderHappyNude</li>
+				</restrictedThoughts>
+				
+			</thoughtSettings>
 
 			<!-- Relation Settings -->
 			<relationSettings>

@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Source",
-    "\\Source\\ThePathfinders",
-    "\\v1.4",
-    "\\v1.4\\Defs",
-    "\\v1.4\\Defs\\HediffDefs",
-    "\\v1.4\\Defs\\ThingDefs_items",
-    "\\v1.4\\Defs\\ThingDefs_items\\WeponsDefs",
-    "\\v1.4\\Defs\\ThingDefs_Races",
-    "\\v1.4\\Patches"
+    "\\Textures",
+    "\\Textures\\Things",
+    "\\Textures\\Things\\Pawn",
+    "\\Textures\\Things\\Pawn\\Humanlike",
+    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes",
+    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left",
+    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left\\Bionic",
+    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Right",
+    "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Right\\Archotech"
   ],
-  "SelectedNode": "\\v1.4\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
+  "SelectedNode": "\\Textures\\Things\\Pawn\\Humanlike\\Eyes\\Left\\Bionic\\EyeBionicLeft_east.png",
   "PreviewInSolutionExplorer": false
 }

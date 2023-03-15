@@ -4,7 +4,7 @@
     <li>/</li>
     <li>v1.4</li>
     <li IfModActive="CETeam.CombatExtended">OtherPatches/P.CE</li>
-    <li IfModActive="smashphil.neceros.srtsexpanded.combatextendedfork">OtherPatches/P.SRTS</li>
-    <li IfModActive="smashphil.neceros.srtsexpanded">OtherPatches/P.SRTS</li>
+    <li IfModActive="Shashlichnik.srtsexpanded">OtherPatches/P.SRTS</li>
+    <li IfModActive="smashphil.srtsexpanded">OtherPatches/P.SRTS</li>
   </v1.4>
 </loadFolders>

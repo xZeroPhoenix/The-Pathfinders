@@ -1,34 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<ThoughtDef>
-  <defName>PathfinderNaked</defName>
-  <workerClass>ThoughtWorker_PsychologicallyNude</workerClass>
-  <validWhileDespawned>true</validWhileDespawned>
-  <nullifyingTraits>
-    <li>Nudist</li>
-  </nullifyingTraits>
-  <stages>
-    <li>
-      <label>naked</label>
-      <description>I'm naked. This wouldn't be so bad if it didn't feel like others were staring...</description>
-      <baseMoodEffect>-1</baseMoodEffect>
-    </li>
-  </stages>
-</ThoughtDef>
+  <ThoughtDef>
+    <defName>PathfinderNaked</defName>
+    <workerClass>ThoughtWorker_PsychologicallyNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Nudist</li>
+    </nullifyingTraits>
+    <nullifyingGenes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+    </nullifyingGenes>
+    <stages>
+      <li>
+        <label>naked</label>
+        <description>I'm naked. This wouldn't be so bad if it didn't feel like others were staring...</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+	
+	<!-- disabled until I can get it working -->
+	<!-- Pathinders are shy, oh and have big dicks :P-->
+	
+	<!-- <ThoughtDef Name="GroinUncovered_Disapproved">
+      <defName>PathfinderGroinUncovered_Disapproved_Male</defName>
+      <workerClass>ThoughtWorker_Precept_GroinUncovered</workerClass>
+      <gender>Male</gender>
+      <stages>
+        <li>
+          <label>uncovered groin</label>
+          <description>I shouldn't have my private parts hanging out. Even if we might make humans jealous...</description>
+          <baseMoodEffect>-4</baseMoodEffect>
+        </li>
+      </stages>
+      <nullifyingTraits>
+        <li>Nudist</li>
+      </nullifyingTraits>
+    </ThoughtDef> -->
 
-<ThoughtDef>
-  <defName>PathfinderHappyNude</defName>
-  <workerClass>ThoughtWorker_NudistNude</workerClass>
-  <validWhileDespawned>true</validWhileDespawned>
-  <requiredTraits>
-    <li>Nudist</li>
-  </requiredTraits>
-  <stages>
-    <li>
-      <label>happily nude</label>
-      <description>I'm totally exposed and loving it! I feel so free and full of confidence! I think some of the others are eyeing me up too...</description>
-      <baseMoodEffect>15</baseMoodEffect>
-    </li>
-  </stages>
-</ThoughtDef>
+	<!-- <ThoughtDef ParentName="GroinUncovered_Disapproved">
+		<defName>PathfinderGroinUncovered_Disapproved_Female</defName>
+		<workerClass>ThoughtWorker_Precept_GroinUncovered</workerClass>
+		<gender>Female</gender>
+		<stages>
+			<li>
+				<label>uncovered groin</label>
+				<description>I shouldn't have my private parts hanging out.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+		<nullifyingTraits>
+			<li>Nudist</li>
+		</nullifyingTraits>
+	</ThoughtDef> -->
+	
+    <ThoughtDef>
+      <defName>PathfinderHappyNude</defName>
+      <workerClass>ThoughtWorker_NudistNude</workerClass>
+      <validWhileDespawned>true</validWhileDespawned>
+      <requiredTraits>
+        <li>Nudist</li>
+      </requiredTraits>
+      <stages>
+        <li>
+          <label>happily nude</label>
+          <description>I'm totally exposed and loving it! I feel so free and full of confidence! I think some of the others are eyeing me up too...</description>
+          <baseMoodEffect>20</baseMoodEffect>
+        </li>
+      </stages>
+    </ThoughtDef>
 </Defs>

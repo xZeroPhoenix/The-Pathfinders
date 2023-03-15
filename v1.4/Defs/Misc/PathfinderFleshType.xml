@@ -83,36 +83,6 @@
           </li>
         </wounds>
       </li>
-      <li>
-        <hediff>BionicEye</hediff>
-        <wounds>
-          <li>
-            <textureSouth>Things/Pathfinder/Wounds/Eye_b_south</textureSouth>
-            <textureNorth>Things/Pathfinder/Wounds/Eye_b_north</textureNorth>
-            <textureEast>Things/Pathfinder/Wounds/Eye_b_east</textureEast>
-            <textureWest>Things/Pathfinder/Wounds/Eye_b_east</textureWest>
-            <flipWest>true</flipWest>
-            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-            <flipOnRotation>South</flipOnRotation>
-            <scale>6</scale>
-          </li>
-        </wounds>
-      </li>
-      <li>
-        <hediff>ArchotechEye</hediff>
-        <wounds>
-          <li>
-            <textureSouth>Things/Pathfinder/Wounds/Eye_a_south</textureSouth>
-            <textureNorth>Things/Pathfinder/Wounds/Eye_a_north</textureNorth>
-            <textureEast>Things/Pathfinder/Wounds/Eye_a_east</textureEast>
-            <textureWest>Things/Pathfinder/Wounds/Eye_a_east</textureWest>
-            <flipWest>true</flipWest>
-            <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
-            <flipOnRotation>South</flipOnRotation>
-            <scale>6</scale>
-          </li>
-        </wounds>
-      </li>
     </hediffWounds>
   </FleshTypeDef>
 </Defs>

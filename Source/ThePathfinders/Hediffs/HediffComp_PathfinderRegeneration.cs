@@ -127,7 +127,7 @@ namespace ThePathfinders
         private void TryRestorePart()
         {
             // logging out the pawns name can help "categorize" the logging messages if multiple hediffs are logging
-            Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
+            // Log.Message($"Attempting body part restoration for {parent.pawn.LabelShort}");
             try
             {
                 BodyPartRecord partToRestore = FindBiggestMissingBodyPart();
@@ -137,7 +137,7 @@ namespace ThePathfinders
                     return;
                 }
                 int tier = BodyPartTierUtility.GetTier(partToRestore.def);
-                Log.Message($"Restoring part {partToRestore}, tier: {tier}");
+                // Log.Message($"Restoring part {partToRestore}, tier: {tier}");
 
                 switch(tier)
                 {
@@ -172,7 +172,7 @@ namespace ThePathfinders
         /// </summary>
         private BodyPartRecord FindBiggestMissingBodyPart(float minCoverage = 0.0f)
         {
-            Log.Message("Initializing Pathfinder_FindBiggestMissingBodyPart");
+            // Log.Message("Initializing Pathfinder_FindBiggestMissingBodyPart");
             BodyPartRecord bodyPartRecord = null;
             foreach(var partsCommonAncestor in Pawn.health.hediffSet.GetMissingPartsCommonAncestors().Where(partsCommonAncestor =>
                    partsCommonAncestor.Part.coverageAbsWithChildren >= (double)minCoverage &&
@@ -182,13 +182,13 @@ namespace ThePathfinders
             {
                 bodyPartRecord = partsCommonAncestor.Part;
             }
-            Log.Message("" + bodyPartRecord?.def?.defName);
+            // Log.Message("" + bodyPartRecord?.def?.defName);
             return bodyPartRecord;
         }
 
         private void RestoreBodyPart_Fallback(BodyPartRecord part)
         {
-            Log.Message("using fallback");
+            // Log.Message("using fallback");
             Pawn.health.RestorePart(part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressMinor, part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessMinor);
@@ -196,14 +196,14 @@ namespace ThePathfinders
         }
         private void RestoreBodyPart_TierOne(BodyPartRecord part)
         {
-            Log.Message("using tier 1");
+           // Log.Message("using tier 1");
             Pawn.health.RestorePart(part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressMinor, part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessMinor);
         }
         private void RestoreBodyPart_TierTwo(BodyPartRecord part)
         {
-            Log.Message("using tier 2");
+           // Log.Message("using tier 2");
             Pawn.health.RestorePart(part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationProgressModerate, part);
             Pawn.health.AddHediff(PathfinderHediffDefOf.PathfinderRegenerationSicknessModerate);
@@ -224,7 +224,7 @@ namespace ThePathfinders
         /// </summary>
         private void TryHealRandomPermanentWound()
         {
-            Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
+            //Log.Message($"Attempting permanent wound healing for {parent.pawn.LabelShort}");
             try
             {
                 Hediff injury = FindRandomPermanentWound();

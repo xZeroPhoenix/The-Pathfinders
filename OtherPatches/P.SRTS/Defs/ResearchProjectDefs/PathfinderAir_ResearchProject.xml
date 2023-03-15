@@ -2,8 +2,8 @@
 <Defs>
 <ResearchProjectDef>
 	<defName>PathfinderBasicAviation</defName>
-	<label>Pathfinder 7C Zero</label>
-	<description>Gain the ability to produce advance Pathfinder 7C Zero Mixed use shuttle. Small but very capable for a vessel of its size.</description>
+	<label>Raven Strike Shuttle</label>
+	<description>Gain the ability to produce the advance Pathfinder strike shuttle. Small but very capable for a vessel of its size.</description>
 	<baseCost>11000</baseCost>
 	<techLevel>Spacer</techLevel>
 	<tab>PathfinderResearch</tab>
@@ -17,24 +17,5 @@
 	</requiredResearchFacilities>
 	<researchViewX>2.00</researchViewX>
 	<researchViewY>0.20</researchViewY>
-</ResearchProjectDef>
-
-<ResearchProjectDef>
-	<defName>PathfinderAdvancedAviation</defName>
-	<label>Pathfinder L2A Raven</label>
-	<description>Gain the ability to produce highly advance Pathfinder L2A Raven Mixed use heavy shuttle. This vessel is the mainstay of civilian exploration forces for the Pathfinder due to it's exceptional speed, large carrying capacity and utility for colonial defence.</description>
-	<baseCost>25000</baseCost>
-	<techLevel>Ultra</techLevel>
-	<tab>PathfinderResearch</tab>
-	<prerequisites>
-		<li>MultiAnalyzer</li>
-		<li>PathfinderBasicAviation</li>
-	</prerequisites>
-	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-	<requiredResearchFacilities>
-		<li>MultiAnalyzer</li>
-	</requiredResearchFacilities>
-	<researchViewX>1.00</researchViewX>
-	<researchViewY>0.80</researchViewY>
 </ResearchProjectDef>
 </Defs>
