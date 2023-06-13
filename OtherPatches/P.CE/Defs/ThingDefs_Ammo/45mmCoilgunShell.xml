@@ -120,7 +120,7 @@
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_45mmCoilgun_APHE</defName>
     <label>make 45mm Coilgun cartridge (APHE) x100</label>
-    <description>Craft 200 45mm Railgun (APHE) cartridges.</description>
+    <description>Craft 100 45mm Railgun (APHE) cartridges.</description>
     <jobString>Making 45mm Coilgun (APHE) cartridges.</jobString>
     <workAmount>32400</workAmount>
     <ingredients>
@@ -155,7 +155,7 @@
 	<RecipeDef ParentName="ChargeAmmoRecipeBase">
 		<defName>MakeAmmo_45mmCoilgun_Ion</defName>
 		<label>make 45mm Coilgun cartridge (Ion) x200</label>
-		<description>Craft 200 45mm Railgun (Ion) cartridges.</description>
+		<description>Craft 100 45mm Railgun (Ion) cartridges.</description>
 		<jobString>Making 45mm Coilgun (Ion) cartridges.</jobString>
 		<ingredients>
 			<li>

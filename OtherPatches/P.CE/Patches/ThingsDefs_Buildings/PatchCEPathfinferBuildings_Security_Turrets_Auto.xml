@@ -61,7 +61,7 @@
 					<range>52</range>
 					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 					<burstShotCount>10</burstShotCount>
-					<soundCast>Shot_MediumRiflePathfinder</soundCast>
+					<soundCast>Shot_ArtilleryPathfinder</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>11</muzzleFlashScale>
 				</Properties>

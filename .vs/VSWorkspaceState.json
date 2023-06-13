@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\About",
-    "\\OtherPatches\\P.SRTS",
-    "\\OtherPatches\\P.SRTS\\Defs",
-    "\\OtherPatches\\P.SRTS\\Defs\\ResearchProjectDefs",
-    "\\Textures\\Things",
-    "\\Textures\\Things\\Building",
-    "\\Textures\\Things\\Building\\PathSRTS",
+    "\\OtherPatches",
+    "\\OtherPatches\\P.CE",
+    "\\OtherPatches\\P.CE\\Defs",
+    "\\OtherPatches\\P.CE\\Defs\\ThingDefs_Ammo",
+    "\\OtherPatches\\P.CE\\Patches",
+    "\\OtherPatches\\P.CE\\Patches\\ThingsDefs_Buildings",
     "\\v1.4",
-    "\\v1.4\\Defs\\ThingDefs_Races"
+    "\\v1.4\\Defs",
+    "\\v1.4\\Defs\\SoundDefs",
+    "\\v1.4\\Defs\\ThingDefs_Buildings"
   ],
-  "SelectedNode": "\\v1.4\\Defs",
   "PreviewInSolutionExplorer": false
 }

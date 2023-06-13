@@ -11,7 +11,7 @@ namespace ThePathfinders
 
 /// ZERO-PHOENIX: much of the code here is form ArchotechPlus so all credit gose to Biscuits and Mlie's (Out-Of-Date)
 /// ZERO-PHOENIX: NABBER was of great help with this, after he got sick of me asking 20 billion questions :P
-/// ZERO-PHOENIX: The neat file structure is his doing and if hee commented on the code he rewrote it and helped explained what it does
+/// ZERO-PHOENIX: The neat file structure is his doing and if he commented on the code he rewrote it and helped explained what it does
 
 {
     /// <summary>
@@ -42,6 +42,7 @@ namespace ThePathfinders
 
         // NABBER: Stop prefacing everything with Pathfinder, it's unnecessary because you are already in your own ThePathfinders namespace
         // ZERO-PHOENIX: NEVER! 
+        // ZERO-PHOENIX Later: Yeah, thats a good idea 
         private const int ticksToRestoreBodyPart = 3500;
         private const int ticksToHealRandomPermanentWound = 3500;
 
@@ -103,12 +104,14 @@ namespace ThePathfinders
             bool isSomethingElseRegenerating = parent.pawn.health.hediffSet.hediffs    // take all hediffs
                 .Except(parent)    // ignore THIS hediff (parent is the Hediff of any HediffComp)
                 .Any(hediff => hediff.def == HediffDefIsAnyOf.PathfinderRegenerationProgressAny);
+
             // ZERO-PHOENIX: HediffDefIsAnyOf is one of my methods, this is likely a poor way to do this but it seems to work. 
+
 
             //check if any other hediff is regeneration
             // NABBER: instead of doing if(){} else{} for your logging, do this instead:
             // I disabled it for now, cause it spams like crazy :D
-            //Log.Message("Pawn is already regenerating ? " + isSomethingElseRegenerating);
+            Log.Message("Pawn is already regenerating ? " + isSomethingElseRegenerating);
             return isSomethingElseRegenerating;
         }
         /// <summary>
