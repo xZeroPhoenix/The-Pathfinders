@@ -15,13 +15,15 @@ namespace ThePathfinders
         public static HediffDef PathfinderRegenerationProgressModerate;
         public static HediffDef PathfinderRegenerationProgressSevere;
 
-        public static HediffDef PathfinderRegenerationProgressAny { get; private set; }
-
-        public static void AnyPathfinderHediffDefOf()
+        public static bool PathfinderRegenerationProgressAny(Hediff hediff)
         {
-            PathfinderRegenerationProgressMinor = PathfinderRegenerationProgressAny;
-            PathfinderRegenerationProgressModerate = PathfinderRegenerationProgressAny;
-            PathfinderRegenerationProgressSevere = PathfinderRegenerationProgressAny;
+            var def = hediff.def;
+
+            return def == PathfinderHediffDefOf.PathfinderBaseRegeneration
+                || def == PathfinderHediffDefOf.PathfinderRegenerationProgressMinor
+                || def == PathfinderHediffDefOf.PathfinderRegenerationProgressModerate
+                || def == PathfinderHediffDefOf.PathfinderRegenerationProgressSevere;
         }
+
     }
 }

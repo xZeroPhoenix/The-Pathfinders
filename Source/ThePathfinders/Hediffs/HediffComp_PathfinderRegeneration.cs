@@ -97,13 +97,15 @@ namespace ThePathfinders
         /// ZERO-PHOENIX: This just check that a pawn is not already regenerated, as they are only supposed to regenerate one part at a time.
         /// </summary>
         /// // NABBER: you don't need to pass Pawn pawn into these methods, the HediffComp has access to the Hediff, which has access to the pawn it's on
+        /// 
+
         private bool AlreadyRegenerating()
         {
-            
+
             // NABBER: the previous check didn't ignore THIS hediff, meaning the hediff will detect itself and then assume something else is generating already, so we need to consider that
             bool isSomethingElseRegenerating = parent.pawn.health.hediffSet.hediffs    // take all hediffs
                 .Except(parent)    // ignore THIS hediff (parent is the Hediff of any HediffComp)
-                .Any(hediff => hediff.def == HediffDefIsAnyOf.PathfinderRegenerationProgressAny);
+                .Any(HediffDefIsAnyOf.PathfinderRegenerationProgressAny);
 
             // ZERO-PHOENIX: HediffDefIsAnyOf is one of my methods, this is likely a poor way to do this but it seems to work. 
 
@@ -111,7 +113,7 @@ namespace ThePathfinders
             //check if any other hediff is regeneration
             // NABBER: instead of doing if(){} else{} for your logging, do this instead:
             // I disabled it for now, cause it spams like crazy :D
-            Log.Message("Pawn is already regenerating ? " + isSomethingElseRegenerating);
+            // Log.Message("Pawn is already regenerating ? " + isSomethingElseRegenerating);
             return isSomethingElseRegenerating;
         }
         /// <summary>
