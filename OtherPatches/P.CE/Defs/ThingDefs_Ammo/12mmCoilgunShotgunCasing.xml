@@ -72,7 +72,7 @@
 	</ThingDef>
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBulletCE">
     <defName>Bullet_12mmCoilgun_Sabot</defName>
     <label>12mm Coilgun Flechette (Sabot)</label>
     <graphicData>
@@ -90,7 +90,7 @@
     </projectile>
   </ThingDef>
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBulletCE">
 		<defName>Bullet_12mmCoilgun_Ion</defName>
 		<label>12mm Coilgun Flechette (Ion)</label>
 		<graphicData>

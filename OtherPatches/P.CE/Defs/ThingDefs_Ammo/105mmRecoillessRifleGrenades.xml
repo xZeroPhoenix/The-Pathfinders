@@ -46,7 +46,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBulletCE">
     <defName>Bullet_105mmCoilgun_Sabot</defName>
     <label>105mm Coilgun bullet (Sabot)</label>
     <graphicData>

@@ -71,7 +71,7 @@
 	
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBulletCE">
     <defName>Bullet_15mmCoilgun_GrenadeHE</defName>
     <label>15mm Coilgun Grenade (HE)</label>
     <graphicData>
@@ -93,7 +93,7 @@
     </comps>
   </ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBulletCE">
 		<defName>Bullet_15mmCoilgun_GrenadeEMI</defName>
 		<label>15mm Coilgun Grenade (EMI)</label>
 		<graphicData>
