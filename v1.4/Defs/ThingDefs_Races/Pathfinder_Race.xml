@@ -577,6 +577,10 @@
 			<!-- Race Restriction -->
 			<raceRestriction>
 
+				<reproductionList>
+  				<li>Alien_Pathfinder</li>
+				</reproductionList>
+
 				<apparelList>
 					<li>Apparel_PathfinderStandardHelmet</li>
 					<li>Apparel_PathfinderArmour</li>
