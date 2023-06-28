@@ -107,8 +107,9 @@
               <costList>
                 <Steel>45</Steel>
                 <Plasteel>25</Plasteel>
+                <Chemfuel>10</Chemfuel>
                 <ComponentIndustrial>10</ComponentIndustrial>
-				<Chemfuel>10</Chemfuel>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>1.5</recoilAmount>
@@ -151,7 +152,7 @@
               <costList>
                 <Chemfuel>10</Chemfuel>
                 <Steel>45</Steel>
-                <Plasteel>25</Plasteel>
+                <Plasteel>15</Plasteel>
                 <ComponentIndustrial>6</ComponentIndustrial>
               </costList>
               <Properties>
@@ -188,8 +189,8 @@
                 <Steel>55</Steel>
                 <Plasteel>30</Plasteel>
                 <ComponentIndustrial>8</ComponentIndustrial>
-                <FSX>2</FSX>
-                <Chemfuel>5</Chemfuel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Chemfuel>15</Chemfuel>
               </costList>
               <Properties>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
@@ -229,6 +230,7 @@
                 <Steel>40</Steel>
                 <Plasteel>25</Plasteel>
                 <ComponentIndustrial>10</ComponentIndustrial>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>1.6</recoilAmount>
@@ -273,6 +275,7 @@
                 <Steel>50</Steel>
                 <Plasteel>30</Plasteel>
                 <ComponentIndustrial>10</ComponentIndustrial>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>1.41</recoilAmount>
@@ -312,9 +315,10 @@
               </statBases>
               <costList>
                 <Chemfuel>20</Chemfuel>
-                <Steel>85</Steel>
+                <Steel>75</Steel>
                 <Plasteel>40</Plasteel>
-                <ComponentIndustrial>10</ComponentIndustrial>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>0.85</recoilAmount>
@@ -354,9 +358,9 @@
               </statBases>
               <costList>
                 <Chemfuel>5</Chemfuel>
-                <Steel>30</Steel>
-                <Plasteel>20</Plasteel>
-                <ComponentIndustrial>9</ComponentIndustrial>
+                <Steel>20</Steel>
+                <Plasteel>15</Plasteel>
+                <ComponentIndustrial>8</ComponentIndustrial>
               </costList>
               <Properties>
                 <recoilAmount>1.19</recoilAmount>
@@ -400,10 +404,11 @@
                 <WorkToMake>67000</WorkToMake>
               </statBases>
               <costList>
-                <Chemfuel>5</Chemfuel>
-                <Steel>30</Steel>
-                <Plasteel>20</Plasteel>
+                <Chemfuel>15</Chemfuel>
+                <Steel>35</Steel>
+                <Plasteel>25</Plasteel>
                 <ComponentIndustrial>6</ComponentIndustrial>
+                <ComponentSpacer>2</ComponentSpacer>
               </costList>
               <Properties>
 				<recoilAmount>2.3</recoilAmount>  
@@ -444,10 +449,11 @@
                 <WorkToMake>58000</WorkToMake>
               </statBases>
               <costList>
-                <Chemfuel>10</Chemfuel>
+                <Chemfuel>15</Chemfuel>
                 <Steel>45</Steel>
                 <Plasteel>25</Plasteel>
                 <ComponentIndustrial>10</ComponentIndustrial>
+                <ComponentSpacer>2</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>2.3</recoilAmount>
@@ -488,10 +494,11 @@
                 <WorkToMake>48000</WorkToMake>
               </statBases>
               <costList>
-                <Chemfuel>10</Chemfuel>
-                <Steel>45</Steel>
-                <Plasteel>25</Plasteel>
-                <ComponentIndustrial>11</ComponentIndustrial>
+                <Chemfuel>15</Chemfuel>
+                <Steel>35</Steel>
+                <Plasteel>15</Plasteel>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>1.43</recoilAmount>
@@ -535,7 +542,8 @@
                 <Chemfuel>15</Chemfuel>
                 <Steel>55</Steel>
                 <Plasteel>30</Plasteel>
-                <ComponentIndustrial>10</ComponentIndustrial>
+                <ComponentIndustrial>8</ComponentIndustrial>
+                <ComponentSpacer>1</ComponentSpacer>
               </costList>
               <Properties>
                 <recoilAmount>2.10</recoilAmount>

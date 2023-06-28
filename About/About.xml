@@ -26,6 +26,8 @@
 
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
+		<li>smashphil.srtsexpanded</li>
+		<li>ETeam.CombatExtended</li>
 	</loadAfter>
 
 	<description></description>

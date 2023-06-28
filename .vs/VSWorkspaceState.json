@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OtherPatches\\P.CE",
-    "\\OtherPatches\\P.CE\\Patches",
-    "\\OtherPatches\\P.CE\\Patches\\ThingsDefs_Buildings",
-    "\\Source",
-    "\\Source\\ThePathfinders",
-    "\\Source\\ThePathfinders\\Hediffs",
-    "\\v1.4",
+    "\\About",
+    "\\OtherPatches",
+    "\\OtherPatches\\P.SRTS",
+    "\\OtherPatches\\P.SRTS\\Defs",
+    "\\OtherPatches\\P.SRTS\\Defs\\ThingDefs_Buildings",
+    "\\OtherPatches\\P.SRTS\\Defs\\ThingDefs_Misc",
     "\\v1.4\\Defs",
-    "\\v1.4\\Defs\\SoundDefs",
-    "\\v1.4\\Defs\\ThingDefs_Buildings"
+    "\\v1.4\\Defs\\ThingDefs_Plants",
+    "\\v1.4\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
+  "SelectedNode": "\\About\\About.xml",
   "PreviewInSolutionExplorer": false
 }

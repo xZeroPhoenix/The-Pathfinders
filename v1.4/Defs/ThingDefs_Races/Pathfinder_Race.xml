@@ -162,16 +162,18 @@
 						<!--tail-->
 						<li>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<path>Things/Pawn/Humanlike/Tails/PathTail</path>
 							<bodyPart>PathTail</bodyPart>
 							<bodyPartLabel>tail</bodyPartLabel>
+							<paths>
+								<li>Things/Pawn/Humanlike/Tails/PathTail</li>
+							</paths>
 							<drawnInBed>false</drawnInBed>
 							<colorChannel>skin</colorChannel>
 							<inFrontOfBody>false</inFrontOfBody>
 							<defaultOffset>Tail</defaultOffset>
 							<drawSize>1</drawSize>
 							<hediffGraphics>
-								<PathTailArmour>Things/Pawn/Humanlike/Tails/PathTailPowerArmour</PathTailArmour>
+								<PathTailArmour>Things/Pawn/Humanlike/Tails/Armour/PathTailPowerArmour</PathTailArmour>
 							</hediffGraphics>
 							<offsets>
 								<south>
