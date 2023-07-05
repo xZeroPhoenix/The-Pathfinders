@@ -52,6 +52,7 @@
     <graphicData>
       <texPath>Things/Projectile/ChargeATShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+		<shaderType>MoteGlow</shaderType>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <speed>180</speed>

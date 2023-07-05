@@ -18,3 +18,4 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathf
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\The-Pathfinders v\Source\ThePathfinders\obj\Debug\ThePathfinders.pdb
+F:\Projects\Rimworld Mod Projects\My Mods (RimWorld)\The-Pathfinders\Source\ThePathfinders\obj\Debug\ThePathfinders.csproj.CopyComplete

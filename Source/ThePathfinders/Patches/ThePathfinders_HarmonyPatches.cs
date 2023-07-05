@@ -6,17 +6,38 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using System.Reflection;
+using AlienRace;
 
 namespace ThePathfinders.Patches
 {
     [StaticConstructorOnStartup]
     public class ThePathfinders_HarmonyPatches
     {
+        private static readonly Type patchType = typeof(HarmonyPatch);
         static ThePathfinders_HarmonyPatches()
         {
             var harmony = new Harmony("ThePathfindersMod.ZeroPhoenix.patch1");
-            harmony.PatchAll();
-            Log.Message("Pathfinder Patching Initialisation");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            Log.Warning("Pathfinder Patching Initialisation");
+
+            harmony.Patch
+                (typeof(PawnRenderer).GetNestedTypes(AccessTools.all).SelectMany(innerType => AccessTools.GetDeclaredMethods(innerType))
+            .FirstOrDefault(method => method.Name.Contains("DrawExtraEyeGraphic") && method.ReturnType == typeof(void)),
+            prefix: new HarmonyMethod(patchType, nameof(Pathfinder_PawnRenderer_DrawExtraEyeGraphic_internal_Patch.Prefix)));
+
+        }
+        public static class Pathfinder_PawnRenderer_DrawExtraEyeGraphic_internal_Patch
+        {
+            public static bool Prefix(Pawn ___pawn)
+            {
+                if (___pawn.def is ThingDef_AlienRace pawn && pawn.defName == PathfinderRaceDefOf.Alien_Pathfinder.defName)
+                {
+                    Log.Warning("Pathfinder DrawExtraEyeGraphic applyed");
+                    return false;
+                }
+                return true;
+            }
+
         }
         #region
         [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
@@ -41,9 +62,9 @@ namespace ThePathfinders.Patches
             {
                 if (IsPathfinderRace(pawn))
                 {
-                    // Log.Message("GenerateRandomMinTicksToNextLovin before patch: " + __result);
+                    Log.Warning("GenerateRandomMinTicksToNextLovin before patch: " + __result);
                     __result = (int)(PathfinderCurve.Evaluate(pawn.ageTracker.AgeBiologicalYearsFloat) * 2500f);
-                    // Log.Message("GenerateRandomMinTicksToNextLovin after patch: " + __result);
+                    Log.Warning("GenerateRandomMinTicksToNextLovin after patch: " + __result);
                 }
             }
         }
@@ -68,7 +89,7 @@ namespace ThePathfinders.Patches
                 if (pawn.def == PathfinderRaceDefOf.Alien_Pathfinder)
                 {
                     __result = LovinMtbSinglePawnFactor(pawn);
-                    // Log.Message("Setting LovinMtbSinglePawnFactor to: " + __result);
+                    Log.Warning("Setting LovinMtbSinglePawnFactor to: " + __result);
                     return false;
                 }
                 return true;
@@ -150,35 +171,8 @@ namespace ThePathfinders.Patches
                 }
             }
         }
-        [HarmonyPatch]
-        // Thanks to Razar
-        public static class Pathfinder_ExtraEyeGraphic_Patch
-        {
-            public static MethodBase TargetMethod()
-            {
-                var targetMethod = typeof(PawnRenderer).GetNestedTypes(AccessTools.all).SelectMany(innerType => AccessTools.GetDeclaredMethods(innerType)).FirstOrDefault(method => method.Name.Contains("DrawExtraEyeGraphic") && method.ReturnType == typeof(void));
-                return targetMethod;
-            }
 
-            [HarmonyPrefix]
-            static bool Prefix(ref PawnRenderer __instance)
-            {
-                PawnRenderer renderer = Traverse.Create(__instance).Field("<>4__this").GetValue() as PawnRenderer;
-                Pawn pawn = Traverse.Create(renderer).Field("pawn").GetValue() as Pawn;
 
-                if (pawn.def.defName == PathfinderRaceDefOf.Alien_Pathfinder.defName)
-                {
-                    // No eye graphics. Handled by Body Addon instead.
-
-                    // Finished the replacement
-                    return false;
-                }
-                else
-                {
-                    // Let Original run
-                    return true;
-                }
-            }
-        }
     }
+
 }

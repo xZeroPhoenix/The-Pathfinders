@@ -79,6 +79,7 @@
     <graphicData>
       <texPath>Things/Projectile/Charge_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
@@ -95,6 +96,7 @@
 		 <graphicData>
 			 <texPath>Things/Projectile/Charge_Small</texPath>
 			 <graphicClass>Graphic_Single</graphicClass>
+			 <shaderType>MoteGlow</shaderType>
 		 </graphicData>
 		 <projectile Class="CombatExtended.ProjectilePropertiesCE">
 			 <damageDef>Bullet</damageDef>

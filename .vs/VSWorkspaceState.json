@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\About",
-    "\\OtherPatches",
-    "\\OtherPatches\\P.SRTS",
-    "\\OtherPatches\\P.SRTS\\Defs",
-    "\\OtherPatches\\P.SRTS\\Defs\\ThingDefs_Buildings",
-    "\\OtherPatches\\P.SRTS\\Defs\\ThingDefs_Misc",
-    "\\v1.4\\Defs",
-    "\\v1.4\\Defs\\ThingDefs_Plants",
-    "\\v1.4\\Defs\\ThingDefs_Races"
+    "\\OtherPatches\\P.CE",
+    "\\OtherPatches\\P.CE\\Patches",
+    "\\OtherPatches\\P.CE\\Patches\\Weapons",
+    "\\Source",
+    "\\Source\\ThePathfinders",
+    "\\Source\\ThePathfinders\\Common",
+    "\\Source\\ThePathfinders\\Extensions",
+    "\\Source\\ThePathfinders\\Patches",
+    "\\Textures\\Things",
+    "\\Textures\\Things\\Items"
   ],
-  "SelectedNode": "\\About\\About.xml",
+  "SelectedNode": "\\Source\\ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
   "PreviewInSolutionExplorer": false
 }
