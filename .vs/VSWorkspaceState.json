@@ -1,16 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OtherPatches\\P.CE",
-    "\\OtherPatches\\P.CE\\Patches",
-    "\\OtherPatches\\P.CE\\Patches\\Weapons",
     "\\Source",
     "\\Source\\ThePathfinders",
     "\\Source\\ThePathfinders\\Common",
     "\\Source\\ThePathfinders\\Extensions",
-    "\\Source\\ThePathfinders\\Patches",
-    "\\Textures\\Things",
-    "\\Textures\\Things\\Items"
+    "\\Source\\ThePathfinders\\Patches"
   ],
   "SelectedNode": "\\Source\\ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
   "PreviewInSolutionExplorer": false

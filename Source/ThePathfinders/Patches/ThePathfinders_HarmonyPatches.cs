@@ -13,32 +13,14 @@ namespace ThePathfinders.Patches
     [StaticConstructorOnStartup]
     public class ThePathfinders_HarmonyPatches
     {
-        private static readonly Type patchType = typeof(HarmonyPatch);
         static ThePathfinders_HarmonyPatches()
         {
             var harmony = new Harmony("ThePathfindersMod.ZeroPhoenix.patch1");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            harmony.PatchAll();
             Log.Warning("Pathfinder Patching Initialisation");
 
-            harmony.Patch
-                (typeof(PawnRenderer).GetNestedTypes(AccessTools.all).SelectMany(innerType => AccessTools.GetDeclaredMethods(innerType))
-            .FirstOrDefault(method => method.Name.Contains("DrawExtraEyeGraphic") && method.ReturnType == typeof(void)),
-            prefix: new HarmonyMethod(patchType, nameof(Pathfinder_PawnRenderer_DrawExtraEyeGraphic_internal_Patch.Prefix)));
-
         }
-        public static class Pathfinder_PawnRenderer_DrawExtraEyeGraphic_internal_Patch
-        {
-            public static bool Prefix(Pawn ___pawn)
-            {
-                if (___pawn.def is ThingDef_AlienRace pawn && pawn.defName == PathfinderRaceDefOf.Alien_Pathfinder.defName)
-                {
-                    Log.Warning("Pathfinder DrawExtraEyeGraphic applyed");
-                    return false;
-                }
-                return true;
-            }
 
-        }
         #region
         [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
         class PathfinderPatchLovinPrefix
@@ -72,9 +54,9 @@ namespace ThePathfinders.Patches
         [HarmonyPatch(typeof(LovePartnerRelationUtility), "LovinMtbSinglePawnFactor")]
         class PathfinderPatchLovinPostfix
         {
-
             public static float LovinMtbSinglePawnFactor(Pawn pawn)
             {
+                
                 float num = 1f;
                 num /= 1f - pawn.health.hediffSet.PainTotal;
                 float level = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness);
@@ -172,6 +154,36 @@ namespace ThePathfinders.Patches
             }
         }
 
+        [HarmonyPatch]
+        // Thanks to Razar
+        public static class Pathfinder_ExtraEyeGraphic_Patch
+        {
+            public static MethodBase TargetMethod()
+            {
+                var targetMethod = typeof(PawnRenderer).GetNestedTypes(AccessTools.all).SelectMany(innerType => AccessTools.GetDeclaredMethods(innerType)).FirstOrDefault(method => method.Name.Contains("DrawExtraEyeGraphic") && method.ReturnType == typeof(void));
+                return targetMethod;
+            }
+
+            [HarmonyPrefix]
+            static bool Prefix(ref PawnRenderer __instance)
+            {
+                PawnRenderer renderer = Traverse.Create(__instance).Field("<>4__this").GetValue() as PawnRenderer;
+                Pawn pawn = Traverse.Create(renderer).Field("pawn").GetValue() as Pawn;
+
+                if (pawn.def.defName == PathfinderRaceDefOf.Alien_Pathfinder.defName)
+                {
+                    // No eye graphics. Handled by Body Addon instead.
+
+                    // Finished the replacement
+                    return false;
+                }
+                else
+                {
+                    // Let Original run
+                    return true;
+                }
+            }
+        }
 
     }
 
