@@ -9,6 +9,10 @@ using System;
 
 namespace ThePathfinders
 
+
+/// ZERO-PHOENIX(2023): it occurred to me that this system may not play very nicely with mods that add Hediffs to body parts.
+/// 
+/// 
 /// ZERO-PHOENIX: much of the code here is form ArchotechPlus so all credit gose to Biscuits and Mlie's (Out-Of-Date)
 /// ZERO-PHOENIX: NABBER was of great help with this, after he got sick of me asking 20 billion questions :P
 /// ZERO-PHOENIX: The neat file structure is his doing and if he commented on the code he rewrote it and helped explained what it does

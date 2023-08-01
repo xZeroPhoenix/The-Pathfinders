@@ -8,7 +8,8 @@
 		<label>Pathfinder</label>
 		<description>A typical example of a Pathfinder, within the expected range of genetic variation common for the species. Outside of their avian appearance, Pathfinders share many outwardly human features but also have a vastly extended lifespan and strong regenerative abilities, known to be able to heal almost any injury, with the ability to regenerate entirely missing organs and limbs, if non fatally injured.\n\nTheir heightened movement speed and dexterity combined with their sharp talons make them capable melee combatants, this along with a higher than standard mental fortitude belie the infamous stubbornness of Pathfinders, making them very troublesome captives.\n\nNatives of Cyris Prime (2nd planet of a s-type binary system), the warm, humid, and geologically active conditions encouraged the loss of their ancestral wings, and instead developing a strong intellect in return. Curious to a fault, many Pathfinders are commonly found among independent explorer groups, seeking out new discoveries and cultures to experience.\n\nTypically friendly, their natural stubbornness however makes many of their number very uncompromising on their ideals.</description>
 		<!-- Not Done -->
-
+		<!--Extra notes-->
+		<!---->
 		<!-- Temp -->
 		<alienRace>
 			<styleSettings>
@@ -42,10 +43,11 @@
 						<points>
 							<li>(16, 0)</li>
 							<li>(20, 1)</li>
-							<li>(35, 0.5)</li>
-							<li>(180, 0.1)</li>
-							<li>(250, 0.05)</li>
-							<li>(280, 0)</li>
+							<li>(133, 1)</li>
+							<li>(166, 0.5)</li>
+							<li>(190, 0.1)</li>
+							<li>(213, 0.02)</li>
+							<li>(237, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
 					<maleFertilityAgeFactor>
@@ -53,9 +55,9 @@
 						<points>
 							<li>(16, 0)</li>
 							<li>(18, 1)</li>
-							<li>(50, 1)</li>
+							<li>(237, 1)</li>
 							<li>(280, 1)</li>
-							<li>(360, 0)</li>
+							<li>(380, 0)</li>
 						</points>
 					</maleFertilityAgeFactor>
 				</reproduction>
@@ -96,6 +98,7 @@
 					</li>
 				</forcedRaceTraitEntries>
 
+				<!-- Theses should be much less likely, reather then not allowed, WIP -->
 				<disallowedTraits>
 					<li>
 						<defName>Psychopath</defName>
@@ -107,7 +110,7 @@
 						<defName>DislikesWomen</defName>
 					</li>
 					<li>
-						<defName>Asexual</defName>
+						<defName>Asexual</defName> <!-- Sorry my ace friends, but forced Race Trait dosent check for incomp traits so it has to go for now, WIP -->
 					</li>
 				</disallowedTraits>
 
