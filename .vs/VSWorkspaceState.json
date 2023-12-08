@@ -1,16 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Source",
     "\\Source\\ThePathfinders",
-    "\\Source\\ThePathfinders\\Common",
-    "\\Source\\ThePathfinders\\Extensions",
-    "\\Source\\ThePathfinders\\Patches",
-    "\\v1.4",
     "\\v1.4\\Defs",
     "\\v1.4\\Defs\\Durgs",
     "\\v1.4\\Defs\\ThingDefs_Races"
   ],
-  "SelectedNode": "\\Source\\ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
+  "SelectedNode": "\\Source",
   "PreviewInSolutionExplorer": false
 }

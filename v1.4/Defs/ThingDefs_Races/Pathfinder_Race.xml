@@ -57,7 +57,7 @@
 							<li>(18, 1)</li>
 							<li>(237, 1)</li>
 							<li>(280, 1)</li>
-							<li>(380, 0)</li>
+							<li>(380, 0.5)</li>
 						</points>
 					</maleFertilityAgeFactor>
 				</reproduction>
@@ -329,7 +329,7 @@
 								<west>
 									<layerOffset>-0.325</layerOffset>
 									<bodyTypes>
-										<Male>(0.028, -0.52)</Male>
+										<Male>(0.041, -0.5)</Male>
 										<Female>(0.045, -0.5)</Female>
 										<Thin>(0.045, -0.5)</Thin>
 									</bodyTypes>

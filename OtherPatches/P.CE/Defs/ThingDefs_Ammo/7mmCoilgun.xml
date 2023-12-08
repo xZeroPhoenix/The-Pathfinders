@@ -86,7 +86,7 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationSharp>91</armorPenetrationSharp>
+      <armorPenetrationSharp>46</armorPenetrationSharp>
       <armorPenetrationBlunt>322</armorPenetrationBlunt>
       <speed>220</speed>
     </projectile>
@@ -109,7 +109,7 @@
 					<amount>8</amount>
 				</li>
 			</secondaryDamage>
-			<armorPenetrationSharp>63</armorPenetrationSharp>
+			<armorPenetrationSharp>32</armorPenetrationSharp>
 			<armorPenetrationBlunt>210</armorPenetrationBlunt>
 			<empShieldBreakChance>0.2</empShieldBreakChance>
 			<speed>220</speed>

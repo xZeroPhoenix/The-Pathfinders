@@ -82,7 +82,7 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>8</damageAmountBase>
+      <damageAmountBase>6</damageAmountBase>
       <armorPenetrationSharp>14</armorPenetrationSharp>
       <armorPenetrationBlunt>15</armorPenetrationBlunt>
       <pelletCount>8</pelletCount>
@@ -101,11 +101,11 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>7</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<secondaryDamage>
 				<li>
 					<def>EMP</def>
-					<amount>3</amount>
+					<amount>2</amount>
 				</li>
 			</secondaryDamage>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
