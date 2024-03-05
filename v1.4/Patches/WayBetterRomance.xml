@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Way Better Romance</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class ="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="Alien_Pathfinder"]</xpath>
+					<value>
+						<li Class="BetterRomance.CasualSexSettings">
+							<caresAboutCheating>True</caresAboutCheating> <!-- They care a lot, but I cant be bothered to change more stuff to make that impactful. ZP -->
+							 <!-- Note: They really only care about *emotional* loyalty and turst, they don't really care if they have a partner that has a hookup with someone else ever so often, 
+							 so long as they aren't keeping that are secret, though with how I'm wired I would hate this and become *thoroughly jealous* lol. ZP-->
+							<willDoHookup>True</willDoHookup>
+							<hookupTriggers>
+								<minOpinion>25</minOpinion>
+							</hookupTriggers>
+							<!-- Errr, its your game but they aint goin fuck someone they dont like, even if the all powerful player wants them to try pfffft. ZP -->
+							<orderedHookupTriggers> 
+								<minOpinion>15</minOpinion>
+								<forBreedingOnly>False</forBreedingOnly>
+							</orderedHookupTriggers>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="BasePathfinderPawnKind" or defName="PathfinderSettler" or defName="PathfinderGuard" or defName="PathfinderLightGuard" or defName="PathfinderTrooper" or defName="PathfinderBaseDrifters" ]</xpath>
+					<!-- in retrospect I should have actually had all of these linked to the base, dont be me. ZP -->
+					<value>
+						<li Class="BetterRomance.RelationSettings">
+							<spousesAllowed>True</spousesAllowed>
+							<childrenAllowed>True</childrenAllowed>
+							<pawnKindForParentGlobal></pawnKindForParentGlobal>
+							<pawnKindForParentFemale></pawnKindForParentFemale>
+							<pawnKindForParentMale></pawnKindForParentMale>
+							<minFemaleAgeToHaveChildren>20</minFemaleAgeToHaveChildren> <!-- Pathfinder are infertil until they reach adulthood. ZP -->
+							<maxFemaleAgeToHaveChildren>236</maxFemaleAgeToHaveChildren> 
+							<usualFemaleAgeToHaveChildren>98</usualFemaleAgeToHaveChildren> <!-- this number is completely arbitrary I just picked at Random. Same for males too. ZP -->
+							<minMaleAgeToHaveChildren>20</minMaleAgeToHaveChildren>
+							<maxMaleAgeToHaveChildren>350</maxMaleAgeToHaveChildren>
+							<usualMaleAgeToHaveChildren>98</usualMaleAgeToHaveChildren>
+							<maxChildrenDesired>8</maxChildrenDesired> <!-- I also picked this number arbitrarily, only taking in some consideration for the imbalance -->
+							<minOpinionRomance>15</minOpinionRomance>
+						</li>
+					</value>
+				</li>
+				<!-- HAR basically covers this already but I'm just putting this in just in case, also Pathfinders are ment to basically have the same lust for all their life. ZP -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="Alien_Pathfinder"]</xpath>
+					<value>
+						<li Class="BetterRomance.RegularSexSettings">
+							<minAgeForSex>20</minAgeForSex> <!-- Also, I spent so much time trying to learn C# so I could Harmony patch this and welp, by the time I had finished both HAR and this mod were already able to do it. ZP -->
+							
+							<!-- RANT: why in all of the Universe are these calculations so complicated in the base game when they are completely invisible to players? 
+							it doesn't make any sense and could have been replaced with a much simpler system. Grrrr. ZP -->
+							
+							<maxAgeForSex>500</maxAgeForSex> <!-- this is over their expected lifespan anyway but just in case -->
+							<maxAgeGap>230</maxAgeGap> <!-- for As gross as it feels to make it this way, Pathfinder live for a long ass time and so dont really care about age, still if a 360 year old was with a 20 year old, most are them going to be *at least* a little weirded out -->
+							<declineAtAge>330</declineAtAge>
+						</li>
+					</value>
+				</li>
+				<!-- Hmmmm, my race has a large sex imbalance, HAR's tools can let me adjust the trait generation per sex curdly but WBR dosent as of 8/12/2023, this could some percentages to be not quite what I want them to be but shouldn't be a big problem. ZP -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="Alien_Pathfinder"]</xpath>
+					<value>
+						<li Class="BetterRomance.SexualityChances">
+							<asexualChance>1</asexualChance>
+							<bisexualChance>80</bisexualChance>
+							<gayChance>15</gayChance>
+							<straightChance>4</straightChance>
+							<aceAroChance>20</aceAroChance>
+							<aceBiChance>70</aceBiChance>
+							<aceHomoChance>5</aceHomoChance>
+							<aceHeteroChance>5</aceHeteroChance>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

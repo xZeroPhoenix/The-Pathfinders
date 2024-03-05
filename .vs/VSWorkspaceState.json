@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Source",
     "\\Source\\ThePathfinders",
+    "\\Source\\ThePathfinders\\Hediffs",
+    "\\v1.4",
     "\\v1.4\\Defs",
-    "\\v1.4\\Defs\\Durgs",
-    "\\v1.4\\Defs\\ThingDefs_Races"
+    "\\v1.4\\Defs\\MemesDefs",
+    "\\v1.4\\Defs\\Misc",
+    "\\v1.4\\Defs\\PreceptDefs",
+    "\\v1.4\\Patches"
   ],
-  "SelectedNode": "\\Source",
+  "SelectedNode": "\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
   "PreviewInSolutionExplorer": false
 }

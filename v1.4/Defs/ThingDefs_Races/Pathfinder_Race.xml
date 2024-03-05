@@ -41,8 +41,8 @@
 					<femaleFertilityAgeFactor>
 						<!--WIP-->
 						<points>
-							<li>(16, 0)</li>
-							<li>(20, 1)</li>
+							<li>(20, 0)</li>
+							<li>(21, 1)</li>
 							<li>(133, 1)</li>
 							<li>(166, 0.5)</li>
 							<li>(190, 0.1)</li>
@@ -53,8 +53,8 @@
 					<maleFertilityAgeFactor>
 						<!--WIP-->
 						<points>
-							<li>(16, 0)</li>
-							<li>(18, 1)</li>
+							<li>(20, 0)</li>
+							<li>(21, 1)</li>
 							<li>(237, 1)</li>
 							<li>(280, 1)</li>
 							<li>(380, 0.5)</li>
