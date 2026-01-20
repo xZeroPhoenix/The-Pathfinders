@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Player Base -->
+    <PawnKindDef Abstract="True" Name="BasePathfinderPlayerPawnKind">
+		<race>Alien_Pathfinder</race>
+		<label>Pathfinder Player Base</label>
+		<combatPower>45</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+		<humanPregnancyChance>0.06</humanPregnancyChance>
+		<backstoryCategories>
+			<li>Pathfinder_Backstory</li>
+		</backstoryCategories>
+    </PawnKindDef>
+	
+    <!-- Player Colonist -->
+	<PawnKindDef ParentName="BasePathfinderPlayerPawnKind">
+		<defName>PathfinderColonist</defName>
+		<label>colonist</label>
+		<defaultFactionDef>PathfinderPlayerColony</defaultFactionDef>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>PathfinderBasic</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
+		</apparelTags>
+		<apparelMoney>1700~1900</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

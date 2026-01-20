@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Pirates/Mercenaries/Drifters -->
+<Defs>
+<!-- Base Drifters -->
+<PawnKindDef Name="PathfinderBaseDrifters">
+	<defName>PathfinderBaseDrifters</defName>
+	<label>Pathfinder Base Drifters</label>
+	<race>Alien_Pathfinder</race>
+	<maxGenerationAge>310</maxGenerationAge>
+	<combatPower>100</combatPower>
+
+	<backstoryCategories>
+		<li>Pathfinder_Backstory</li>
+	</backstoryCategories>
+
+	<apparelTags>
+		<li>IndustrialBasic</li>
+		<li>IndustrialAdvanced</li>
+		<li>IndustrialMilitaryBasic</li>
+		<li>IndustrialMilitaryAdvanced</li>
+		<li>PathfinderBasic</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
+	</apparelTags>
+
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+
+
+	<apparelMoney>2700~3900</apparelMoney>
+	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<chemicalAddictionChance>0.01</chemicalAddictionChance>
+	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+	<weaponMoney>3800~5800</weaponMoney>
+	<itemQuality>Good</itemQuality>
+	<isFighter>true</isFighter>
+
+	<weaponTags>
+		<li></li>
+	</weaponTags>
+
+	<techHediffsMoney>
+		<min>2000</min>
+		<max>3000</max>
+	</techHediffsMoney>
+
+	<invNutrition>3</invNutrition>
+	<inventoryOptions>
+		<skipChance>0</skipChance>
+		<subOptionsChooseOne>
+			<li>
+				<thingDef>Silver</thingDef>
+				<countRange>125~170</countRange>
+			</li>
+			<li>
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>
+					<min>3</min>
+					<max>1</max>
+				</countRange>
+			</li>
+		</subOptionsChooseOne>
+	</inventoryOptions>
+
+	<initialWillRange>40~70</initialWillRange>
+	<initialResistanceRange>15~38</initialResistanceRange>
+	<biocodeWeaponChance>0.15</biocodeWeaponChance>
+</PawnKindDef>
+
+<!-- Mercenaries -->
+<PawnKindDef ParentName="PathfinderBaseDrifters">
+	<defName>PathfinderMercenaries</defName>
+	<label>Pathfinder Mercenary</label>
+	<combatPower>240</combatPower>
+
+	<weaponTags>
+		<li>SimpleGun</li>
+		<li>AssaultRifle</li>
+		<li>LongShots</li>
+	</weaponTags>
+
+	<apparelRequired>
+		<li>Apparel_PathfinderAdvHelmet</li>
+		<li>Apparel_PathfinderArmour</li>
+		<li>Apparel_PathfinderBallisticLining</li>
+	</apparelRequired>
+</PawnKindDef>
+
+<!-- Drifters -->
+<PawnKindDef ParentName="PathfinderBaseDrifters">
+	<defName>PathfinderDrifters</defName>
+	<label>Pathfinder Drifter</label>
+	<combatPower>100</combatPower>
+	<weaponTags>
+		<li>SimpleGun</li>
+		<li>AssaultRifle</li>
+		<li>LongShots</li>
+	</weaponTags>
+</PawnKindDef>
+
+<!-- Pirates -->
+<PawnKindDef ParentName="PathfinderBaseDrifters">
+	<defName>PathfinderPirates</defName>
+	<label>Pathfinder Pirate</label>
+	<combatPower>140</combatPower>
+	<weaponTags>
+		<li>SimpleGun</li>
+		<li>AssaultRifle</li>
+		<li>LongShots</li>
+	</weaponTags>
+</PawnKindDef>
+
+<PawnKindDef ParentName="PathfinderBaseDrifters">
+	<defName>PathfinderPiratesMelee</defName>
+	<label>Pathfinder Pirate</label>
+	<combatPower>60</combatPower>
+	<weaponTags>
+		<li>PathfinderMelee</li>
+	</weaponTags>
+</PawnKindDef>
+</Defs>

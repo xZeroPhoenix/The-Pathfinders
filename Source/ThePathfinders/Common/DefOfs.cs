@@ -42,5 +42,7 @@ namespace ThePathfinders
             DefOfHelper.EnsureInitializedInCtor(typeof(PathfinderHediffDefOf));
         }
     }
+ 
+
 
 }

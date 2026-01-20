@@ -1,0 +1,478 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|f:\\projects\\rimworld mod projects\\my mods (rimworld)\\the-pathfinders\\source\\thepathfinders\\extensions\\pathfindertierdefmodextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:thepathfinders\\extensions\\pathfindertierdefmodextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Common\\DefOfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:ThePathfinders\\Common\\DefOfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\thepathfinders\\common\\hediffdefisanyof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:thepathfinders\\common\\hediffdefisanyof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\thepathfinders\\patches\\otherpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:thepathfinders\\patches\\otherpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\thepathfinders\\patches\\thepathfinders_harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:thepathfinders\\patches\\thepathfinders_harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\thepathfinders\\decrepitcode\\decrepit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:thepathfinders\\decrepitcode\\decrepit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Royalty\\Defs\\HediffDefs\\Hediffs_BodyParts_Archotech_EmpireRoyal.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ThePathfinders||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\Reverse Engineering Bin\\AlienRaces\\Source\\AlienRace\\AlienRace\\ThingDef_AlienRace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cameron\\AppData\\Local\\Temp\\MetadataAsSource\\eabea2af0b7d48078241dcd455d5c6a0\\DecompilationMetadataAsSourceFileProvider\\8f9dfe2d38d14fcda5c9bd69ea9ad19e\\MethodType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Extensions\\PathfinderDefModExtension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ThePathfinders\\Extensions\\PathfinderDefModExtension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Patches\\BodyPartsRegenTeirPatch.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\Pathfinder_Body.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\BodyPartTagDefs\\BodyPartTagDefs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Organs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cameron\\AppData\\Local\\Temp\\MetadataAsSource\\0da82327571648daa9498e4a1247a323\\DecompilationMetadataAsSourceFileProvider\\92d744465bf24210ba5badb2204f06ad\\Pawn_HealthTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\BodyPartGroups_Pathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Injuries.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Infections.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\HediffGiverPathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Drugs\\Luciferium.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Apparel_Hediff.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2665C2B-979C-42BD-8425-A2FCBB8D3470}|ThePathfinders\\ThePathfinders.csproj|solutionrelative:ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Decrepit.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\DecrepitCode\\Decrepit.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\DecrepitCode\\Decrepit.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\DecrepitCode\\Decrepit.cs",
+              "RelativeToolTip": "ThePathfinders\\DecrepitCode\\Decrepit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T06:56:11.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PathfinderTierDefModExtension.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Extensions\\PathfinderTierDefModExtension.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Extensions\\PathfinderTierDefModExtension.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Extensions\\PathfinderTierDefModExtension.cs",
+              "RelativeToolTip": "ThePathfinders\\Extensions\\PathfinderTierDefModExtension.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-19T06:19:35.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThePathfinders_HarmonyPatches.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
+              "RelativeToolTip": "ThePathfinders\\Patches\\ThePathfinders_HarmonyPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-19T10:39:53.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PathfinderApparelDefModExtension.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs",
+              "RelativeToolTip": "ThePathfinders\\DecrepitCode\\PathfinderApparelDefModExtension.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-19T06:19:36.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DefOfs.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Common\\DefOfs.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Common\\DefOfs.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Common\\DefOfs.cs",
+              "RelativeToolTip": "ThePathfinders\\Common\\DefOfs.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-18T06:59:21.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OtherPatches.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Patches\\OtherPatches.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Patches\\OtherPatches.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Patches\\OtherPatches.cs",
+              "RelativeToolTip": "ThePathfinders\\Patches\\OtherPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T07:05:01.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HediffDefIsAnyOf.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Common\\HediffDefIsAnyOf.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Common\\HediffDefIsAnyOf.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Common\\HediffDefIsAnyOf.cs",
+              "RelativeToolTip": "ThePathfinders\\Common\\HediffDefIsAnyOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-18T06:59:21.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BodyParts_Humanoid.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-30T03:05:15.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThePathfinders",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\ThePathfinders.csproj",
+              "RelativeDocumentMoniker": "ThePathfinders\\ThePathfinders.csproj",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\ThePathfinders.csproj",
+              "RelativeToolTip": "ThePathfinders\\ThePathfinders.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-09T04:46:37.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BodyParts_Organs.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Organs.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Organs.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-30T05:47:37.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BodyPartTagDefs.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\BodyPartTagDefs\\BodyPartTagDefs.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\BodyPartTagDefs\\BodyPartTagDefs.xml",
+              "ViewState": "AgIAAAIAAAAAAAAAAABRwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-30T03:08:04.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Hediffs_BodyParts_Archotech_EmpireRoyal.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Royalty\\Defs\\HediffDefs\\Hediffs_BodyParts_Archotech_EmpireRoyal.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Royalty\\Defs\\HediffDefs\\Hediffs_BodyParts_Archotech_EmpireRoyal.xml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAKoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-31T09:50:20.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Pathfinder_Body.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\Pathfinder_Body.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\BodyDefs\\Pathfinder_Body.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\Pathfinder_Body.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\BodyDefs\\Pathfinder_Body.xml",
+              "ViewState": "AgIAABcCAAAAAAAAAABBwJ8BAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pathfinder_Hediffs_RegenerationProgress.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "RelativeDocumentMoniker": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "RelativeToolTip": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "ViewState": "AgIAAEkAAAAAAAAAAABBwGAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T11:29:46.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BodyPartsRegenTeirPatch.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "RelativeToolTip": "..\\v1.3\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "ViewState": "AgIAAB8AAAAAAAAAAABBwC4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Pathfinder_Hediffs_RegenerationSickness.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml",
+              "RelativeDocumentMoniker": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml",
+              "RelativeToolTip": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationSickness.xml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwDMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-23T09:38:34.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BodyPartGroups_Pathfinder.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\BodyPartGroups_Pathfinder.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\BodyDefs\\BodyPartGroups_Pathfinder.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyDefs\\BodyPartGroups_Pathfinder.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\BodyDefs\\BodyPartGroups_Pathfinder.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Pathfinders_Bodyparts.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Hediffs_Local_Injuries.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Injuries.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Injuries.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-29T06:08:34.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Hediffs_Local_Infections.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Infections.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\HediffDefs\\Hediffs_Local_Infections.xml",
+              "ViewState": "AgIAALgAAAAAAAAAAABBwMsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-27T06:12:51.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Pathfinder_Hediffs_RegenerationProgress.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "RelativeDocumentMoniker": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "RelativeToolTip": "..\\v1.4\\Defs\\HediffDefs\\Pathfinder_Hediffs_RegenerationProgress.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HediffGiverPathfinder.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\HediffGiverPathfinder.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\HediffDefs\\HediffGiverPathfinder.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\HediffGiverPathfinder.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\HediffDefs\\HediffGiverPathfinder.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Pathfinder_Hediffs_Regeneration_Base.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\HediffDefs\\Pathfinder_Hediffs_Regeneration_Base.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Apparel_Hediff.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Apparel_Hediff.xml",
+              "RelativeDocumentMoniker": "..\\v1.3\\Defs\\HediffDefs\\Apparel_Hediff.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.3\\Defs\\HediffDefs\\Apparel_Hediff.xml",
+              "RelativeToolTip": "..\\v1.3\\Defs\\HediffDefs\\Apparel_Hediff.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-07-14T09:57:18.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Luciferium.xml",
+              "DocumentMoniker": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Drugs\\Luciferium.xml",
+              "ToolTip": "C:\\Games\\SteamLibrary\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Drugs\\Luciferium.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2022-05-24T12:29:13.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HediffComp_PathfinderRegeneration.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
+              "RelativeToolTip": "ThePathfinders\\Hediffs\\HediffComp_PathfinderRegeneration.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwB0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:03:20.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HediffComp_PathfinderSetSeveritySinkness.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs",
+              "RelativeToolTip": "ThePathfinders\\Hediffs\\HediffComp_PathfinderSetSeveritySinkness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-18T06:59:21.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ThingDef_AlienRace.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\Reverse Engineering Bin\\AlienRaces\\Source\\AlienRace\\AlienRace\\ThingDef_AlienRace.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Reverse Engineering Bin\\AlienRaces\\Source\\AlienRace\\AlienRace\\ThingDef_AlienRace.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\Reverse Engineering Bin\\AlienRaces\\Source\\AlienRace\\AlienRace\\ThingDef_AlienRace.cs",
+              "RelativeToolTip": "..\\..\\..\\Reverse Engineering Bin\\AlienRaces\\Source\\AlienRace\\AlienRace\\ThingDef_AlienRace.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-10-21T08:39:24.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MethodType.cs",
+              "DocumentMoniker": "C:\\Users\\cameron\\AppData\\Local\\Temp\\MetadataAsSource\\eabea2af0b7d48078241dcd455d5c6a0\\DecompilationMetadataAsSourceFileProvider\\8f9dfe2d38d14fcda5c9bd69ea9ad19e\\MethodType.cs",
+              "ToolTip": "HarmonyLib.MethodType",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenToolTip": "HarmonyLib.MethodType",
+              "WhenOpened": "2022-10-19T11:04:28.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PathfinderDefModExtension.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Extensions\\PathfinderDefModExtension.cs",
+              "RelativeDocumentMoniker": "ThePathfinders\\Extensions\\PathfinderDefModExtension.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\Extensions\\PathfinderDefModExtension.cs",
+              "RelativeToolTip": "ThePathfinders\\Extensions\\PathfinderDefModExtension.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-07-29T02:48:14.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Pawn_HealthTracker.cs",
+              "DocumentMoniker": "C:\\Users\\cameron\\AppData\\Local\\Temp\\MetadataAsSource\\0da82327571648daa9498e4a1247a323\\DecompilationMetadataAsSourceFileProvider\\92d744465bf24210ba5badb2204f06ad\\Pawn_HealthTracker.cs",
+              "ToolTip": "C:\\Users\\cameron\\AppData\\Local\\Temp\\MetadataAsSource\\0da82327571648daa9498e4a1247a323\\DecompilationMetadataAsSourceFileProvider\\92d744465bf24210ba5badb2204f06ad\\Pawn_HealthTracker.cs",
+              "ViewState": "AQIAABQBAAAAAAAAAIBZwBkBAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-05-30T06:05:05.415Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\LoadFolders.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoadFolders.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\BodyPartsRegenTeirPatch.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Patches\\BodyPartsRegenTeirPatch.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\CoreFactionPatches.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Patches\\CoreFactionPatches.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\About\\About.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:About\\About.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\Factions.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Patches\\Factions.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\EyeOverride.xml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Patches\\EyeOverride.xml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 255,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatchCEPawnKindsPathfinder.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml",
+              "RelativeDocumentMoniker": "OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml",
+              "RelativeToolTip": "OtherPatches\\P.CE\\Patches\\PawnKinds\\PatchCEPawnKindsPathfinder.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-27T04:33:15.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoadFolders.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\LoadFolders.xml",
+              "RelativeDocumentMoniker": "LoadFolders.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\LoadFolders.xml",
+              "RelativeToolTip": "LoadFolders.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-27T04:27:15.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AlienRaceSetting.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml",
+              "RelativeToolTip": "v1.6\\Defs\\AlienRaceSettings\\AlienRaceSetting.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-27T04:26:08.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BodyPartsRegenTeirPatch.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "RelativeDocumentMoniker": "v1.6\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "RelativeToolTip": "v1.6\\Patches\\BodyPartsRegenTeirPatch.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-22T06:57:26.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Factions.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\Factions.xml",
+              "RelativeDocumentMoniker": "v1.6\\Patches\\Factions.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\Factions.xml",
+              "RelativeToolTip": "v1.6\\Patches\\Factions.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-16T07:02:15.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EyeOverride.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\EyeOverride.xml",
+              "RelativeDocumentMoniker": "v1.6\\Patches\\EyeOverride.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\EyeOverride.xml",
+              "RelativeToolTip": "v1.6\\Patches\\EyeOverride.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-16T07:02:13.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThePathfindersRegeneration_Hediff.cs",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs",
+              "RelativeDocumentMoniker": "Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs",
+              "RelativeToolTip": "Source\\ThePathfinders\\ThePathfindersRegeneration_Hediff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:45:49.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PathfinderBodyPartTierDictionaryDef.xml.d",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d",
+              "RelativeToolTip": "v1.6\\Defs\\CustomDefs\\PathfinderBodyPartTierDictionaryDef.xml.d",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-20T04:05:29.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoreFactionPatches.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\CoreFactionPatches.xml",
+              "RelativeDocumentMoniker": "v1.6\\Patches\\CoreFactionPatches.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Patches\\CoreFactionPatches.xml",
+              "RelativeToolTip": "v1.6\\Patches\\CoreFactionPatches.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-16T07:01:51.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Pathfinders_Bodyparts.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "RelativeToolTip": "v1.6\\Defs\\BodyPartDefs\\Pathfinders_Bodyparts.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-14T04:56:07.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Factions_Pathfinder_Player.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml",
+              "RelativeToolTip": "v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Player.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-13T07:14:10.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "About.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\About\\About.xml",
+              "RelativeDocumentMoniker": "About\\About.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\About\\About.xml",
+              "RelativeToolTip": "About\\About.xml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-18T11:20:42.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pathfinder_Race.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
+              "RelativeToolTip": "v1.6\\Defs\\ThingDefs_Races\\Pathfinder_Race.xml",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAwwM4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-14T04:51:28.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Scenarios_Pathfinder.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml",
+              "RelativeToolTip": "v1.6\\Defs\\Scenarios\\Scenarios_Pathfinder.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-13T11:49:21.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Factions_Pathfinder_Explorers.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml",
+              "RelativeToolTip": "v1.6\\Defs\\FactionDefs\\Factions_Pathfinder_Explorers.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-13T06:49:04.91Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "009d0891-db29-4e1d-8865-548d60a8048b",
+        "Display": 1,
+        "X": 865,
+        "Y": 158,
+        "Width": 1558,
+        "Height": 791,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PawnKinds_Pathfinder_Player.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml",
+              "RelativeToolTip": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Player.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-10T02:40:12.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PawnKinds_Pathfinder_Explorers.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml",
+              "RelativeToolTip": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Explorers.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-10T02:37:58.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PawnKinds_Pathfinder_Others.xml",
+              "DocumentMoniker": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml",
+              "RelativeDocumentMoniker": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml",
+              "ToolTip": "F:\\Projects\\Rimworld Mod Projects\\My Mods (RimWorld)\\The-Pathfinders\\v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml",
+              "RelativeToolTip": "v1.6\\Defs\\PawnKindDefs\\PawnKinds_Pathfinder_Others.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-13T11:49:59.157Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

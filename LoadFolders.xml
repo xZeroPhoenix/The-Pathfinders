@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <loadFolders>
-  <v1.4>
+  <v1.6>
     <li>/</li>
-    <li>v1.4</li>
+    <li>v1.6</li>
     <li IfModActive="CETeam.CombatExtended">OtherPatches/P.CE</li>
     <li IfModActive="smashphil.srtsexpanded">OtherPatches/P.SRTS</li>
-  </v1.4>
+  </v1.6>
 </loadFolders>

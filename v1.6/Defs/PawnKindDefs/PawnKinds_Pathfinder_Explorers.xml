@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Explorers Base -->
+	<PawnKindDef Abstract="Ture" Name="BasePathfinderExplorersPawnKind">
+		<race>Alien_Pathfinder</race>
+		<label>Pathfinder Explorers Base</label>
+		<defName>PathfinderExplorersBase</defName>
+		<combatPower>55</combatPower>
+		<defaultFactionDef>PathfinderExplorers</defaultFactionDef>
+		<chemicalAddictionChance>0.01</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+		<invNutrition>3.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>125~170</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>3</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>PathfinderBasic</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Cape</li>
+		</apparelTags>
+		<backstoryCategories>
+			<li>Pathfinder_Backstory</li>
+		</backstoryCategories>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Explorers Civilians -->
+	<PawnKindDef ParentName="BasePathfinderExplorersPawnKind" Name="PathfinderCivlian">
+		<defName>PathfinderCivilian</defName>
+		<label>Pathfinder Civilian</label>
+		<combatPower>55</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>1.0~2.0</gearHealthRange>
+		<weaponTags>
+			<li>PathfinderEmergency</li>
+		</weaponTags>
+		<weaponMoney>800~1800</weaponMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+		<humanPregnancyChance>0.08</humanPregnancyChance>
+	</PawnKindDef>
+	<!-- Trader -->
+	<PawnKindDef ParentName="BasePathfinderExplorersPawnKind">
+		<defName>PathfinderTrader</defName>
+		<label>Pathfinder trader</label>
+		<defaultFactionType>PathfinderExplorers</defaultFactionType>
+		<trader>true</trader>
+		<combatPower>55</combatPower>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Explorers Guard Base -->
+	<PawnKindDef ParentName="BasePathfinderExplorersPawnKind" Name="PathfinderGuardBase">
+		<defName>PathfinderGuard</defName>
+		<label>Pathfinder Guard</label>
+		<combatPower>100</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1.0~2.0</gearHealthRange>
+		<weaponTags>
+			<li>PathfinderEmergency</li>
+			<li>PathfinderGeneral</li>
+		</weaponTags>
+		<weaponMoney>2800~3800</weaponMoney>
+		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelMoney>2700~2900</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>PathfinderBasic</li>
+		</apparelTags>
+		<initialWillRange>18~25</initialWillRange>
+		<initialResistanceRange>22~32</initialResistanceRange>
+		<humanPregnancyChance>0.02</humanPregnancyChance>
+	</PawnKindDef>
+	<!-- Explorers Elite Guard -->
+	<PawnKindDef ParentName="PathfinderGuardBase" Name="ElitePathfinderGuard">
+		<defName>ElitePathfinderGuard</defName>
+		<label>Elite Pathfinder Guard</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderGeneral</li>
+		</weaponTags>
+		<weaponMoney>3800~4800</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_PathfinderAdvHelmet</li>
+			<li>Apparel_PathfinderArmour</li>
+			<li>Apparel_PathfinderBallisticLining</li>
+		</apparelRequired>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Explorers Military Base -->
+	<PawnKindDef ParentName="BasePathfinderExplorersPawnKind" Name="PathfinderMilitaryBase">
+		<defName>PathfinderBaseMilitary</defName>
+		<label>Pathfinder Base Military</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderGeneral</li>
+		</weaponTags>
+		<weaponMoney>3800~4800</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_PathfinderAdvHelmet</li>
+			<li>Apparel_PathfinderArmour</li>
+			<li>Apparel_PathfinderBallisticLining</li>
+		</apparelRequired>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Soldier -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderSoldier</defName>
+		<label>Pathfinder Soldier</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderGeneral</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Marksman -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderMarksman</defName>
+		<label>Pathfinder Marksman</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderMarksman</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Gunner -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderGunner</defName>
+		<label>Pathfinder Gunner</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderGunner</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Breacher -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderBreacher</defName>
+		<label>Pathfinder Breacher</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderClose</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Demolitions -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderDemolitions</defName>
+		<label>Pathfinder Demolitions</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderDemolitions</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Chancellor -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderChancellor</defName>
+		<label>Pathfinder Chancellor</label>
+		<combatPower>240</combatPower>
+		<factionLeader>true</factionLeader>
+		<weaponTags>
+			<li>PathfinderGeneral</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+	<!-- Melee -->
+	<PawnKindDef ParentName="PathfinderMilitaryBase">
+		<defName>PathfinderMelee</defName>
+		<label>Pathfinder Melee Specialist</label>
+		<combatPower>240</combatPower>
+		<weaponTags>
+			<li>PathfinderMeleeAdvanced</li>
+		</weaponTags>
+		<initialWillRange>16~23</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

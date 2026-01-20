@@ -153,38 +153,7 @@ namespace ThePathfinders.Patches
                 }
             }
         }
-
-        [HarmonyPatch]
-        // Thanks to Razar
-        public static class Pathfinder_ExtraEyeGraphic_Patch
-        {
-            public static MethodBase TargetMethod()
-            {
-                var targetMethod = typeof(PawnRenderer).GetNestedTypes(AccessTools.all).SelectMany(innerType => AccessTools.GetDeclaredMethods(innerType)).FirstOrDefault(method => method.Name.Contains("DrawExtraEyeGraphic") && method.ReturnType == typeof(void));
-                return targetMethod;
-            }
-
-            [HarmonyPrefix]
-            static bool Prefix(ref PawnRenderer __instance)
-            {
-                PawnRenderer renderer = Traverse.Create(__instance).Field("<>4__this").GetValue() as PawnRenderer;
-                Pawn pawn = Traverse.Create(renderer).Field("pawn").GetValue() as Pawn;
-
-                if (pawn.def.defName == PathfinderRaceDefOf.Alien_Pathfinder.defName)
-                {
-                    // No eye graphics. Handled by Body Addon instead.
-
-                    // Finished the replacement
-                    return false;
-                }
-                else
-                {
-                    // Let Original run
-                    return true;
-                }
-            }
-        }
-
+        
     }
 
 }
